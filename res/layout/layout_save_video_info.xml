@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" 
+    android:id="@+id/ll_popup"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:background="#b6c5dc" >
+
+        <EditText
+            android:id="@+id/et_video_name"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:background="#e9f2fc"
+            android:gravity="center_vertical"
+            android:hint="填写视频介绍"
+            android:paddingLeft="15dp" />
+
+        <ImageView
+            android:id="@+id/iv_locaiton"
+            android:layout_width="15dp"
+            android:layout_height="23dp"
+            android:layout_alignLeft="@id/et_video_name"
+            android:layout_below="@id/et_video_name"
+            android:layout_marginTop="12dp"
+            android:src="@drawable/location_blue" />
+
+        <TextView
+            android:id="@+id/tv_set_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/et_video_name"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_toRightOf="@id/iv_locaiton"
+            android:text="设置位置"
+            android:textColor="#2a3552"
+            android:textSize="15sp" />
+
+        <View
+            android:id="@+id/view_empty"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:id="@+id/tv_save"
+            android:layout_width="120dp"
+            android:layout_height="35dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_toLeftOf="@id/view_empty"
+            android:background="#ffffff"
+            android:gravity="center"
+            android:text="保存"
+            android:textColor="#b6c5dc" />
+        <EditText 
+            android:id="@+id/et_save2"
+            android:layout_width="1dp"
+            android:layout_height="1dp"
+            android:layout_below="@id/tv_save"
+            
+            />
+
+        <TextView
+            android:id="@+id/tv_upload"
+            android:layout_width="120dp"
+            android:layout_height="35dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@id/view_empty"
+            android:background="#ffffff"
+            android:gravity="center"
+            android:text="上传"
+            android:textColor="#b6c5dc" />
+    </RelativeLayout>
+
+</LinearLayout>

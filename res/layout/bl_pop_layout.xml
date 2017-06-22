@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+   
+    android:layout_height="wrap_content" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+           android:background="@color/lighter_blue"
+            android:gravity="center"
+            android:padding="15dp"
+            android:src="@drawable/clock" />
+
+        <TextView
+            android:id="@+id/tv_10s"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+             android:background="@color/lighter_blue"
+            android:gravity="center"
+            android:text="10秒"
+            android:textColor="@android:color/white"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/tv_30s"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+          android:background="@color/lighter_blue"
+            android:gravity="center"
+            android:text="30秒"
+            android:textColor="@android:color/white"
+            android:textSize="17sp" />
+
+        <TextView
+             android:id="@+id/tv_60s"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+             android:background="@color/lighter_blue"
+            android:gravity="center"
+            android:text="60秒"
+            android:textColor="@android:color/white"
+            android:textSize="17sp" />
+
+        <TextView
+               android:id="@+id/tv_90s"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+           android:background="@color/lighter_blue"
+            android:gravity="center"
+            android:text="90秒"
+            android:textColor="@android:color/white"
+            android:textSize="17sp" />
+
+        <TextView
+            
+            android:id="@+id/tv_120s"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/lighter_blue"
+            android:gravity="center"
+            android:text="120秒"
+            android:textColor="@android:color/white"
+            android:textSize="17sp" />
+    </LinearLayout>
+
+</RelativeLayout>

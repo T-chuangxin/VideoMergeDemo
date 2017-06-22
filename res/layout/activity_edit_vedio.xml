@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="#ffffff"
+    >
+    
+    <RelativeLayout
+        android:id="@+id/rl_top"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_above="@+id/tv_progress_time"
+        android:background="#2a3552" >
+
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            >
+        <VideoView
+            android:id="@+id/vv_vedio_show"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+	</LinearLayout>
+        <ImageView
+            android:id="@+id/iv_edit_back"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="17dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/ic_vedio_back" />
+
+        <ImageView
+            android:id="@+id/iv_play_pause"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="27dp"
+            android:layout_marginTop="87dp"
+            android:src="@drawable/play_btn_state" />
+
+        <com.tian.videomergedemo.view.VideoEditProgressBar
+            android:id="@+id/vedio_progress"
+            android:layout_width="match_parent"
+            android:layout_height="27dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/transparent" />
+
+        <TextView
+            android:id="@+id/tv_duration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/vedio_progress"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:text="00:00:00"
+            android:textColor="#b6c5dc"
+            android:textSize="10sp" />
+    </RelativeLayout>
+    
+    
+    <TextView
+            android:id="@+id/tv_progress_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/sl"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="2dp"
+            android:text="00:00:00"
+            android:gravity="center"
+            android:textColor="#2a3552"
+            android:textSize="10sp" />
+    
+    
+     <com.tian.videomergedemo.view.ObservableScrollView 
+        android:id="@+id/sl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/rl_bottom"
+        android:scrollbars="none"
+        >
+        <LinearLayout 
+            android:id="@+id/ll_scroll"
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical|center_horizontal"
+            >
+        <com.tian.videomergedemo.view.EditVideoImageBar 
+            android:id="@+id/iv_show"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+        </LinearLayout>
+    </com.tian.videomergedemo.view.ObservableScrollView>
+    
+    
+    
+    
+    <RelativeLayout
+        android:id="@+id/rl_bottom"
+        android:layout_width="match_parent"
+        android:background="#ffffff"
+        android:layout_alignParentBottom="true"
+        android:layout_height="100dp" >
+        <ImageView
+            android:id="@+id/iv_btn_cut"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="25dp"
+            android:src="@drawable/video_cut" />
+
+        <ImageView
+            android:id="@+id/iv_delete"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="35dp"
+            android:layout_marginRight="50dp"
+            android:layout_toLeftOf="@id/iv_btn_cut"
+            android:src="@drawable/video_delete" />
+
+        <ImageView
+            android:id="@+id/iv_merge"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="35dp"
+            android:layout_marginLeft="50dp"
+            android:layout_toRightOf="@id/iv_btn_cut"
+            android:src="@drawable/video_merge" />
+
+    </RelativeLayout>
+    
+     	<View
+            android:layout_width="1dp"
+            android:layout_below="@+id/tv_progress_time"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="85dp"
+            android:background="#f1404b" />
+    
+    
+    
+    
+    
+
+</RelativeLayout>

@@ -1,0 +1,17 @@
+<resources>
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+   <style name="dialog_time_animation" parent="android:Animation">
+        <item name="@android:windowEnterAnimation">@anim/time_enter</item>
+        <item name="@android:windowExitAnimation">@anim/time_exit</item>
+    </style>
+    <style name="quicks_option_dialog" parent="@android:style/Theme.Black.NoTitleBar">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowAnimationStyle">@style/dialog_time_animation</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <!-- activity变暗 -->
+    </style>
+</resources>

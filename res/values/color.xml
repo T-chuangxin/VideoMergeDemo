@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="lignttextColor">#95c5ef</color>
+    <color name="ligntBlack">#323232</color>
+    <color name="ligntGrey">#cfcfcf</color>
+    <color name="grey3">#333333</color>
+    <color name="greybd">#bdbdbd</color>
+    <color name="greyc8">#c8c8cb</color>
+    <color name="greye3">#e3e3e3</color>
+    <color name="grey9">#999</color>
+    <color name="grey_pressed">#4d999999</color>
+    <color name="greyc">#cccccc</color>
+    <color name="greyec">#ececec</color>
+    <color name="recycler_view_divider_color">#CFCFCF</color>
+    <color name="greya">#aaaaaa</color>
+    <color name="a5">#1983d1</color>
+    <color name="lightblue">#1983d1</color> <!-- >#1983d1 -->
+    <color name="hot_bg">#5cb5da</color>
+    <color name="greyad">#adadad</color>
+    <color name="greycf">#cfcfcf</color>
+    <color name="greyce">#cecece</color>
+    <color name="blue2">#5cb4dc</color>
+    <color name="blue3">#5ab6d8</color>
+    <color name="edit_blue">#5ab6da</color>
+    <color name="dark_blue">#1c8ab7</color>
+    <color name="lighter_black">#333</color>
+    <color name="grey">#999</color>
+    <color name="blue">#b72b2e</color>
+    <color name="light_grey7">#46000000</color>
+    <color name="color_divider">#eee</color>
+    <color name="lighter_grey">#666</color>
+    <color name="light_red_30">#1ab72b2e</color>
+    <color name="grey_border_color">#9b9b9b</color>
+    <color name="bg_floder_press">#bdbdbd</color>
+    <color name="light_grey">#ccc</color>
+    <color name="crop__selector_pressed">#1a000000</color>
+    <color name="crop__selector_focused">#77000000</color>
+    <color name="record_alert_bg">#99000000</color>
+    <color name="seek_blue">#4fc1e9</color>
+    <color name="seek_grey">#e4e6ea</color>
+    <color name="status_grey">#b6b8b9</color>
+    <color name="progress_grey">#afafaf</color>
+    <color name="bgColor_overlay">#99000000</color>
+    <color name="pickerview_timebtn_nor">#ef7301</color>
+    <color name="pickerview_timebtn_pre">#f79a45</color>
+    <color name="pickerview_topbar_title">#000000</color>
+    <color name="pickerview_bg_topbar">#f5f5f5</color>
+    <color name="pickerview_wheelview_textcolor_out">#a8a8a8</color>
+    <color name="pickerview_wheelview_textcolor_center">#666666</color>
+    <color name="pickerview_wheelview_textcolor_divider">#d5d5d5</color>
+    <color name="colorPrimary">#4dbbaa</color>
+    <color name="colorPrimaryDark">#138b78</color>
+    <color name="colorAccent">#464646</color>
+    <color name="custom_dialog_nor">#ffffff</color>
+    <color name="custom_dialog_sel">#4dbbaa</color>
+    <color name="custom_dialog_dis">#e5e5e5</color>
+    <color name="color_theme">#44aaf0</color>
+    <color name="menu_divider">#7cc4f5</color>
+    <color name="dark_theme_pressed">#3899db</color>
+    <color name="greyd">#dddddd</color>
+    <color name="home_btn_bg">#0070c6</color>
+    <color name="copyright">#6eb9f1</color>
+    <color name="grey7">#777777</color>
+    <color name="grey6">#666666</color>
+    <color name="red">#ff0000</color>
+    <color name="black">#000000</color>
+    <color name="light_gray">#99a4b7</color>
+    <color name="deep_gray">#394257</color>
+    <color name="border_gray">#d9dfe5</color>
+    <color name="bg_gray">#e1e1e1</color>
+    <color name="btn_gray">#d1d1d1</color>
+    <color name="glass_gall">#c2ebef</color>
+    <color name="light_blue">#87d0f2</color>
+    <color name="transparent">#00000000</color>
+    <color name="solid_black">#ff000000</color>
+    <color name="bg_capture_progress">#ff000000</color>
+    <color name="vine_green">#b5c3db</color>
+    <color name="vine_green_1">#2A3552</color>
+    <color name="capture_background">#586897</color>
+    <color name="green">#00ff00</color>
+    <color name="blue_light">#00ffff</color>
+    <color name="white">#ffffff</color>
+    
+    <drawable name="waveform_selected">#8dffff</drawable>
+    <drawable name="waveform_unselected">#106072</drawable>
+    <drawable name="waveform_unselected_bkgnd_overlay">#00000000</drawable>
+    <drawable name="selection_border">#00000000</drawable>
+    <drawable name="playback_indicator">#ffff66</drawable>
+    <drawable name="grid_line">#ee01a9a9</drawable>
+    <drawable name="timecode">#ddffffdd</drawable>
+    <drawable name="timecode_shadow">#aa000000</drawable>
+    <drawable name="type_bkgnd_alarm">#88880000</drawable>
+    <drawable name="type_bkgnd_ringtone">#88008888</drawable>
+    <drawable name="type_bkgnd_notification">#88666600</drawable>
+    <drawable name="type_bkgnd_music">#88000000</drawable>
+    <drawable name="type_bkgnd_unsupported">#88cccccc</drawable>
+
+    <color name="backgreybaoliao">#ececec</color>
+    <color name="edit_color">#ffcc42</color>
+    <color name="titlebar_bg_color">#69AA05</color>
+    <color name="titlebar_title_color">#FFFFFF</color>
+    <color name="waveform_selected">#33b5e5</color>
+    <color name="waveform_unselected">#195a72</color>
+    <color name="waveform_unselected_bkgnd_overlay">#0a242d</color>
+    <color name="selection_border">#ffffff</color>
+    <color name="playback_indicator">#ffff66</color>
+    <color name="grid_line">#66ffffff</color>
+    <color name="timecode">#ddffffdd</color>
+    <color name="timecode_shadow">#aa000000</color>
+    <color name="type_bkgnd_alarm">#88880000</color>
+    <color name="type_bkgnd_ringtone">#88008888</color>
+    <color name="type_bkgnd_notification">#88666600</color>
+    <color name="type_bkgnd_music">#88000000</color>
+    <color name="type_bkgnd_unsupported">#88cccccc</color>
+    <color name="hui">#b6c5dc</color>
+    <color name="half_blue">#2a3552</color>
+    <color name="dark_red">#586897</color>
+    <color name="lighter_blue">#607394</color>
+    <color name="progress_divider_color">#afd0f7</color>
+    <color name="title_bar_gray_text_color">#b1b1b1</color>
+    <color name="materialcolorpicker__white">#ffffff</color>
+    <color name="materialcolorpicker__red">#f44336</color>
+    <color name="materialcolorpicker__green">#4caf50</color>
+    <color name="materialcolorpicker__blue">#2196f3</color>
+    <color name="materialcolorpicker__grey">#b3b3b3</color>
+    <color name="materialcolorpicker__lightgrey">#d9d9d9</color>
+    <color name="materialcolorpicker__dribble">#ea4c89</color>
+    <color name="materialcolorpicker__dribbledark">#c32361</color>
+    <color name="materialcolorpicker__black">#000000</color>
+    <color name="materialcolorpicker__dialogcolor">#009688</color>
+    <color name="text_bule">#2B3552</color>
+    <color name="bottomBg">#66b6c5dc</color>
+    <color name="dark_black">#4d000000</color>
+    <color name="sellpagetitlebottom">#4696d3</color>
+    <color name="text_normal_color">#696969</color>
+    <color name="text_comment_color">#979797</color>
+    <color name="edit_text_color">#8d8d8d</color>
+    <color name="dialog_text_color">#696969</color>
+    <color name="dialog_text_green_color">#7ba842</color>
+    <color name="dialog_item_selected_color">#6F9929</color>
+    <color name="dialog_hint_color">#A2A2A2</color>
+
+    <!-- 马赛克控件 -->
+    <color name="mosaicblue">#20bcff</color>
+    <color name="mosaicdark">#77f0f0f0</color>
+
+    <!-- 颜色值选择 -->
+    <color name="color0">#000000</color>
+    <color name="color1">#CC6600</color>
+    <color name="color2">#FF6666</color>
+    <color name="color3">#00CCFF</color>
+    <color name="color4">#000033</color>
+    <color name="color5">#ff0000</color>
+    <color name="color6">#53D265</color>
+    <color name="color7">#cccccc</color>
+    <color name="color8">#FF47BD</color>
+    <!-- 4G回传 开始 -->
+    <color name="customcolor">#8000ff00</color>
+    <color name="dividercolor">#33ccff</color>
+    <color name="edittextcolor">#694d9f</color>
+    <color name="gridviewbackgroundcolor">#1d953f</color>
+    <color name="clickgridviewbackgroundcolor">#a3cf62</color>
+    <color name="disablecolor">#d3d7d4</color>
+    <color name="whitecolor">#ffffff</color>
+    <color name="blackcolor">#000000</color>
+    <color name="greencolor">#00FF00</color>
+    <color name="recordtimecolor">#d71345</color>
+    <color name="common_top_bg">#e52111</color>
+    <color name="main_menu_text_color">#f68f88</color>
+    <color name="main_menu_text_color_press">#c32b22</color>
+    
+    <!-- new_4G回传 -->
+    <color name="redml">#fd0303</color>
+    <color name="whiteml">#dddce3</color>
+    <color name="buttonleft">#27c927</color>
+    <color name="buttonright">#ec1313</color>
+    <color name="dialogtextcolor">#020202</color>
+    
+    <!-- 4G回传 结束 -->
+    <color name="main_menu_bg">#aa111213</color>
+    <color name="common_title_bg">#aa111213</color>
+    <color name="primary_title_text_color">#ff888888</color>
+    <color name="common_title_text">#ff565555</color>
+    <color name="common_text_yellow">#ffffe049</color>
+    <color name="album_item_bg">#fffcfcfd</color>
+    <color name="video_playter_bg">#333333</color>
+    <color name="text_color_2A3552">#ff0000</color>
+    <color name="text_color_000000">#000000</color>
+    <color name="black_overlay">#66000000</color>
+    <color name="none_color">#00000000</color>
+    <color name="bule_overlay">#660D92DD</color>
+    
+    <color name="blacktop">#999999</color>
+    <!-- 退稿 -->
+    <color name="tuigao">#db1011</color>
+    <!-- 审核 -->
+    <color name="shenhe">#22ac38</color>
+    <!-- 采用 -->
+    <color name="caiyong">#0476c8</color>
+    
+     <color name="record_progress_black">#2c2c2c</color>
+    <color name="record_progress_bg">#2c2c2c</color>
+    <color name="record_progress_blue">#368ca8</color>
+    <color name="record_progress_pause">#2c2c2c</color>
+    <color name="record_progress_red">#e85932</color>
+</resources>
