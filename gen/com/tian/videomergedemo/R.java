@@ -9,13 +9,254 @@ package com.tian.videomergedemo;
 
 public final class R {
     public static final class anim {
-        public static final int fade_ins=0x7f040000;
-        public static final int push_bottom_in=0x7f040001;
-        public static final int push_bottom_in_2=0x7f040002;
-        public static final int time_enter=0x7f040003;
-        public static final int time_exit=0x7f040004;
+        public static final int abc_fade_in=0x7f040000;
+        public static final int abc_fade_out=0x7f040001;
+        public static final int abc_grow_fade_in_from_bottom=0x7f040002;
+        public static final int abc_popup_enter=0x7f040003;
+        public static final int abc_popup_exit=0x7f040004;
+        public static final int abc_shrink_fade_out_from_bottom=0x7f040005;
+        public static final int abc_slide_in_bottom=0x7f040006;
+        public static final int abc_slide_in_top=0x7f040007;
+        public static final int abc_slide_out_bottom=0x7f040008;
+        public static final int abc_slide_out_top=0x7f040009;
+        public static final int fade_ins=0x7f04000a;
+        public static final int push_bottom_in=0x7f04000b;
+        public static final int push_bottom_in_2=0x7f04000c;
+        public static final int time_enter=0x7f04000d;
+        public static final int time_exit=0x7f04000e;
     }
     public static final class attr {
+        /**  Custom divider drawable to use for elements in the action bar. 
+         <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int actionBarDivider=0x7f010018;
+        /**  Custom item state list drawable background for action bar items. 
+         <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int actionBarItemBackground=0x7f010019;
+        /**  Reference to a theme that should be used to inflate popups
+             shown by widgets in the action bar. 
+         <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int actionBarPopupTheme=0x7f010012;
+        /**  Size of the Action Bar, including the contextual
+             bar used to present Action Modes. 
+         <p>May be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+<p>May be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>wrap_content</code></td><td>0</td><td></td></tr>
+</table>
+         */
+        public static final int actionBarSize=0x7f010017;
+        /**  Reference to a style for the split Action Bar. This style
+             controls the split component that holds the menu/action
+             buttons. actionBarStyle is still used for the primary
+             bar. 
+         <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int actionBarSplitStyle=0x7f010014;
+        /**  Reference to a style for the Action Bar 
+         <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int actionBarStyle=0x7f010013;
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int actionBarTabBarStyle=0x7f01000e;
+        /**  Default style for tabs within an action bar 
+         <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int actionBarTabStyle=0x7f01000d;
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int actionBarTabTextStyle=0x7f01000f;
+        /**  Reference to a theme that should be used to inflate the
+             action bar. This will be inherited by any widget inflated
+             into the action bar. 
+         <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int actionBarTheme=0x7f010015;
+        /**  Reference to a theme that should be used to inflate widgets
+             and layouts destined for the action bar. Most of the time
+             this will be a reference to the current theme, but when
+             the action bar has a significantly different contrast
+             profile than the rest of the activity the difference
+             can become important. If this is set to @null the current
+             theme will be used.
+         <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int actionBarWidgetTheme=0x7f010016;
+        /**  Default action button style. 
+         <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int actionButtonStyle=0x7f010032;
+        /**  Default ActionBar dropdown style. 
+         <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int actionDropDownStyle=0x7f01002e;
+        /**  An optional layout to be used as an action view.
+             See {@link android.view.MenuItem#setActionView(android.view.View)}
+             for more info. 
+         <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int actionLayout=0x7f01008b;
+        /**  TextAppearance style that will be applied to text that
+             appears within action menu items. 
+         <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int actionMenuTextAppearance=0x7f01001a;
+        /**  Color for text that appears within action menu items. 
+ Color for text that appears within action menu items. 
+         <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+         */
+        public static final int actionMenuTextColor=0x7f01001b;
+        /**  Background drawable to use for action mode UI 
+         <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int actionModeBackground=0x7f01001e;
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int actionModeCloseButtonStyle=0x7f01001d;
+        /**  Drawable to use for the close action mode button 
+         <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int actionModeCloseDrawable=0x7f010020;
+        /**  Drawable to use for the Copy action button in Contextual Action Bar 
+         <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int actionModeCopyDrawable=0x7f010022;
+        /**  Drawable to use for the Cut action button in Contextual Action Bar 
+         <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int actionModeCutDrawable=0x7f010021;
+        /**  Drawable to use for the Find action button in WebView selection action modes 
+         <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int actionModeFindDrawable=0x7f010026;
+        /**  Drawable to use for the Paste action button in Contextual Action Bar 
+         <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int actionModePasteDrawable=0x7f010023;
+        /**  PopupWindow style to use for action modes when showing as a window overlay. 
+         <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int actionModePopupWindowStyle=0x7f010028;
+        /**  Drawable to use for the Select all action button in Contextual Action Bar 
+         <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int actionModeSelectAllDrawable=0x7f010024;
+        /**  Drawable to use for the Share action button in WebView selection action modes 
+         <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int actionModeShareDrawable=0x7f010025;
+        /**  Background drawable to use for action mode UI in the lower split bar 
+         <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int actionModeSplitBackground=0x7f01001f;
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int actionModeStyle=0x7f01001c;
+        /**  Drawable to use for the Web Search action button in WebView selection action modes 
+         <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int actionModeWebSearchDrawable=0x7f010027;
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int actionOverflowButtonStyle=0x7f010010;
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int actionOverflowMenuStyle=0x7f010011;
+        /**  The name of an optional ActionProvider class to instantiate an action view
+             and perform operations such as default action for that menu item.
+             See {@link android.view.MenuItem#setActionProvider(android.view.ActionProvider)}
+             for more info. 
+         <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int actionProviderClass=0x7f01008d;
+        /**  The name of an optional View class to instantiate and use as an
+             action view. See {@link android.view.MenuItem#setActionView(android.view.View)}
+             for more info. 
+         <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int actionViewClass=0x7f01008c;
+        /**  Default ActivityChooserView style. 
+         <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int activityChooserViewStyle=0x7f010039;
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int alertDialogButtonGroupStyle=0x7f01005a;
+        /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int alertDialogCenterButtons=0x7f01005b;
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int alertDialogStyle=0x7f010059;
+        /**  Theme to use for alert dialogs spawned from this theme. 
+         <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int alertDialogTheme=0x7f01005c;
         /** <p>Must be an integer value, such as "<code>100</code>".
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -23,13 +264,77 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int animat_id=0x7f01003d;
+        public static final int animat_id=0x7f010104;
+        /**  Default AutoCompleteTextView style. 
+         <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int autoCompleteTextViewStyle=0x7f010061;
+        /**  Specifies a background drawable for the action bar. 
+         <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int background=0x7f010073;
+        /**  Specifies a background drawable for the bottom component of a split action bar. 
+         <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+         */
+        public static final int backgroundSplit=0x7f010075;
+        /**  Specifies a background drawable for a second stacked row of the action bar. 
+         <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+         */
+        public static final int backgroundStacked=0x7f010074;
+        /**  Tint to apply to the background. 
+         <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int backgroundTint=0x7f010087;
+        /**  Blending mode used to apply the background tint. 
+         <p>Must be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>src_over</code></td><td>3</td><td> The tint is drawn on top of the drawable.
+                 [Sa + (1 - Sa)*Da, Rc = Sc + (1 - Sa)*Dc] </td></tr>
+<tr><td><code>src_in</code></td><td>5</td><td> The tint is masked by the alpha channel of the drawable. The drawable’s
+                 color channels are thrown out. [Sa * Da, Sc * Da] </td></tr>
+<tr><td><code>src_atop</code></td><td>9</td><td> The tint is drawn above the drawable, but with the drawable’s alpha
+                 channel masking the result. [Da, Sc * Da + (1 - Sa) * Dc] </td></tr>
+<tr><td><code>multiply</code></td><td>14</td><td> Multiplies the color and alpha channels of the drawable with those of
+                 the tint. [Sa * Da, Sc * Dc] </td></tr>
+<tr><td><code>screen</code></td><td>15</td><td> [Sa + Da - Sa * Da, Sc + Dc - Sc * Dc] </td></tr>
+</table>
+         */
+        public static final int backgroundTintMode=0x7f010088;
+        /**  The size of the bars when they are parallel to each other 
+         <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int barSize=0x7f0100b8;
         /** <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
          */
-        public static final int bgColor=0x7f010000;
+        public static final int bgColor=0x7f0100c7;
         /** <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
 <p>This may also be a reference to a resource (in the form
@@ -38,7 +343,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int border_color=0x7f010005;
+        public static final int border_color=0x7f0100cc;
         /** <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
 <p>This may also be a reference to a resource (in the form
@@ -47,7 +352,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int border_colors=0x7f010025;
+        public static final int border_colors=0x7f0100ec;
         /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
 Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
 in (inches), mm (millimeters).
@@ -57,7 +362,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int border_width=0x7f010004;
+        public static final int border_width=0x7f0100cb;
         /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
 Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
 in (inches), mm (millimeters).
@@ -67,7 +372,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int border_widths=0x7f010024;
+        public static final int border_widths=0x7f0100eb;
         /** <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
 <p>This may also be a reference to a resource (in the form
@@ -76,7 +381,56 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int bottomLineColor=0x7f010033;
+        public static final int bottomLineColor=0x7f0100fa;
+        /**  Style for buttons within button bars 
+         <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int buttonBarButtonStyle=0x7f010034;
+        /**  Style for the "negative" buttons within button bars 
+         <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int buttonBarNegativeButtonStyle=0x7f01005f;
+        /**  Style for the "neutral" buttons within button bars 
+         <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int buttonBarNeutralButtonStyle=0x7f010060;
+        /**  Style for the "positive" buttons within button bars 
+         <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int buttonBarPositiveButtonStyle=0x7f01005e;
+        /**  Style for button bars 
+         <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int buttonBarStyle=0x7f010033;
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int buttonPanelSideLayout=0x7f0100c2;
+        /**  Normal Button style. 
+         <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int buttonStyle=0x7f010062;
+        /**  Small Button style. 
+         <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int buttonStyleSmall=0x7f010063;
+        /**  Default Checkbox style. 
+         <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int checkboxStyle=0x7f010064;
+        /**  Default CheckedTextView style. 
+         <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int checkedTextViewStyle=0x7f010065;
         /** <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
 <p>This may also be a reference to a resource (in the form
@@ -85,7 +439,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int circle_finished_color=0x7f01000c;
+        public static final int circle_finished_color=0x7f0100d3;
         /** <p>Must be an integer value, such as "<code>100</code>".
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -93,7 +447,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int circle_max=0x7f01000a;
+        public static final int circle_max=0x7f0100d1;
         /** <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -101,7 +455,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int circle_prefix_text=0x7f01000f;
+        public static final int circle_prefix_text=0x7f0100d6;
         /** <p>Must be an integer value, such as "<code>100</code>".
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -109,7 +463,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int circle_progress=0x7f010009;
+        public static final int circle_progress=0x7f0100d0;
         /** <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -117,7 +471,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int circle_suffix_text=0x7f010010;
+        public static final int circle_suffix_text=0x7f0100d7;
         /** <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
 <p>This may also be a reference to a resource (in the form
@@ -126,7 +480,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int circle_text_color=0x7f01000e;
+        public static final int circle_text_color=0x7f0100d5;
         /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
 Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
 in (inches), mm (millimeters).
@@ -136,7 +490,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int circle_text_size=0x7f01000d;
+        public static final int circle_text_size=0x7f0100d4;
         /** <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
 <p>This may also be a reference to a resource (in the form
@@ -145,7 +499,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int circle_unfinished_color=0x7f01000b;
+        public static final int circle_unfinished_color=0x7f0100d2;
         /** <p>Must be an integer value, such as "<code>100</code>".
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -153,7 +507,30 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int click_remove_id=0x7f010051;
+        public static final int click_remove_id=0x7f010118;
+        /**  Close button icon 
+         <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int closeIcon=0x7f010095;
+        /**  Specifies a layout to use for the "close" item at the starting edge. 
+         <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int closeItemLayout=0x7f010083;
+        /**  Text to set as the content description for the collapse button. 
+         <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int collapseContentDescription=0x7f0100ad;
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int collapseIcon=0x7f0100ac;
         /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
 Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
 in (inches), mm (millimeters).
@@ -163,7 +540,153 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int collapsed_height=0x7f010041;
+        public static final int collapsed_height=0x7f010108;
+        /**  The drawing color for the bars 
+         <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int color=0x7f0100b2;
+        /**  Bright complement to the primary branding color. By default, this is the color applied
+             to framework controls (via colorControlActivated). 
+         <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int colorAccent=0x7f010053;
+        /**  The color applied to framework buttons in their normal state. 
+         <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int colorButtonNormal=0x7f010057;
+        /**  The color applied to framework controls in their activated (ex. checked) state. 
+         <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int colorControlActivated=0x7f010055;
+        /**  The color applied to framework control highlights (ex. ripples, list selectors). 
+         <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int colorControlHighlight=0x7f010056;
+        /**  The color applied to framework controls in their normal state. 
+         <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int colorControlNormal=0x7f010054;
+        /**  The primary branding color for the app. By default, this is the color applied to the
+             action bar background. 
+         <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int colorPrimary=0x7f010051;
+        /**  Dark variant of the primary branding color. By default, this is the color applied to
+             the status bar (via statusBarColor) and navigation bar (via navigationBarColor). 
+         <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int colorPrimaryDark=0x7f010052;
+        /**  The color applied to framework switch thumbs in their normal state. 
+         <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int colorSwitchThumbNormal=0x7f010058;
+        /**  Commit icon shown in the query suggestion row 
+         <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int commitIcon=0x7f01009a;
+        /**  Minimum inset for content views within a bar. Navigation buttons and
+             menu views are excepted. Only valid for some themes and configurations. 
+         <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int contentInsetEnd=0x7f01007e;
+        /**  Minimum inset for content views within a bar. Navigation buttons and
+             menu views are excepted. Only valid for some themes and configurations. 
+         <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int contentInsetLeft=0x7f01007f;
+        /**  Minimum inset for content views within a bar. Navigation buttons and
+             menu views are excepted. Only valid for some themes and configurations. 
+         <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int contentInsetRight=0x7f010080;
+        /**  Minimum inset for content views within a bar. Navigation buttons and
+             menu views are excepted. Only valid for some themes and configurations. 
+         <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int contentInsetStart=0x7f01007d;
         /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
 Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
 in (inches), mm (millimeters).
@@ -173,12 +696,65 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int corner_radius=0x7f010023;
+        public static final int corner_radius=0x7f0100ea;
         /**  图片裁剪 
          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
-        public static final int cropImageStyle=0x7f010028;
+        public static final int cropImageStyle=0x7f0100ef;
+        /**  Specifies a layout for custom navigation. Overrides navigationMode. 
+         <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int customNavigationLayout=0x7f010076;
+        /**  Preferred padding for dialog content. 
+         <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int dialogPreferredPadding=0x7f01002c;
+        /**  Theme to use for dialogs spawned from this theme. 
+         <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int dialogTheme=0x7f01002b;
+        /**  Whether this spinner should mark child views as enabled/disabled when
+             the spinner itself is enabled/disabled. 
+         <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int disableChildrenWhenDisabled=0x7f010091;
+        /**  Options affecting how the action bar is displayed. 
+         <p>Must be one or more (separated by '|') of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>none</code></td><td>0</td><td></td></tr>
+<tr><td><code>useLogo</code></td><td>0x1</td><td></td></tr>
+<tr><td><code>showHome</code></td><td>0x2</td><td></td></tr>
+<tr><td><code>homeAsUp</code></td><td>0x4</td><td></td></tr>
+<tr><td><code>showTitle</code></td><td>0x8</td><td></td></tr>
+<tr><td><code>showCustom</code></td><td>0x10</td><td></td></tr>
+<tr><td><code>disableHome</code></td><td>0x20</td><td></td></tr>
+</table>
+         */
+        public static final int displayOptions=0x7f01006c;
+        /**  Specifies the drawable used for item dividers. 
+         <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int divider=0x7f010072;
         /** <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
 <p>This may also be a reference to a resource (in the form
@@ -187,7 +763,28 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int dividerColor=0x7f01003c;
+        public static final int dividerColor=0x7f010103;
+        /**  A drawable that may be used as a horizontal divider between visual elements. 
+         <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int dividerHorizontal=0x7f010038;
+        /**  Size of padding on either end of a divider. 
+         <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int dividerPadding=0x7f0100a3;
+        /**  A drawable that may be used as a vertical divider between visual elements. 
+         <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int dividerVertical=0x7f010037;
         /** <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
 <p>This may also be a reference to a resource (in the form
@@ -196,7 +793,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int donut_background_color=0x7f01001c;
+        public static final int donut_background_color=0x7f0100e3;
         /** <p>Must be an integer value, such as "<code>100</code>".
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -204,7 +801,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int donut_circle_starting_degree=0x7f010020;
+        public static final int donut_circle_starting_degree=0x7f0100e7;
         /** <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
 <p>This may also be a reference to a resource (in the form
@@ -213,7 +810,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int donut_finished_color=0x7f010014;
+        public static final int donut_finished_color=0x7f0100db;
         /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
 Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
 in (inches), mm (millimeters).
@@ -223,7 +820,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int donut_finished_stroke_width=0x7f010015;
+        public static final int donut_finished_stroke_width=0x7f0100dc;
         /** <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -231,7 +828,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int donut_inner_bottom_text=0x7f01001d;
+        public static final int donut_inner_bottom_text=0x7f0100e4;
         /** <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
 <p>This may also be a reference to a resource (in the form
@@ -240,7 +837,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int donut_inner_bottom_text_color=0x7f01001f;
+        public static final int donut_inner_bottom_text_color=0x7f0100e6;
         /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
 Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
 in (inches), mm (millimeters).
@@ -250,11 +847,11 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int donut_inner_bottom_text_size=0x7f01001e;
+        public static final int donut_inner_bottom_text_size=0x7f0100e5;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
-        public static final int donut_inner_drawable=0x7f010022;
+        public static final int donut_inner_drawable=0x7f0100e9;
         /** <p>Must be an integer value, such as "<code>100</code>".
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -262,7 +859,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int donut_max=0x7f010012;
+        public static final int donut_max=0x7f0100d9;
         /** <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -270,7 +867,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int donut_prefix_text=0x7f010019;
+        public static final int donut_prefix_text=0x7f0100e0;
         /** <p>Must be a floating point value, such as "<code>1.2</code>".
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -278,7 +875,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int donut_progress=0x7f010011;
+        public static final int donut_progress=0x7f0100d8;
         /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -286,7 +883,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int donut_show_text=0x7f010021;
+        public static final int donut_show_text=0x7f0100e8;
         /** <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -294,7 +891,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int donut_suffix_text=0x7f01001a;
+        public static final int donut_suffix_text=0x7f0100e1;
         /** <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -302,7 +899,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int donut_text=0x7f01001b;
+        public static final int donut_text=0x7f0100e2;
         /** <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
 <p>This may also be a reference to a resource (in the form
@@ -311,7 +908,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int donut_text_color=0x7f010018;
+        public static final int donut_text_color=0x7f0100df;
         /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
 Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
 in (inches), mm (millimeters).
@@ -321,7 +918,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int donut_text_size=0x7f010017;
+        public static final int donut_text_size=0x7f0100de;
         /** <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
 <p>This may also be a reference to a resource (in the form
@@ -330,7 +927,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int donut_unfinished_color=0x7f010013;
+        public static final int donut_unfinished_color=0x7f0100da;
         /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
 Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
 in (inches), mm (millimeters).
@@ -340,7 +937,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int donut_unfinished_stroke_width=0x7f010016;
+        public static final int donut_unfinished_stroke_width=0x7f0100dd;
         /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -348,7 +945,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int drag_enabled=0x7f01004b;
+        public static final int drag_enabled=0x7f010112;
         /** <p>Must be an integer value, such as "<code>100</code>".
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -356,7 +953,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int drag_handle_id=0x7f01004f;
+        public static final int drag_handle_id=0x7f010116;
         /** <p>Must be a floating point value, such as "<code>1.2</code>".
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -364,7 +961,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int drag_scroll_start=0x7f010042;
+        public static final int drag_scroll_start=0x7f010109;
         /** <p>Must be one of the following constant values.</p>
 <table>
 <colgroup align="left" />
@@ -376,7 +973,27 @@ containing a value of this type.
 <tr><td><code>onLongPress</code></td><td>2</td><td></td></tr>
 </table>
          */
-        public static final int drag_start_mode=0x7f01004e;
+        public static final int drag_start_mode=0x7f010115;
+        /**  The total size of the drawable 
+         <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int drawableSize=0x7f0100b4;
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int drawerArrowStyle=0x7f0100ba;
+        /**  ListPopupWindow compatibility 
+         <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int dropDownListViewStyle=0x7f010049;
         /** <p>Must be an integer value, such as "<code>100</code>".
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -384,7 +1001,56 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int drop_animation_duration=0x7f01004a;
+        public static final int drop_animation_duration=0x7f010111;
+        /**  The preferred item height for dropdown lists. 
+         <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int dropdownListPreferredItemHeight=0x7f01002f;
+        /**  EditText background drawable. 
+         <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int editTextBackground=0x7f01003f;
+        /**  EditText text foreground color. 
+         <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+         */
+        public static final int editTextColor=0x7f01003e;
+        /**  Default EditText style. 
+         <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int editTextStyle=0x7f010066;
+        /**  Elevation for the action bar itself 
+         <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int elevation=0x7f010081;
+        /**  The drawable to show in the button for expanding the activities overflow popup.
+             <strong>Note:</strong> Clients would like to set this drawable
+             as a clue about the action the chosen activity will perform. For
+             example, if share activity is to be chosen the drawable should
+             give a clue that sharing is to be performed.
+         
+         <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int expandActivityOverflowButtonDrawable=0x7f01009f;
         /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
 Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
 in (inches), mm (millimeters).
@@ -394,7 +1060,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int firstLineAndSecondLineSpace=0x7f010035;
+        public static final int firstLineAndSecondLineSpace=0x7f0100fc;
         /** <p>Must be an integer value, such as "<code>100</code>".
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -402,7 +1068,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int fling_handle_id=0x7f010050;
+        public static final int fling_handle_id=0x7f010117;
         /** <p>Must be a floating point value, such as "<code>1.2</code>".
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -410,7 +1076,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int float_alpha=0x7f010047;
+        public static final int float_alpha=0x7f01010e;
         /** <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
 <p>This may also be a reference to a resource (in the form
@@ -419,7 +1085,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int float_background_color=0x7f010044;
+        public static final int float_background_color=0x7f01010b;
         /** <p>Must be an integer value, such as "<code>100</code>".
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -427,7 +1093,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int focus_fail_id=0x7f010040;
+        public static final int focus_fail_id=0x7f010107;
         /** <p>Must be an integer value, such as "<code>100</code>".
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -435,7 +1101,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int focus_focusing_id=0x7f01003e;
+        public static final int focus_focusing_id=0x7f010105;
         /** <p>Must be an integer value, such as "<code>100</code>".
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -443,7 +1109,23 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int focus_success_id=0x7f01003f;
+        public static final int focus_success_id=0x7f010106;
+        /**  The max gap between the bars when they are parallel to each other 
+         <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int gapBetweenBars=0x7f0100b5;
+        /**  Go button icon 
+         <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int goIcon=0x7f010096;
         /** <p>Must be one of the following constant values.</p>
 <table>
 <colgroup align="left" />
@@ -455,13 +1137,71 @@ containing a value of this type.
 <tr><td><code>right</code></td><td>5</td><td></td></tr>
 </table>
          */
-        public static final int gravity=0x7f010039;
+        public static final int gravity=0x7f010100;
+        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int height=0x7f010001;
+        /**  Set true to hide the action bar on a vertical nested scroll of content. 
+         <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int hideOnContentScroll=0x7f01007c;
         /** <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
          */
-        public static final int highlightColor=0x7f010029;
+        public static final int highlightColor=0x7f0100f0;
+        /**  Specifies a drawable to use for the 'home as up' indicator. 
+         <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int homeAsUpIndicator=0x7f010031;
+        /**  Specifies a layout to use for the "home" section of the action bar. 
+         <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int homeLayout=0x7f010077;
+        /**  Specifies the drawable used for the application icon. 
+         <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int icon=0x7f010070;
+        /**  The default state of the SearchView. If true, it will be iconified when not in
+             use and expanded when clicked. 
+         <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int iconifiedByDefault=0x7f010093;
+        /**  Specifies a style resource to use for an indeterminate progress spinner. 
+         <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int indeterminateProgressStyle=0x7f010079;
+        /**  The maximal number of items initially shown in the activity list. 
+         <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int initialActivityCount=0x7f01009e;
         /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -469,7 +1209,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int ios=0x7f010007;
+        public static final int ios=0x7f0100ce;
         /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -477,7 +1217,16 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int isEnable=0x7f010038;
+        public static final int isEnable=0x7f0100ff;
+        /**  Specifies whether the theme is light, otherwise it is dark. 
+         <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int isLightTheme=0x7f010002;
         /** <p>Must be an integer value, such as "<code>100</code>".
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -485,7 +1234,24 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int itemNumber=0x7f010031;
+        public static final int itemNumber=0x7f0100f8;
+        /**  Specifies padding that should be applied to the left and right sides of
+             system-provided items in the bar. 
+         <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int itemPadding=0x7f01007b;
+        /**  The layout to use for the search view. 
+         <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int layout=0x7f010092;
         /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -493,7 +1259,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int leftSwipe=0x7f010008;
+        public static final int leftSwipe=0x7f0100cf;
         /** <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
 <p>This may also be a reference to a resource (in the form
@@ -502,7 +1268,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int lineColor=0x7f010032;
+        public static final int lineColor=0x7f0100f9;
         /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
 Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
 in (inches), mm (millimeters).
@@ -512,7 +1278,89 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int lineHeight=0x7f010034;
+        public static final int lineHeight=0x7f0100fb;
+        /**  Drawable used as a background for selected list items. 
+         <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int listChoiceBackgroundIndicator=0x7f010050;
+        /**  The list divider used in alert dialogs. 
+         <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int listDividerAlertDialog=0x7f01002d;
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int listItemLayout=0x7f0100c6;
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int listLayout=0x7f0100c3;
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int listPopupWindowStyle=0x7f01004a;
+        /**  The preferred list item height. 
+         <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int listPreferredItemHeight=0x7f010044;
+        /**  A larger, more robust list item height. 
+         <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int listPreferredItemHeightLarge=0x7f010046;
+        /**  A smaller, sleeker list item height. 
+         <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int listPreferredItemHeightSmall=0x7f010045;
+        /**  The preferred padding along the left edge of list items. 
+         <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int listPreferredItemPaddingLeft=0x7f010047;
+        /**  The preferred padding along the right edge of list items. 
+         <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int listPreferredItemPaddingRight=0x7f010048;
+        /**  Specifies the drawable used for the application logo. 
+         <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int logo=0x7f010071;
         /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
 Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
 in (inches), mm (millimeters).
@@ -522,7 +1370,17 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int maskHight=0x7f010036;
+        public static final int maskHight=0x7f0100fd;
+        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int maxButtonHeight=0x7f0100ab;
         /** <p>Must be a floating point value, such as "<code>1.2</code>".
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -530,7 +1388,33 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int max_drag_scroll_speed=0x7f010043;
+        public static final int max_drag_scroll_speed=0x7f01010a;
+        /**  When set to true, all children with a weight will be considered having
+             the minimum size of the largest child. If false, all children are
+             measured normally. 
+         <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int measureWithLargestChild=0x7f0100a1;
+        /**  The size of the middle bar when top and bottom bars merge into middle bar to form an arrow 
+         <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int middleBarArrowSize=0x7f0100b7;
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int multiChoiceItemLayout=0x7f0100c4;
         /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -538,7 +1422,36 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int mutate_background=0x7f010026;
+        public static final int mutate_background=0x7f0100ed;
+        /**  Text to set as the content description for the navigation button
+             located at the start of the toolbar. 
+         <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int navigationContentDescription=0x7f0100af;
+        /**  Icon drawable to use for the navigation button located at
+             the start of the toolbar. 
+         <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int navigationIcon=0x7f0100ae;
+        /**  The type of navigation to use. 
+         <p>Must be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>normal</code></td><td>0</td><td> Normal static title text </td></tr>
+<tr><td><code>listMode</code></td><td>1</td><td> The action bar will use a selection list for navigation. </td></tr>
+<tr><td><code>tabMode</code></td><td>2</td><td> The action bar will use a series of horizontal tabs for navigation. </td></tr>
+</table>
+         */
+        public static final int navigationMode=0x7f01006b;
         /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -546,7 +1459,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int noEmpty=0x7f010037;
+        public static final int noEmpty=0x7f0100fe;
         /** <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
 <p>This may also be a reference to a resource (in the form
@@ -555,7 +1468,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int normalTextColor=0x7f01002c;
+        public static final int normalTextColor=0x7f0100f3;
         /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
 Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
 in (inches), mm (millimeters).
@@ -565,7 +1478,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int normalTextSize=0x7f01002d;
+        public static final int normalTextSize=0x7f0100f4;
         /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -573,13 +1486,137 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int oval=0x7f010027;
+        public static final int oval=0x7f0100ee;
+        /**  Whether the popup window should overlap its anchor view. 
+         <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int overlapAnchor=0x7f0100b1;
+        /**  Sets the padding, in pixels, of the end edge; see {@link android.R.attr#padding}. 
+         <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int paddingEnd=0x7f010085;
+        /**  Sets the padding, in pixels, of the start edge; see {@link android.R.attr#padding}. 
+         <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int paddingStart=0x7f010084;
+        /**  The background of a panel when it is inset from the left and right edges of the screen. 
+         <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int panelBackground=0x7f01004d;
+        /**  Default Panel Menu style. 
+         <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int panelMenuListTheme=0x7f01004f;
+        /**  Default Panel Menu width. 
+         <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int panelMenuListWidth=0x7f01004e;
+        /**  Default PopupMenu style. 
+         <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int popupMenuStyle=0x7f01003c;
+        /**  Reference to a layout to use for displaying a prompt in the dropdown for
+             spinnerMode="dropdown". This layout must contain a TextView with the id
+             {@code @android:id/text1} to be populated with the prompt text. 
+         <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int popupPromptView=0x7f010090;
+        /**  Reference to a theme that should be used to inflate popups
+             shown by widgets in the action bar. 
+         <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int popupTheme=0x7f010082;
+        /**  Default PopupWindow style. 
+         <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int popupWindowStyle=0x7f01003d;
+        /**  Whether space should be reserved in layout when an icon is missing. 
+         <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int preserveIconSpacing=0x7f010089;
+        /**  Specifies the horizontal padding on either end for an embedded progress bar. 
+         <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int progressBarPadding=0x7f01007a;
+        /**  Specifies a style resource to use for an embedded progress bar. 
+         <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int progressBarStyle=0x7f010078;
         /** <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
          */
-        public static final int progressColor=0x7f010001;
+        public static final int progressColor=0x7f0100c8;
+        /**  The prompt to display when the spinner's dialog is shown. 
+         <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int prompt=0x7f01008e;
+        /**  Background for the section containing the search query 
+         <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int queryBackground=0x7f01009c;
+        /**  An optional query hint string to be displayed in the empty query field. 
+         <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int queryHint=0x7f010094;
+        /**  Default RadioButton style. 
+         <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int radioButtonStyle=0x7f010067;
         /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
 Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
 in (inches), mm (millimeters).
@@ -589,7 +1626,12 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int radius=0x7f010002;
+        public static final int radius=0x7f0100c9;
+        /**  Default RatingBar style. 
+         <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int ratingBarStyle=0x7f010068;
         /** <p>Must be an integer value, such as "<code>100</code>".
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -597,7 +1639,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int remove_animation_duration=0x7f010049;
+        public static final int remove_animation_duration=0x7f010110;
         /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -605,7 +1647,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int remove_enabled=0x7f01004d;
+        public static final int remove_enabled=0x7f010114;
         /** <p>Must be one of the following constant values.</p>
 <table>
 <colgroup align="left" />
@@ -616,7 +1658,34 @@ containing a value of this type.
 <tr><td><code>flingRemove</code></td><td>1</td><td></td></tr>
 </table>
          */
-        public static final int remove_mode=0x7f010045;
+        public static final int remove_mode=0x7f01010c;
+        /**  Search icon displayed as a text field hint 
+         <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int searchHintIcon=0x7f010098;
+        /**  Search icon 
+         <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int searchIcon=0x7f010097;
+        /**  Style for the search query widget. 
+         <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int searchViewStyle=0x7f010043;
+        /**  A style that may be applied to buttons or other selectable items
+             that should react to pressed and focus states, but that do not
+             have a clear visual border along the edges. 
+         <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int selectableItemBackground=0x7f010035;
+        /**  Background drawable for borderless standalone items that need focus/pressed states. 
+         <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int selectableItemBackgroundBorderless=0x7f010036;
         /** <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
 <p>This may also be a reference to a resource (in the form
@@ -625,7 +1694,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int selectedTextColor=0x7f01002e;
+        public static final int selectedTextColor=0x7f0100f5;
         /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
 Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
 in (inches), mm (millimeters).
@@ -635,7 +1704,45 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int selectedTextSize=0x7f01002f;
+        public static final int selectedTextSize=0x7f0100f6;
+        /**  How this item should display in the Action Bar, if present. 
+         <p>Must be one or more (separated by '|') of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>never</code></td><td>0</td><td> Never show this item in an action bar, show it in the overflow menu instead.
+                 Mutually exclusive with "ifRoom" and "always". </td></tr>
+<tr><td><code>ifRoom</code></td><td>1</td><td> Show this item in an action bar if there is room for it as determined
+                 by the system. Favor this option over "always" where possible.
+                 Mutually exclusive with "never" and "always". </td></tr>
+<tr><td><code>always</code></td><td>2</td><td> Always show this item in an actionbar, even if it would override
+                 the system's limits of how much stuff to put there. This may make
+                 your action bar look bad on some screens. In most cases you should
+                 use "ifRoom" instead. Mutually exclusive with "ifRoom" and "never". </td></tr>
+<tr><td><code>withText</code></td><td>4</td><td> When this item is shown as an action in the action bar, show a text
+                 label with it even if it has an icon representation. </td></tr>
+<tr><td><code>collapseActionView</code></td><td>8</td><td> This item's action view collapses to a normal menu
+                 item. When expanded, the action view takes over a
+                 larger segment of its container. </td></tr>
+</table>
+         */
+        public static final int showAsAction=0x7f01008a;
+        /**  Setting for which dividers to show. 
+         <p>Must be one or more (separated by '|') of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>none</code></td><td>0</td><td></td></tr>
+<tr><td><code>beginning</code></td><td>1</td><td></td></tr>
+<tr><td><code>middle</code></td><td>2</td><td></td></tr>
+<tr><td><code>end</code></td><td>4</td><td></td></tr>
+</table>
+         */
+        public static final int showDividers=0x7f0100a2;
         /** <p>Must be one of the following constant values.</p>
 <table>
 <colgroup align="left" />
@@ -647,7 +1754,16 @@ containing a value of this type.
 <tr><td><code>never</code></td><td>2</td><td></td></tr>
 </table>
          */
-        public static final int showHandles=0x7f01002b;
+        public static final int showHandles=0x7f0100f2;
+        /**  Whether to draw on/off text. 
+         <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int showText=0x7f0100c1;
         /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -655,7 +1771,11 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int showThirds=0x7f01002a;
+        public static final int showThirds=0x7f0100f1;
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int singleChoiceItemLayout=0x7f0100c5;
         /** <p>Must be a floating point value, such as "<code>1.2</code>".
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -663,7 +1783,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int slide_shuffle_speed=0x7f010048;
+        public static final int slide_shuffle_speed=0x7f01010f;
         /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -671,7 +1791,57 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int sort_enabled=0x7f01004c;
+        public static final int sort_enabled=0x7f010113;
+        /**  Whether bars should rotate or not during transition 
+         <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int spinBars=0x7f0100b3;
+        /**  Default Spinner style. 
+         <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int spinnerDropDownItemStyle=0x7f010030;
+        /**  Display mode for spinner options. 
+         <p>Must be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>dialog</code></td><td>0</td><td> Spinner options will be presented to the user as a dialog window. </td></tr>
+<tr><td><code>dropdown</code></td><td>1</td><td> Spinner options will be presented to the user as an inline dropdown
+                 anchored to the spinner widget itself. </td></tr>
+</table>
+         */
+        public static final int spinnerMode=0x7f01008f;
+        /**  Default Spinner style. 
+         <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int spinnerStyle=0x7f010069;
+        /**  Whether to split the track and leave a gap for the thumb drawable. 
+         <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int splitTrack=0x7f0100c0;
+        /**  State identifier indicating the popup will be above the anchor. 
+         <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int state_above_anchor=0x7f0100b0;
         /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
 Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
 in (inches), mm (millimeters).
@@ -681,7 +1851,35 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int strokeWidth=0x7f010003;
+        public static final int strokeWidth=0x7f0100ca;
+        /**  Background for the section containing the action (e.g. voice search) 
+         <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int submitBackground=0x7f01009d;
+        /**  Specifies subtitle text used for navigationMode="normal" 
+         <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int subtitle=0x7f01006d;
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int subtitleTextAppearance=0x7f0100a5;
+        /**  Specifies a style to use for subtitle text. 
+         <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int subtitleTextStyle=0x7f01006f;
+        /**  Layout for query suggestion rows 
+         <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int suggestionRowLayout=0x7f01009b;
         /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -689,7 +1887,82 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int swipeEnable=0x7f010006;
+        public static final int swipeEnable=0x7f0100cd;
+        /**  Minimum width for the switch component 
+         <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int switchMinWidth=0x7f0100be;
+        /**  Minimum space between the switch and caption text 
+         <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int switchPadding=0x7f0100bf;
+        /**  Default style for the Switch widget. 
+         <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int switchStyle=0x7f01006a;
+        /**  TextAppearance style for text displayed on the switch thumb. 
+         <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int switchTextAppearance=0x7f0100bd;
+        /**  Present the text in ALL CAPS. This may use a small-caps form when available. 
+         <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<p>May be a boolean value, either "<code>true</code>" or "<code>false</code>".
+         */
+        public static final int textAllCaps=0x7f0100a0;
+        /**  Text color, typeface, size, and style for the text inside of a popup menu. 
+         <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int textAppearanceLargePopupMenu=0x7f010029;
+        /**  The preferred TextAppearance for the primary text of list items. 
+         <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int textAppearanceListItem=0x7f01004b;
+        /**  The preferred TextAppearance for the primary text of small list items. 
+         <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int textAppearanceListItemSmall=0x7f01004c;
+        /**  Text color, typeface, size, and style for system search result subtitle. Defaults to primary inverse text color. 
+         <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int textAppearanceSearchResultSubtitle=0x7f010041;
+        /**  Text color, typeface, size, and style for system search result title. Defaults to primary inverse text color. 
+         <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int textAppearanceSearchResultTitle=0x7f010040;
+        /**  Text color, typeface, size, and style for small text inside of a popup menu. 
+         <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int textAppearanceSmallPopupMenu=0x7f01002a;
+        /**  Color of list item text in alert dialogs. 
+         <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+         */
+        public static final int textColorAlertDialogListItem=0x7f01005d;
         /** <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
 <p>This may also be a reference to a resource (in the form
@@ -698,7 +1971,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int textColorCenter=0x7f01003b;
+        public static final int textColorCenter=0x7f010102;
         /** <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
 <p>This may also be a reference to a resource (in the form
@@ -707,15 +1980,49 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int textColorOut=0x7f01003a;
-        /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+        public static final int textColorOut=0x7f010101;
+        /**  Text color for urls in search suggestions, used by things like global search 
+         <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+         */
+        public static final int textColorSearchUrl=0x7f010042;
+        /**  Deprecated. 
+         <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int theme=0x7f010086;
+        /**  The thickness (stroke size) for the bar paint 
+         <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int track_drag_sort=0x7f010046;
+        public static final int thickness=0x7f0100b9;
+        /**  Amount of padding on either side of text within the switch thumb. 
+         <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int thumbTextPadding=0x7f0100bc;
+        /** <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int title=0x7f010000;
         /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
 Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
 in (inches), mm (millimeters).
@@ -725,7 +2032,82 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int unitHight=0x7f010030;
+        public static final int titleMarginBottom=0x7f0100aa;
+        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int titleMarginEnd=0x7f0100a8;
+        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int titleMarginStart=0x7f0100a7;
+        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int titleMarginTop=0x7f0100a9;
+        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int titleMargins=0x7f0100a6;
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int titleTextAppearance=0x7f0100a4;
+        /**  Specifies a style to use for title text. 
+         <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int titleTextStyle=0x7f01006e;
+        /**  Default Toolar NavigationButtonStyle 
+         <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int toolbarNavigationButtonStyle=0x7f01003b;
+        /**  Default Toolbar style. 
+         <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int toolbarStyle=0x7f01003a;
+        /**  The size of the top and bottom bars when they merge to the middle bar to form an arrow 
+         <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int topBottomBarArrowSize=0x7f0100b6;
+        /**  Drawable to use as the "track" that the switch thumb slides within. 
+         <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int track=0x7f0100bb;
         /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -733,203 +2115,603 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int use_default_controller=0x7f010052;
+        public static final int track_drag_sort=0x7f01010d;
+        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int unitHight=0x7f0100f7;
+        /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int use_default_controller=0x7f010119;
+        /**  Voice button icon 
+         <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int voiceIcon=0x7f010099;
+        /**  Flag indicating whether this window should have an Action Bar
+             in place of the usual title bar. 
+         <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int windowActionBar=0x7f010003;
+        /**  Flag indicating whether this window's Action Bar should overlay
+             application content. Does nothing if the window would not
+             have an Action Bar. 
+         <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int windowActionBarOverlay=0x7f010005;
+        /**  Flag indicating whether action modes should overlay window content
+             when there is not reserved space for their UI (such as an Action Bar). 
+         <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int windowActionModeOverlay=0x7f010006;
+        /**  A fixed height for the window along the major axis of the screen,
+             that is, when in portrait. Can be either an absolute dimension
+             or a fraction of the screen size in that dimension. 
+         <p>May be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>May be a fractional value, which is a floating point number appended with either % or %p, such as "<code>14.5%</code>".
+The % suffix always means a percentage of the base size; the optional %p suffix provides a size relative to
+some parent container.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int windowFixedHeightMajor=0x7f01000a;
+        /**  A fixed height for the window along the minor axis of the screen,
+             that is, when in landscape. Can be either an absolute dimension
+             or a fraction of the screen size in that dimension. 
+         <p>May be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>May be a fractional value, which is a floating point number appended with either % or %p, such as "<code>14.5%</code>".
+The % suffix always means a percentage of the base size; the optional %p suffix provides a size relative to
+some parent container.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int windowFixedHeightMinor=0x7f010008;
+        /**  A fixed width for the window along the major axis of the screen,
+             that is, when in landscape. Can be either an absolute dimension
+             or a fraction of the screen size in that dimension. 
+         <p>May be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>May be a fractional value, which is a floating point number appended with either % or %p, such as "<code>14.5%</code>".
+The % suffix always means a percentage of the base size; the optional %p suffix provides a size relative to
+some parent container.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int windowFixedWidthMajor=0x7f010007;
+        /**  A fixed width for the window along the minor axis of the screen,
+             that is, when in portrait. Can be either an absolute dimension
+             or a fraction of the screen size in that dimension. 
+         <p>May be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>May be a fractional value, which is a floating point number appended with either % or %p, such as "<code>14.5%</code>".
+The % suffix always means a percentage of the base size; the optional %p suffix provides a size relative to
+some parent container.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int windowFixedWidthMinor=0x7f010009;
+        /**  The minimum width the window is allowed to be, along the major
+             axis of the screen.  That is, when in landscape.  Can be either
+             an absolute dimension or a fraction of the screen size in that
+             dimension. 
+         <p>May be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>May be a fractional value, which is a floating point number appended with either % or %p, such as "<code>14.5%</code>".
+The % suffix always means a percentage of the base size; the optional %p suffix provides a size relative to
+some parent container.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int windowMinWidthMajor=0x7f01000b;
+        /**  The minimum width the window is allowed to be, along the minor
+             axis of the screen.  That is, when in portrait.  Can be either
+             an absolute dimension or a fraction of the screen size in that
+             dimension. 
+         <p>May be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>May be a fractional value, which is a floating point number appended with either % or %p, such as "<code>14.5%</code>".
+The % suffix always means a percentage of the base size; the optional %p suffix provides a size relative to
+some parent container.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int windowMinWidthMinor=0x7f01000c;
+        /**  Flag indicating whether there should be no title on this window. 
+         <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int windowNoTitle=0x7f010004;
+    }
+    public static final class bool {
+        public static final int abc_action_bar_embed_tabs=0x7f060000;
+        public static final int abc_action_bar_embed_tabs_pre_jb=0x7f060001;
+        public static final int abc_action_bar_expanded_action_views_exclusive=0x7f060002;
+        /**  Whether action menu items should be displayed in ALLCAPS or not.
+         Defaults to true. If this is not appropriate for specific locales
+         it should be disabled in that locale's resources. 
+         */
+        public static final int abc_config_actionMenuItemAllCaps=0x7f060005;
+        /**  Whether action menu items should obey the "withText" showAsAction
+    flag. This may be set to false for situations where space is
+    extremely limited. 
+ Whether action menu items should obey the "withText" showAsAction.
+         This may be set to false for situations where space is
+         extremely limited. 
+         */
+        public static final int abc_config_allowActionMenuItemTextWithIcon=0x7f060004;
+        public static final int abc_config_closeDialogWhenTouchOutside=0x7f060006;
+        public static final int abc_config_showMenuShortcutsWhenKeyboardPresent=0x7f060003;
     }
     public static final class color {
-        public static final int a5=0x7f06000d;
-        public static final int album_item_bg=0x7f06009e;
-        public static final int backgreybaoliao=0x7f060050;
-        public static final int bgColor_overlay=0x7f060028;
-        public static final int bg_capture_progress=0x7f060049;
-        public static final int bg_floder_press=0x7f06001f;
-        public static final int bg_gray=0x7f060043;
-        public static final int black=0x7f06003f;
-        public static final int black_overlay=0x7f0600a2;
-        public static final int blackcolor=0x7f06008e;
-        public static final int blacktop=0x7f0600a5;
-        public static final int blue=0x7f060019;
-        public static final int blue2=0x7f060013;
-        public static final int blue3=0x7f060014;
-        public static final int blue_light=0x7f06004e;
-        public static final int border_gray=0x7f060042;
-        public static final int bottomBg=0x7f060072;
-        public static final int btn_gray=0x7f060044;
-        public static final int bule_overlay=0x7f0600a4;
-        public static final int buttonleft=0x7f060096;
-        public static final int buttonright=0x7f060097;
+        public static final int a5=0x7f070040;
+        public static final int abc_background_cache_hint_selector_material_dark=0x7f0700e1;
+        public static final int abc_background_cache_hint_selector_material_light=0x7f0700e2;
+        public static final int abc_input_method_navigation_guard=0x7f070003;
+        public static final int abc_primary_text_disable_only_material_dark=0x7f0700e3;
+        public static final int abc_primary_text_disable_only_material_light=0x7f0700e4;
+        public static final int abc_primary_text_material_dark=0x7f0700e5;
+        public static final int abc_primary_text_material_light=0x7f0700e6;
+        public static final int abc_search_url_text=0x7f0700e7;
+        public static final int abc_search_url_text_normal=0x7f070000;
+        public static final int abc_search_url_text_pressed=0x7f070002;
+        public static final int abc_search_url_text_selected=0x7f070001;
+        public static final int abc_secondary_text_material_dark=0x7f0700e8;
+        public static final int abc_secondary_text_material_light=0x7f0700e9;
+        public static final int accent_material_dark=0x7f07000f;
+        public static final int accent_material_light=0x7f07000e;
+        public static final int album_item_bg=0x7f0700d1;
+        public static final int backgreybaoliao=0x7f070083;
+        public static final int background_floating_material_dark=0x7f070006;
+        public static final int background_floating_material_light=0x7f070007;
+        public static final int background_material_dark=0x7f070004;
+        public static final int background_material_light=0x7f070005;
+        public static final int bgColor_overlay=0x7f07005b;
+        public static final int bg_capture_progress=0x7f07007c;
+        public static final int bg_floder_press=0x7f070052;
+        public static final int bg_gray=0x7f070076;
+        public static final int black=0x7f070072;
+        public static final int black_overlay=0x7f0700d5;
+        public static final int blackcolor=0x7f0700c1;
+        public static final int blacktop=0x7f0700d8;
+        public static final int blue=0x7f07004c;
+        public static final int blue2=0x7f070046;
+        public static final int blue3=0x7f070047;
+        public static final int blue_light=0x7f070081;
+        public static final int border_gray=0x7f070075;
+        public static final int bottomBg=0x7f0700a5;
+        /**  White 50% 
+         */
+        public static final int bright_foreground_disabled_material_dark=0x7f070018;
+        /**  Black 50% 
+         */
+        public static final int bright_foreground_disabled_material_light=0x7f070019;
+        public static final int bright_foreground_inverse_material_dark=0x7f07001a;
+        public static final int bright_foreground_inverse_material_light=0x7f07001b;
+        public static final int bright_foreground_material_dark=0x7f070016;
+        public static final int bright_foreground_material_light=0x7f070017;
+        public static final int btn_gray=0x7f070077;
+        public static final int bule_overlay=0x7f0700d7;
+        public static final int button_material_dark=0x7f070010;
+        public static final int button_material_light=0x7f070011;
+        public static final int buttonleft=0x7f0700c9;
+        public static final int buttonright=0x7f0700ca;
         /**  采用 
          */
-        public static final int caiyong=0x7f0600a8;
-        public static final int capture_background=0x7f06004c;
-        public static final int clickgridviewbackgroundcolor=0x7f06008b;
+        public static final int caiyong=0x7f0700db;
+        public static final int capture_background=0x7f07007f;
+        public static final int clickgridviewbackgroundcolor=0x7f0700be;
         /**  颜色值选择 
          */
-        public static final int color0=0x7f06007e;
-        public static final int color1=0x7f06007f;
-        public static final int color2=0x7f060080;
-        public static final int color3=0x7f060081;
-        public static final int color4=0x7f060082;
-        public static final int color5=0x7f060083;
-        public static final int color6=0x7f060084;
-        public static final int color7=0x7f060085;
-        public static final int color8=0x7f060086;
-        public static final int colorAccent=0x7f060032;
-        public static final int colorPrimary=0x7f060030;
-        public static final int colorPrimaryDark=0x7f060031;
-        public static final int color_divider=0x7f06001b;
-        public static final int color_theme=0x7f060036;
-        public static final int common_text_yellow=0x7f06009d;
-        public static final int common_title_bg=0x7f06009a;
-        public static final int common_title_text=0x7f06009c;
-        public static final int common_top_bg=0x7f060091;
-        public static final int copyright=0x7f06003b;
-        public static final int crop__selector_focused=0x7f060022;
-        public static final int crop__selector_pressed=0x7f060021;
-        public static final int custom_dialog_dis=0x7f060035;
-        public static final int custom_dialog_nor=0x7f060033;
-        public static final int custom_dialog_sel=0x7f060034;
+        public static final int color0=0x7f0700b1;
+        public static final int color1=0x7f0700b2;
+        public static final int color2=0x7f0700b3;
+        public static final int color3=0x7f0700b4;
+        public static final int color4=0x7f0700b5;
+        public static final int color5=0x7f0700b6;
+        public static final int color6=0x7f0700b7;
+        public static final int color7=0x7f0700b8;
+        public static final int color8=0x7f0700b9;
+        public static final int colorAccent=0x7f070065;
+        public static final int colorPrimary=0x7f070063;
+        public static final int colorPrimaryDark=0x7f070064;
+        public static final int color_divider=0x7f07004e;
+        public static final int color_theme=0x7f070069;
+        public static final int common_text_yellow=0x7f0700d0;
+        public static final int common_title_bg=0x7f0700cd;
+        public static final int common_title_text=0x7f0700cf;
+        public static final int common_top_bg=0x7f0700c4;
+        public static final int copyright=0x7f07006e;
+        public static final int crop__selector_focused=0x7f070055;
+        public static final int crop__selector_pressed=0x7f070054;
+        public static final int custom_dialog_dis=0x7f070068;
+        public static final int custom_dialog_nor=0x7f070066;
+        public static final int custom_dialog_sel=0x7f070067;
         /**  4G回传 开始 
          */
-        public static final int customcolor=0x7f060087;
-        public static final int dark_black=0x7f060073;
-        public static final int dark_blue=0x7f060016;
-        public static final int dark_red=0x7f060063;
-        public static final int dark_theme_pressed=0x7f060038;
-        public static final int deep_gray=0x7f060041;
-        public static final int dialog_hint_color=0x7f06007b;
-        public static final int dialog_item_selected_color=0x7f06007a;
-        public static final int dialog_text_color=0x7f060078;
-        public static final int dialog_text_green_color=0x7f060079;
-        public static final int dialogtextcolor=0x7f060098;
-        public static final int disablecolor=0x7f06008c;
-        public static final int dividercolor=0x7f060088;
-        public static final int edit_blue=0x7f060015;
-        public static final int edit_color=0x7f060051;
-        public static final int edit_text_color=0x7f060077;
-        public static final int edittextcolor=0x7f060089;
-        public static final int glass_gall=0x7f060045;
-        public static final int green=0x7f06004d;
-        public static final int greencolor=0x7f06008f;
-        public static final int grey=0x7f060018;
-        public static final int grey3=0x7f060003;
-        public static final int grey6=0x7f06003d;
-        public static final int grey7=0x7f06003c;
-        public static final int grey9=0x7f060007;
-        public static final int grey_border_color=0x7f06001e;
-        public static final int grey_pressed=0x7f060008;
-        public static final int greya=0x7f06000c;
-        public static final int greyad=0x7f060010;
-        public static final int greybd=0x7f060004;
-        public static final int greyc=0x7f060009;
-        public static final int greyc8=0x7f060005;
-        public static final int greyce=0x7f060012;
-        public static final int greycf=0x7f060011;
-        public static final int greyd=0x7f060039;
-        public static final int greye3=0x7f060006;
-        public static final int greyec=0x7f06000a;
-        public static final int grid_line=0x7f060059;
-        public static final int gridviewbackgroundcolor=0x7f06008a;
-        public static final int half_blue=0x7f060062;
-        public static final int home_btn_bg=0x7f06003a;
+        public static final int customcolor=0x7f0700ba;
+        public static final int dark_black=0x7f0700a6;
+        public static final int dark_blue=0x7f070049;
+        public static final int dark_red=0x7f070096;
+        public static final int dark_theme_pressed=0x7f07006b;
+        public static final int deep_gray=0x7f070074;
+        public static final int dialog_hint_color=0x7f0700ae;
+        public static final int dialog_item_selected_color=0x7f0700ad;
+        public static final int dialog_text_color=0x7f0700ab;
+        public static final int dialog_text_green_color=0x7f0700ac;
+        public static final int dialogtextcolor=0x7f0700cb;
+        public static final int dim_foreground_disabled_material_dark=0x7f07001e;
+        public static final int dim_foreground_disabled_material_light=0x7f07001f;
+        public static final int dim_foreground_material_dark=0x7f07001c;
+        public static final int dim_foreground_material_light=0x7f07001d;
+        public static final int disablecolor=0x7f0700bf;
+        public static final int dividercolor=0x7f0700bb;
+        public static final int edit_blue=0x7f070048;
+        public static final int edit_color=0x7f070084;
+        public static final int edit_text_color=0x7f0700aa;
+        public static final int edittextcolor=0x7f0700bc;
+        public static final int glass_gall=0x7f070078;
+        public static final int green=0x7f070080;
+        public static final int greencolor=0x7f0700c2;
+        public static final int grey=0x7f07004b;
+        public static final int grey3=0x7f070036;
+        public static final int grey6=0x7f070070;
+        public static final int grey7=0x7f07006f;
+        public static final int grey9=0x7f07003a;
+        public static final int grey_border_color=0x7f070051;
+        public static final int grey_pressed=0x7f07003b;
+        public static final int greya=0x7f07003f;
+        public static final int greyad=0x7f070043;
+        public static final int greybd=0x7f070037;
+        public static final int greyc=0x7f07003c;
+        public static final int greyc8=0x7f070038;
+        public static final int greyce=0x7f070045;
+        public static final int greycf=0x7f070044;
+        public static final int greyd=0x7f07006c;
+        public static final int greye3=0x7f070039;
+        public static final int greyec=0x7f07003d;
+        public static final int grid_line=0x7f07008c;
+        public static final int gridviewbackgroundcolor=0x7f0700bd;
+        public static final int half_blue=0x7f070095;
+        /**  TODO: This is 40% alpha on the default accent color. 
+         */
+        public static final int highlighted_text_material_dark=0x7f070022;
+        /**  TODO: This is 40% alpha on the default accent color. 
+         */
+        public static final int highlighted_text_material_light=0x7f070023;
+        public static final int hint_foreground_material_dark=0x7f070020;
+        public static final int hint_foreground_material_light=0x7f070021;
+        public static final int home_btn_bg=0x7f07006d;
         /**  >#1983d1 
          */
-        public static final int hot_bg=0x7f06000f;
-        public static final int hui=0x7f060061;
-        public static final int light_blue=0x7f060046;
-        public static final int light_gray=0x7f060040;
-        public static final int light_grey=0x7f060020;
-        public static final int light_grey7=0x7f06001a;
-        public static final int light_red_30=0x7f06001d;
-        public static final int lightblue=0x7f06000e;
-        public static final int lighter_black=0x7f060017;
-        public static final int lighter_blue=0x7f060064;
-        public static final int lighter_grey=0x7f06001c;
-        public static final int ligntBlack=0x7f060001;
-        public static final int ligntGrey=0x7f060002;
-        public static final int lignttextColor=0x7f060000;
+        public static final int hot_bg=0x7f070042;
+        public static final int hui=0x7f070094;
+        public static final int light_blue=0x7f070079;
+        public static final int light_gray=0x7f070073;
+        public static final int light_grey=0x7f070053;
+        public static final int light_grey7=0x7f07004d;
+        public static final int light_red_30=0x7f070050;
+        public static final int lightblue=0x7f070041;
+        public static final int lighter_black=0x7f07004a;
+        public static final int lighter_blue=0x7f070097;
+        public static final int lighter_grey=0x7f07004f;
+        public static final int ligntBlack=0x7f070034;
+        public static final int ligntGrey=0x7f070035;
+        public static final int lignttextColor=0x7f070033;
+        public static final int link_text_material_dark=0x7f070024;
+        public static final int link_text_material_light=0x7f070025;
         /**  4G回传 结束 
          */
-        public static final int main_menu_bg=0x7f060099;
-        public static final int main_menu_text_color=0x7f060092;
-        public static final int main_menu_text_color_press=0x7f060093;
-        public static final int materialcolorpicker__black=0x7f06006f;
-        public static final int materialcolorpicker__blue=0x7f06006a;
-        public static final int materialcolorpicker__dialogcolor=0x7f060070;
-        public static final int materialcolorpicker__dribble=0x7f06006d;
-        public static final int materialcolorpicker__dribbledark=0x7f06006e;
-        public static final int materialcolorpicker__green=0x7f060069;
-        public static final int materialcolorpicker__grey=0x7f06006b;
-        public static final int materialcolorpicker__lightgrey=0x7f06006c;
-        public static final int materialcolorpicker__red=0x7f060068;
-        public static final int materialcolorpicker__white=0x7f060067;
-        public static final int menu_divider=0x7f060037;
+        public static final int main_menu_bg=0x7f0700cc;
+        public static final int main_menu_text_color=0x7f0700c5;
+        public static final int main_menu_text_color_press=0x7f0700c6;
+        public static final int material_blue_grey_800=0x7f070030;
+        public static final int material_blue_grey_900=0x7f070031;
+        public static final int material_blue_grey_950=0x7f070032;
+        public static final int material_deep_teal_200=0x7f07002e;
+        public static final int material_deep_teal_500=0x7f07002f;
+        public static final int materialcolorpicker__black=0x7f0700a2;
+        public static final int materialcolorpicker__blue=0x7f07009d;
+        public static final int materialcolorpicker__dialogcolor=0x7f0700a3;
+        public static final int materialcolorpicker__dribble=0x7f0700a0;
+        public static final int materialcolorpicker__dribbledark=0x7f0700a1;
+        public static final int materialcolorpicker__green=0x7f07009c;
+        public static final int materialcolorpicker__grey=0x7f07009e;
+        public static final int materialcolorpicker__lightgrey=0x7f07009f;
+        public static final int materialcolorpicker__red=0x7f07009b;
+        public static final int materialcolorpicker__white=0x7f07009a;
+        public static final int menu_divider=0x7f07006a;
         /**  马赛克控件 
          */
-        public static final int mosaicblue=0x7f06007c;
-        public static final int mosaicdark=0x7f06007d;
-        public static final int none_color=0x7f0600a3;
-        public static final int pickerview_bg_topbar=0x7f06002c;
-        public static final int pickerview_timebtn_nor=0x7f060029;
-        public static final int pickerview_timebtn_pre=0x7f06002a;
-        public static final int pickerview_topbar_title=0x7f06002b;
-        public static final int pickerview_wheelview_textcolor_center=0x7f06002e;
-        public static final int pickerview_wheelview_textcolor_divider=0x7f06002f;
-        public static final int pickerview_wheelview_textcolor_out=0x7f06002d;
-        public static final int playback_indicator=0x7f060058;
-        public static final int primary_title_text_color=0x7f06009b;
-        public static final int progress_divider_color=0x7f060065;
-        public static final int progress_grey=0x7f060027;
-        public static final int record_alert_bg=0x7f060023;
-        public static final int record_progress_bg=0x7f0600aa;
-        public static final int record_progress_black=0x7f0600a9;
-        public static final int record_progress_blue=0x7f0600ab;
-        public static final int record_progress_pause=0x7f0600ac;
-        public static final int record_progress_red=0x7f0600ad;
-        public static final int recordtimecolor=0x7f060090;
-        public static final int recycler_view_divider_color=0x7f06000b;
-        public static final int red=0x7f06003e;
+        public static final int mosaicblue=0x7f0700af;
+        public static final int mosaicdark=0x7f0700b0;
+        public static final int none_color=0x7f0700d6;
+        public static final int pickerview_bg_topbar=0x7f07005f;
+        public static final int pickerview_timebtn_nor=0x7f07005c;
+        public static final int pickerview_timebtn_pre=0x7f07005d;
+        public static final int pickerview_topbar_title=0x7f07005e;
+        public static final int pickerview_wheelview_textcolor_center=0x7f070061;
+        public static final int pickerview_wheelview_textcolor_divider=0x7f070062;
+        public static final int pickerview_wheelview_textcolor_out=0x7f070060;
+        public static final int playback_indicator=0x7f07008b;
+        public static final int primary_dark_material_dark=0x7f07000a;
+        public static final int primary_dark_material_light=0x7f07000b;
+        public static final int primary_material_dark=0x7f070008;
+        public static final int primary_material_light=0x7f070009;
+        public static final int primary_text_default_material_dark=0x7f070028;
+        public static final int primary_text_default_material_light=0x7f070026;
+        /**  30% of default values 
+         */
+        public static final int primary_text_disabled_material_dark=0x7f07002c;
+        /**  26% of default values 
+         */
+        public static final int primary_text_disabled_material_light=0x7f07002a;
+        public static final int primary_title_text_color=0x7f0700ce;
+        public static final int progress_divider_color=0x7f070098;
+        public static final int progress_grey=0x7f07005a;
+        public static final int record_alert_bg=0x7f070056;
+        public static final int record_progress_bg=0x7f0700dd;
+        public static final int record_progress_black=0x7f0700dc;
+        public static final int record_progress_blue=0x7f0700de;
+        public static final int record_progress_pause=0x7f0700df;
+        public static final int record_progress_red=0x7f0700e0;
+        public static final int recordtimecolor=0x7f0700c3;
+        public static final int recycler_view_divider_color=0x7f07003e;
+        public static final int red=0x7f070071;
         /**  new_4G回传 
          */
-        public static final int redml=0x7f060094;
-        public static final int seek_blue=0x7f060024;
-        public static final int seek_grey=0x7f060025;
-        public static final int selection_border=0x7f060057;
-        public static final int sellpagetitlebottom=0x7f060074;
+        public static final int redml=0x7f0700c7;
+        public static final int ripple_material_dark=0x7f07000c;
+        public static final int ripple_material_light=0x7f07000d;
+        public static final int secondary_text_default_material_dark=0x7f070029;
+        public static final int secondary_text_default_material_light=0x7f070027;
+        public static final int secondary_text_disabled_material_dark=0x7f07002d;
+        public static final int secondary_text_disabled_material_light=0x7f07002b;
+        public static final int seek_blue=0x7f070057;
+        public static final int seek_grey=0x7f070058;
+        public static final int selection_border=0x7f07008a;
+        public static final int sellpagetitlebottom=0x7f0700a7;
         /**  审核 
          */
-        public static final int shenhe=0x7f0600a7;
-        public static final int solid_black=0x7f060048;
-        public static final int status_grey=0x7f060026;
-        public static final int text_bule=0x7f060071;
-        public static final int text_color_000000=0x7f0600a1;
-        public static final int text_color_2A3552=0x7f0600a0;
-        public static final int text_comment_color=0x7f060076;
-        public static final int text_normal_color=0x7f060075;
-        public static final int timecode=0x7f06005a;
-        public static final int timecode_shadow=0x7f06005b;
-        public static final int title_bar_gray_text_color=0x7f060066;
-        public static final int titlebar_bg_color=0x7f060052;
-        public static final int titlebar_title_color=0x7f060053;
-        public static final int transparent=0x7f060047;
+        public static final int shenhe=0x7f0700da;
+        public static final int solid_black=0x7f07007b;
+        public static final int status_grey=0x7f070059;
+        public static final int switch_thumb_disabled_material_dark=0x7f070014;
+        public static final int switch_thumb_disabled_material_light=0x7f070015;
+        public static final int switch_thumb_material_dark=0x7f0700ea;
+        public static final int switch_thumb_material_light=0x7f0700eb;
+        public static final int switch_thumb_normal_material_dark=0x7f070012;
+        public static final int switch_thumb_normal_material_light=0x7f070013;
+        public static final int text_bule=0x7f0700a4;
+        public static final int text_color_000000=0x7f0700d4;
+        public static final int text_color_2A3552=0x7f0700d3;
+        public static final int text_comment_color=0x7f0700a9;
+        public static final int text_normal_color=0x7f0700a8;
+        public static final int timecode=0x7f07008d;
+        public static final int timecode_shadow=0x7f07008e;
+        public static final int title_bar_gray_text_color=0x7f070099;
+        public static final int titlebar_bg_color=0x7f070085;
+        public static final int titlebar_title_color=0x7f070086;
+        public static final int transparent=0x7f07007a;
         /**  退稿 
          */
-        public static final int tuigao=0x7f0600a6;
-        public static final int type_bkgnd_alarm=0x7f06005c;
-        public static final int type_bkgnd_music=0x7f06005f;
-        public static final int type_bkgnd_notification=0x7f06005e;
-        public static final int type_bkgnd_ringtone=0x7f06005d;
-        public static final int type_bkgnd_unsupported=0x7f060060;
-        public static final int video_playter_bg=0x7f06009f;
-        public static final int vine_green=0x7f06004a;
-        public static final int vine_green_1=0x7f06004b;
-        public static final int waveform_selected=0x7f060054;
-        public static final int waveform_unselected=0x7f060055;
-        public static final int waveform_unselected_bkgnd_overlay=0x7f060056;
-        public static final int white=0x7f06004f;
-        public static final int whitecolor=0x7f06008d;
-        public static final int whiteml=0x7f060095;
+        public static final int tuigao=0x7f0700d9;
+        public static final int type_bkgnd_alarm=0x7f07008f;
+        public static final int type_bkgnd_music=0x7f070092;
+        public static final int type_bkgnd_notification=0x7f070091;
+        public static final int type_bkgnd_ringtone=0x7f070090;
+        public static final int type_bkgnd_unsupported=0x7f070093;
+        public static final int video_playter_bg=0x7f0700d2;
+        public static final int vine_green=0x7f07007d;
+        public static final int vine_green_1=0x7f07007e;
+        public static final int waveform_selected=0x7f070087;
+        public static final int waveform_unselected=0x7f070088;
+        public static final int waveform_unselected_bkgnd_overlay=0x7f070089;
+        public static final int white=0x7f070082;
+        public static final int whitecolor=0x7f0700c0;
+        public static final int whiteml=0x7f0700c8;
     }
     public static final class dimen {
+        /**  Default content inset of an action bar. 
+ Default content inset of an action bar. 
+         */
+        public static final int abc_action_bar_content_inset_material=0x7f080025;
+        /**  Default height of an action bar. 
+ Default height of an action bar. 
+ Default height of an action bar. 
+         */
+        public static final int abc_action_bar_default_height_material=0x7f080023;
+        /**  Default padding of an action bar. 
+ Default padding of an action bar. 
+ Default padding of an action bar. 
+         */
+        public static final int abc_action_bar_default_padding_material=0x7f080024;
+        /**  Vertical padding around action bar icons. 
+         */
+        public static final int abc_action_bar_icon_vertical_padding_material=0x7f080028;
+        /**  Padding to add to the start of the overflow action button. 
+ Padding to add to the start of the overflow action button. 
+         */
+        public static final int abc_action_bar_navigation_padding_start_material=0x7f080026;
+        /**  Padding to add to the end of the overflow action button. 
+ Padding to add to the end of the overflow action button. 
+         */
+        public static final int abc_action_bar_overflow_padding_end_material=0x7f080027;
+        /**  Padding to add to the start of the overflow action button. 
+         */
+        public static final int abc_action_bar_overflow_padding_start_material=0x7f08002c;
+        /**  Size of the indeterminate Progress Bar 
+ Size of the indeterminate Progress Bar 
+         */
+        public static final int abc_action_bar_progress_bar_size=0x7f080005;
+        /**  Maximum height for a stacked tab bar as part of an action bar 
+         */
+        public static final int abc_action_bar_stacked_max_height=0x7f080004;
+        /**  Maximum width for a stacked action bar tab. This prevents
+         action bar tabs from becoming too wide on a wide screen when only
+         a few are present. 
+         */
+        public static final int abc_action_bar_stacked_tab_max_width=0x7f080003;
+        /**  Bottom margin for action bar subtitles 
+         */
+        public static final int abc_action_bar_subtitle_bottom_margin_material=0x7f08002a;
+        /**  Top margin for action bar subtitles 
+         */
+        public static final int abc_action_bar_subtitle_top_margin_material=0x7f080029;
+        public static final int abc_action_button_min_height_material=0x7f08002f;
+        public static final int abc_action_button_min_width_material=0x7f08002e;
+        public static final int abc_action_button_min_width_overflow_material=0x7f08002d;
+        /**  Dialog button bar height 
+ Dialog button bar height 
+         */
+        public static final int abc_alert_dialog_button_bar_height=0x7f08001d;
+        public static final int abc_button_inset_horizontal_material=0x7f080011;
+        public static final int abc_button_inset_vertical_material=0x7f080010;
+        public static final int abc_button_padding_horizontal_material=0x7f080013;
+        /**  Default inner padding within buttons 
+         */
+        public static final int abc_button_padding_vertical_material=0x7f080012;
+        /**  The maximum width we would prefer dialogs to be.  0 if there is no
+    maximum (let them grow as large as the screen).  Actual values are
+    specified for -large and -xlarge configurations. 
+ see comment in values/config.xml 
+ see comment in values/config.xml 
+         */
+        public static final int abc_config_prefDialogWidth=0x7f080002;
+        /**  Default rounded corner for controls 
+         */
+        public static final int abc_control_corner_material=0x7f080016;
+        /**  Default insets (outer padding) around controls 
+         */
+        public static final int abc_control_inset_material=0x7f080014;
+        /**  Default inner padding within controls 
+         */
+        public static final int abc_control_padding_material=0x7f080015;
+        /**  Padding above and below selection dialog lists. 
+         */
+        public static final int abc_dialog_list_padding_vertical_material=0x7f08001e;
+        /**  The platform's desired minimum size for a dialog's width when it
+         is along the major axis (that is the screen is landscape).  This may
+         be either a fraction or a dimension. 
+         */
+        public static final int abc_dialog_min_width_major=0x7f08001f;
+        /**  The platform's desired minimum size for a dialog's width when it
+         is along the minor axis (that is the screen is portrait).  This may
+         be either a fraction or a dimension. 
+         */
+        public static final int abc_dialog_min_width_minor=0x7f080020;
+        public static final int abc_dialog_padding_material=0x7f08001b;
+        public static final int abc_dialog_padding_top_material=0x7f08001c;
+        public static final int abc_disabled_alpha_material_dark=0x7f080041;
+        public static final int abc_disabled_alpha_material_light=0x7f080040;
+        /**  Width of the icon in a dropdown list 
+         */
+        public static final int abc_dropdownitem_icon_width=0x7f08000b;
+        /**  Text padding for dropdown items 
+         */
+        public static final int abc_dropdownitem_text_padding_left=0x7f080009;
+        public static final int abc_dropdownitem_text_padding_right=0x7f08000a;
+        public static final int abc_edit_text_inset_bottom_material=0x7f080019;
+        public static final int abc_edit_text_inset_horizontal_material=0x7f080017;
+        public static final int abc_edit_text_inset_top_material=0x7f080018;
+        public static final int abc_floating_window_z=0x7f08003f;
+        /**  Default padding for list items. This should match the action bar
+         content inset so that ListActivity items line up correctly. 
+         */
+        public static final int abc_list_item_padding_horizontal_material=0x7f08002b;
+        public static final int abc_panel_menu_list_width=0x7f080006;
+        /**  Preferred width of the search view. 
+         */
+        public static final int abc_search_view_preferred_width=0x7f080008;
+        /**  Minimum width of the search view text entry area. 
+ Minimum width of the search view text entry area. 
+ Minimum width of the search view text entry area. 
+ Minimum width of the search view text entry area. 
+ Minimum width of the search view text entry area. 
+         */
+        public static final int abc_search_view_text_min_width=0x7f080007;
+        /**  Since optical insets are not available pre-v18, we add a small amount of padding 
+ Since SwitchCompat can use optical insets on v18+, reset the manual padding 
+         */
+        public static final int abc_switch_padding=0x7f08001a;
+        public static final int abc_text_size_body_1_material=0x7f080039;
+        public static final int abc_text_size_body_2_material=0x7f080038;
+        public static final int abc_text_size_button_material=0x7f08003b;
+        public static final int abc_text_size_caption_material=0x7f08003a;
+        public static final int abc_text_size_display_1_material=0x7f080033;
+        public static final int abc_text_size_display_2_material=0x7f080032;
+        public static final int abc_text_size_display_3_material=0x7f080031;
+        public static final int abc_text_size_display_4_material=0x7f080030;
+        public static final int abc_text_size_headline_material=0x7f080034;
+        public static final int abc_text_size_large_material=0x7f08003c;
+        public static final int abc_text_size_medium_material=0x7f08003d;
+        public static final int abc_text_size_menu_material=0x7f080037;
+        public static final int abc_text_size_small_material=0x7f08003e;
+        public static final int abc_text_size_subhead_material=0x7f080036;
+        /**  Use the default subtitle sizes on tablets. 
+ Default text size for action bar subtitle.
+         */
+        public static final int abc_text_size_subtitle_material_toolbar=0x7f080022;
+        public static final int abc_text_size_title_material=0x7f080035;
+        /**  Use the default title sizes on tablets. 
+ Default text size for action bar title.
+         */
+        public static final int abc_text_size_title_material_toolbar=0x7f080021;
         /**  Default screen margins, per the Android Design guidelines. 
 
          Example customization of dimensions originally defined in res/values/dimens.xml
@@ -937,129 +2719,415 @@ containing a value of this type.
          would include 7" and 10" devices in landscape (~960dp and ~1280dp respectively).
     
          */
-        public static final int activity_horizontal_margin=0x7f070000;
-        public static final int activity_vertical_margin=0x7f070001;
+        public static final int activity_horizontal_margin=0x7f080042;
+        public static final int activity_vertical_margin=0x7f080043;
+        /**  The platform's desired fixed height for a dialog along the major axis
+         (the screen is in portrait). This may be either a fraction or a dimension.
+ The platform's desired fixed height for a dialog along the major axis
+         (the screen is in portrait). This may be either a fraction or a dimension.
+ The platform's desired fixed height for a dialog along the major axis
+         (the screen is in portrait). This may be either a fraction or a dimension.
+         */
+        public static final int dialog_fixed_height_major=0x7f08000e;
+        /**  The platform's desired fixed height for a dialog along the minor axis
+         (the screen is in landscape). This may be either a fraction or a dimension.
+ The platform's desired fixed height for a dialog along the minor axis
+         (the screen is in landscape). This may be either a fraction or a dimension.
+ The platform's desired fixed height for a dialog along the minor axis
+         (the screen is in landscape). This may be either a fraction or a dimension.
+         */
+        public static final int dialog_fixed_height_minor=0x7f08000f;
+        /**  The platform's desired fixed width for a dialog along the major axis
+         (the screen is in landscape). This may be either a fraction or a dimension.
+ The platform's desired fixed width for a dialog along the major axis
+         (the screen is in landscape). This may be either a fraction or a dimension.
+ The platform's desired fixed width for a dialog along the major axis
+         (the screen is in landscape). This may be either a fraction or a dimension.
+         */
+        public static final int dialog_fixed_width_major=0x7f08000c;
+        /**  The platform's desired fixed width for a dialog along the minor axis
+         (the screen is in portrait). This may be either a fraction or a dimension.
+ The platform's desired fixed width for a dialog along the minor axis
+         (the screen is in portrait). This may be either a fraction or a dimension.
+ The platform's desired fixed width for a dialog along the minor axis
+         (the screen is in portrait). This may be either a fraction or a dimension.
+         */
+        public static final int dialog_fixed_width_minor=0x7f08000d;
+        public static final int disabled_alpha_material_dark=0x7f080001;
+        public static final int disabled_alpha_material_light=0x7f080000;
     }
     public static final class drawable {
-        public static final int btn_ok=0x7f020000;
-        public static final int clock=0x7f020001;
-        public static final int edit_alert_bg=0x7f020002;
-        public static final int edit_mark=0x7f020003;
-        public static final int empty_pause=0x7f020004;
-        public static final int empty_play=0x7f020005;
-        public static final int grid_line=0x7f020022;
-        public static final int ic_launcher=0x7f020006;
-        public static final int ic_show_bar_icon=0x7f020007;
-        public static final int ic_vedio_back=0x7f020008;
-        public static final int icn_change_view=0x7f020009;
-        public static final int icn_flashlight_off=0x7f02000a;
-        public static final int icn_flashlight_on=0x7f02000b;
-        public static final int location_blue=0x7f02000c;
-        public static final int play_btn_state=0x7f02000d;
-        public static final int playback_indicator=0x7f020021;
-        public static final int record_cha=0x7f02000e;
-        public static final int record_falsh_state=0x7f02000f;
-        public static final int record_maker_d=0x7f020010;
-        public static final int record_off=0x7f020011;
-        public static final int record_on=0x7f020012;
-        public static final int record_progressbar_front=0x7f020013;
-        public static final int record_state=0x7f020014;
-        public static final int record_stop=0x7f020015;
-        public static final int record_stop_ok=0x7f020016;
-        public static final int red_delete=0x7f020017;
-        public static final int red_dot=0x7f020018;
-        public static final int red_dots=0x7f020019;
-        public static final int selection_border=0x7f020020;
-        public static final int timecode=0x7f020023;
-        public static final int timecode_shadow=0x7f020024;
-        public static final int type_bkgnd_alarm=0x7f020025;
-        public static final int type_bkgnd_music=0x7f020028;
-        public static final int type_bkgnd_notification=0x7f020027;
-        public static final int type_bkgnd_ringtone=0x7f020026;
-        public static final int type_bkgnd_unsupported=0x7f020029;
-        public static final int video_cut=0x7f02001a;
-        public static final int video_delete=0x7f02001b;
-        public static final int video_merge=0x7f02001c;
-        public static final int waveform_selected=0x7f02001d;
-        public static final int waveform_unselected=0x7f02001e;
-        public static final int waveform_unselected_bkgnd_overlay=0x7f02001f;
+        public static final int abc_ab_share_pack_mtrl_alpha=0x7f020000;
+        public static final int abc_btn_borderless_material=0x7f020001;
+        public static final int abc_btn_check_material=0x7f020002;
+        public static final int abc_btn_check_to_on_mtrl_000=0x7f020003;
+        public static final int abc_btn_check_to_on_mtrl_015=0x7f020004;
+        public static final int abc_btn_default_mtrl_shape=0x7f020005;
+        public static final int abc_btn_radio_material=0x7f020006;
+        public static final int abc_btn_radio_to_on_mtrl_000=0x7f020007;
+        public static final int abc_btn_radio_to_on_mtrl_015=0x7f020008;
+        public static final int abc_btn_rating_star_off_mtrl_alpha=0x7f020009;
+        public static final int abc_btn_rating_star_on_mtrl_alpha=0x7f02000a;
+        public static final int abc_btn_switch_to_on_mtrl_00001=0x7f02000b;
+        public static final int abc_btn_switch_to_on_mtrl_00012=0x7f02000c;
+        public static final int abc_cab_background_internal_bg=0x7f02000d;
+        public static final int abc_cab_background_top_material=0x7f02000e;
+        public static final int abc_cab_background_top_mtrl_alpha=0x7f02000f;
+        public static final int abc_dialog_material_background_dark=0x7f020010;
+        public static final int abc_dialog_material_background_light=0x7f020011;
+        public static final int abc_edit_text_material=0x7f020012;
+        public static final int abc_ic_ab_back_mtrl_am_alpha=0x7f020013;
+        public static final int abc_ic_clear_mtrl_alpha=0x7f020014;
+        public static final int abc_ic_commit_search_api_mtrl_alpha=0x7f020015;
+        public static final int abc_ic_go_search_api_mtrl_alpha=0x7f020016;
+        public static final int abc_ic_menu_copy_mtrl_am_alpha=0x7f020017;
+        public static final int abc_ic_menu_cut_mtrl_alpha=0x7f020018;
+        public static final int abc_ic_menu_moreoverflow_mtrl_alpha=0x7f020019;
+        public static final int abc_ic_menu_paste_mtrl_am_alpha=0x7f02001a;
+        public static final int abc_ic_menu_selectall_mtrl_alpha=0x7f02001b;
+        public static final int abc_ic_menu_share_mtrl_alpha=0x7f02001c;
+        public static final int abc_ic_search_api_mtrl_alpha=0x7f02001d;
+        public static final int abc_ic_voice_search_api_mtrl_alpha=0x7f02001e;
+        public static final int abc_item_background_holo_dark=0x7f02001f;
+        public static final int abc_item_background_holo_light=0x7f020020;
+        public static final int abc_list_divider_mtrl_alpha=0x7f020021;
+        public static final int abc_list_focused_holo=0x7f020022;
+        public static final int abc_list_longpressed_holo=0x7f020023;
+        public static final int abc_list_pressed_holo_dark=0x7f020024;
+        public static final int abc_list_pressed_holo_light=0x7f020025;
+        public static final int abc_list_selector_background_transition_holo_dark=0x7f020026;
+        public static final int abc_list_selector_background_transition_holo_light=0x7f020027;
+        public static final int abc_list_selector_disabled_holo_dark=0x7f020028;
+        public static final int abc_list_selector_disabled_holo_light=0x7f020029;
+        public static final int abc_list_selector_holo_dark=0x7f02002a;
+        public static final int abc_list_selector_holo_light=0x7f02002b;
+        public static final int abc_menu_hardkey_panel_mtrl_mult=0x7f02002c;
+        public static final int abc_popup_background_mtrl_mult=0x7f02002d;
+        public static final int abc_ratingbar_full_material=0x7f02002e;
+        public static final int abc_spinner_mtrl_am_alpha=0x7f02002f;
+        public static final int abc_spinner_textfield_background_material=0x7f020030;
+        public static final int abc_switch_thumb_material=0x7f020031;
+        public static final int abc_switch_track_mtrl_alpha=0x7f020032;
+        public static final int abc_tab_indicator_material=0x7f020033;
+        public static final int abc_tab_indicator_mtrl_alpha=0x7f020034;
+        public static final int abc_text_cursor_mtrl_alpha=0x7f020035;
+        public static final int abc_textfield_activated_mtrl_alpha=0x7f020036;
+        public static final int abc_textfield_default_mtrl_alpha=0x7f020037;
+        public static final int abc_textfield_search_activated_mtrl_alpha=0x7f020038;
+        public static final int abc_textfield_search_default_mtrl_alpha=0x7f020039;
+        public static final int abc_textfield_search_material=0x7f02003a;
+        public static final int blue_dot_empty=0x7f02003b;
+        public static final int blue_dot_solid=0x7f02003c;
+        public static final int btn_ok=0x7f02003d;
+        public static final int cha=0x7f02003e;
+        public static final int clock=0x7f02003f;
+        public static final int confirm_bg=0x7f020040;
+        public static final int edit_alert_bg=0x7f020041;
+        public static final int edit_mark=0x7f020042;
+        public static final int empty_pause=0x7f020043;
+        public static final int empty_play=0x7f020044;
+        public static final int grid_line=0x7f020073;
+        public static final int ic_audio_cut=0x7f020045;
+        public static final int ic_audio_hebing=0x7f020046;
+        public static final int ic_audio_maker_left=0x7f020047;
+        public static final int ic_audio_maker_right=0x7f020048;
+        public static final int ic_audio_record_back=0x7f020049;
+        public static final int ic_audio_record_setting=0x7f02004a;
+        public static final int ic_launcher=0x7f02004b;
+        public static final int ic_position_icon=0x7f02004c;
+        public static final int ic_record_audio_del=0x7f02004d;
+        public static final int ic_record_audio_op=0x7f02004e;
+        public static final int ic_record_audio_save=0x7f02004f;
+        public static final int ic_record_audioing=0x7f020050;
+        public static final int ic_record_can_maker=0x7f020051;
+        public static final int ic_record_contral=0x7f020052;
+        public static final int ic_record_mark=0x7f020053;
+        public static final int ic_show_bar_icon=0x7f020054;
+        public static final int ic_vedio_back=0x7f020055;
+        public static final int icn_change_view=0x7f020056;
+        public static final int icn_flashlight_off=0x7f020057;
+        public static final int icn_flashlight_on=0x7f020058;
+        public static final int location_blue=0x7f020059;
+        public static final int play_btn_state=0x7f02005a;
+        public static final int playback_indicator=0x7f020072;
+        public static final int record_cha=0x7f02005b;
+        public static final int record_circle=0x7f02005c;
+        public static final int record_falsh_state=0x7f02005d;
+        public static final int record_maker_d=0x7f02005e;
+        public static final int record_off=0x7f02005f;
+        public static final int record_on=0x7f020060;
+        public static final int record_progressbar_front=0x7f020061;
+        public static final int record_state=0x7f020062;
+        public static final int record_stop=0x7f020063;
+        public static final int record_stop_ok=0x7f020064;
+        public static final int red_delete=0x7f020065;
+        public static final int red_dot=0x7f020066;
+        public static final int red_dots=0x7f020067;
+        public static final int selection_border=0x7f020071;
+        public static final int shape_rect_blue=0x7f020068;
+        public static final int shape_rect_blue_line=0x7f020069;
+        public static final int shape_rect_white=0x7f02006a;
+        public static final int timecode=0x7f020074;
+        public static final int timecode_shadow=0x7f020075;
+        public static final int type_bkgnd_alarm=0x7f020076;
+        public static final int type_bkgnd_music=0x7f020079;
+        public static final int type_bkgnd_notification=0x7f020078;
+        public static final int type_bkgnd_ringtone=0x7f020077;
+        public static final int type_bkgnd_unsupported=0x7f02007a;
+        public static final int video_cut=0x7f02006b;
+        public static final int video_delete=0x7f02006c;
+        public static final int video_merge=0x7f02006d;
+        public static final int waveform_selected=0x7f02006e;
+        public static final int waveform_unselected=0x7f02006f;
+        public static final int waveform_unselected_bkgnd_overlay=0x7f020070;
     }
     public static final class id {
-        public static final int always=0x7f0b0000;
-        public static final int bar_horizontal=0x7f0b0034;
-        public static final int bar_vertical=0x7f0b0036;
-        public static final int bottom_mask=0x7f0b001d;
-        public static final int btn_click=0x7f0b0019;
-        public static final int camera_hint=0x7f0b001c;
-        public static final int camera_preview=0x7f0b001b;
-        public static final int center=0x7f0b0003;
-        public static final int changing=0x7f0b0001;
-        public static final int clickRemove=0x7f0b0006;
-        public static final int et_save2=0x7f0b003e;
-        public static final int et_video_name=0x7f0b0039;
-        public static final int flingRemove=0x7f0b0007;
-        public static final int iv_back=0x7f0b0027;
-        public static final int iv_btn_cut=0x7f0b0016;
-        public static final int iv_camera_switch=0x7f0b0029;
-        public static final int iv_clock=0x7f0b002a;
-        public static final int iv_delete=0x7f0b0017;
-        public static final int iv_edit_back=0x7f0b000e;
-        public static final int iv_flash=0x7f0b0028;
-        public static final int iv_locaiton=0x7f0b003a;
-        public static final int iv_merge=0x7f0b0018;
-        public static final int iv_play_pause=0x7f0b000f;
-        public static final int iv_point_maker1=0x7f0b001f;
-        public static final int iv_record=0x7f0b001e;
-        public static final int iv_show=0x7f0b0015;
-        public static final int iv_stop=0x7f0b0020;
-        public static final int left=0x7f0b0004;
-        public static final int ll_popup=0x7f0b0038;
-        public static final int ll_scroll=0x7f0b0014;
-        public static final int ll_top=0x7f0b0026;
-        public static final int never=0x7f0b0002;
-        public static final int onDown=0x7f0b0008;
-        public static final int onLongPress=0x7f0b0009;
-        public static final int onMove=0x7f0b000a;
-        public static final int progressBar1=0x7f0b002d;
-        public static final int record_progress=0x7f0b0022;
-        public static final int right=0x7f0b0005;
-        public static final int rl=0x7f0b0023;
-        public static final int rl_bottom=0x7f0b0013;
-        public static final int rl_progress=0x7f0b002c;
-        public static final int rl_progress_bar=0x7f0b0021;
-        public static final int rl_root=0x7f0b001a;
-        public static final int rl_top=0x7f0b000b;
-        public static final int sl=0x7f0b0012;
-        public static final int tv_10s=0x7f0b002e;
-        public static final int tv_120s=0x7f0b0032;
-        public static final int tv_30s=0x7f0b002f;
-        public static final int tv_60s=0x7f0b0030;
-        public static final int tv_90s=0x7f0b0031;
-        public static final int tv_duration=0x7f0b0011;
-        public static final int tv_no=0x7f0b0037;
-        public static final int tv_progress_time=0x7f0b000c;
-        public static final int tv_record_time=0x7f0b0024;
-        public static final int tv_record_time1=0x7f0b0025;
-        public static final int tv_resolution=0x7f0b002b;
-        public static final int tv_save=0x7f0b003d;
-        public static final int tv_set_location=0x7f0b003b;
-        public static final int tv_tip=0x7f0b0033;
-        public static final int tv_upload=0x7f0b003f;
-        public static final int tv_yes=0x7f0b0035;
-        public static final int vedio_progress=0x7f0b0010;
-        public static final int view_empty=0x7f0b003c;
-        public static final int vv_vedio_show=0x7f0b000d;
+        public static final int action_bar=0x7f0a0049;
+        public static final int action_bar_activity_content=0x7f0a0003;
+        public static final int action_bar_container=0x7f0a0048;
+        public static final int action_bar_root=0x7f0a0044;
+        public static final int action_bar_spinner=0x7f0a0002;
+        public static final int action_bar_subtitle=0x7f0a002d;
+        public static final int action_bar_title=0x7f0a002c;
+        public static final int action_context_bar=0x7f0a004a;
+        public static final int action_menu_divider=0x7f0a0005;
+        public static final int action_menu_presenter=0x7f0a0006;
+        public static final int action_mode_bar=0x7f0a0046;
+        public static final int action_mode_bar_stub=0x7f0a0045;
+        public static final int action_mode_close_button=0x7f0a002e;
+        public static final int activity_chooser_view_content=0x7f0a002f;
+        public static final int alertTitle=0x7f0a0039;
+        public static final int always=0x7f0a0019;
+        public static final int audio_progress=0x7f0a0065;
+        public static final int bar_horizontal=0x7f0a0090;
+        public static final int bar_vertical=0x7f0a0092;
+        public static final int beginning=0x7f0a0020;
+        public static final int bottom_mask=0x7f0a007d;
+        public static final int btn_click=0x7f0a0077;
+        public static final int btn_click_selcet_loaction=0x7f0a0078;
+        public static final int btn_record_audio=0x7f0a0079;
+        public static final int buttonPanel=0x7f0a003f;
+        public static final int camera_hint=0x7f0a007c;
+        public static final int camera_preview=0x7f0a007b;
+        public static final int center=0x7f0a0024;
+        public static final int changing=0x7f0a0023;
+        public static final int checkbox=0x7f0a0041;
+        public static final int clickRemove=0x7f0a0027;
+        public static final int collapseActionView=0x7f0a001a;
+        public static final int contentPanel=0x7f0a003a;
+        public static final int custom=0x7f0a003e;
+        public static final int customPanel=0x7f0a003d;
+        public static final int decor_content_parent=0x7f0a0047;
+        public static final int default_activity_button=0x7f0a0032;
+        public static final int dialog=0x7f0a001e;
+        public static final int disableHome=0x7f0a000d;
+        public static final int dropdown=0x7f0a001f;
+        public static final int ed_rename=0x7f0a009f;
+        public static final int edit_query=0x7f0a004b;
+        public static final int end=0x7f0a0021;
+        public static final int et_save2=0x7f0a009d;
+        public static final int et_video_name=0x7f0a0098;
+        public static final int expand_activities_button=0x7f0a0030;
+        public static final int expanded_menu=0x7f0a0040;
+        public static final int flingRemove=0x7f0a0028;
+        public static final int gv=0x7f0a00a8;
+        public static final int hlv_scroll=0x7f0a0062;
+        public static final int home=0x7f0a0000;
+        public static final int homeAsUp=0x7f0a000e;
+        public static final int icon=0x7f0a0034;
+        public static final int ifRoom=0x7f0a001b;
+        public static final int image=0x7f0a0031;
+        public static final int iv=0x7f0a00a5;
+        public static final int iv_back=0x7f0a005b;
+        public static final int iv_btn_cut=0x7f0a0074;
+        public static final int iv_camera_switch=0x7f0a0086;
+        public static final int iv_clock=0x7f0a005a;
+        public static final int iv_close=0x7f0a00a6;
+        public static final int iv_delete=0x7f0a0075;
+        public static final int iv_edit_back=0x7f0a006d;
+        public static final int iv_flash=0x7f0a0085;
+        public static final int iv_locaiton=0x7f0a0099;
+        public static final int iv_merge=0x7f0a0076;
+        public static final int iv_play_pause=0x7f0a006e;
+        public static final int iv_point_maker1=0x7f0a007e;
+        public static final int iv_record=0x7f0a0067;
+        public static final int iv_record_control=0x7f0a006a;
+        public static final int iv_record_mark=0x7f0a0066;
+        public static final int iv_record_off=0x7f0a0068;
+        public static final int iv_record_on=0x7f0a0069;
+        public static final int iv_select=0x7f0a00aa;
+        public static final int iv_show=0x7f0a0073;
+        public static final int iv_stop=0x7f0a007f;
+        public static final int iv_thumb=0x7f0a00a9;
+        public static final int left=0x7f0a0025;
+        public static final int line_left=0x7f0a0094;
+        public static final int line_right=0x7f0a0095;
+        public static final int listMode=0x7f0a000a;
+        public static final int list_item=0x7f0a0033;
+        public static final int ll_content=0x7f0a0064;
+        public static final int ll_popup=0x7f0a0097;
+        public static final int ll_save=0x7f0a00a0;
+        public static final int ll_save_audio=0x7f0a00a2;
+        public static final int ll_scroll=0x7f0a0072;
+        public static final int ll_top=0x7f0a0084;
+        public static final int ll_upload=0x7f0a00a3;
+        public static final int middle=0x7f0a0022;
+        public static final int multiply=0x7f0a0014;
+        public static final int never=0x7f0a001c;
+        public static final int none=0x7f0a000f;
+        public static final int normal=0x7f0a000b;
+        public static final int onDown=0x7f0a0029;
+        public static final int onLongPress=0x7f0a002a;
+        public static final int onMove=0x7f0a002b;
+        public static final int parentPanel=0x7f0a0036;
+        public static final int progressBar1=0x7f0a0089;
+        public static final int progress_circular=0x7f0a0007;
+        public static final int progress_horizontal=0x7f0a0008;
+        public static final int radio=0x7f0a0043;
+        public static final int record_progress=0x7f0a0081;
+        public static final int right=0x7f0a0026;
+        public static final int rl=0x7f0a0082;
+        public static final int rl_all=0x7f0a0058;
+        public static final int rl_bottom=0x7f0a005d;
+        public static final int rl_progress=0x7f0a0088;
+        public static final int rl_progress_bar=0x7f0a0080;
+        public static final int rl_root=0x7f0a007a;
+        public static final int rl_top=0x7f0a0059;
+        public static final int screen=0x7f0a0015;
+        public static final int scrollView=0x7f0a003b;
+        public static final int search_badge=0x7f0a004d;
+        public static final int search_bar=0x7f0a004c;
+        public static final int search_button=0x7f0a004e;
+        public static final int search_close_btn=0x7f0a0053;
+        public static final int search_edit_frame=0x7f0a004f;
+        public static final int search_go_btn=0x7f0a0055;
+        public static final int search_mag_icon=0x7f0a0050;
+        public static final int search_plate=0x7f0a0051;
+        public static final int search_src_text=0x7f0a0052;
+        public static final int search_voice_btn=0x7f0a0056;
+        public static final int select_dialog_listview=0x7f0a0057;
+        public static final int shortcut=0x7f0a0042;
+        public static final int showCustom=0x7f0a0010;
+        public static final int showHome=0x7f0a0011;
+        public static final int showTitle=0x7f0a0012;
+        public static final int sl=0x7f0a0071;
+        public static final int split_action_bar=0x7f0a0004;
+        public static final int src_atop=0x7f0a0016;
+        public static final int src_in=0x7f0a0017;
+        public static final int src_over=0x7f0a0018;
+        public static final int submit_area=0x7f0a0054;
+        public static final int tabMode=0x7f0a000c;
+        public static final int textSpacerNoButtons=0x7f0a003c;
+        public static final int time_coder=0x7f0a0060;
+        public static final int title=0x7f0a0035;
+        public static final int title_template=0x7f0a0038;
+        public static final int topPanel=0x7f0a0037;
+        public static final int tv_10s=0x7f0a008a;
+        public static final int tv_120s=0x7f0a008e;
+        public static final int tv_30s=0x7f0a008b;
+        public static final int tv_60s=0x7f0a008c;
+        public static final int tv_90s=0x7f0a008d;
+        public static final int tv_confirm=0x7f0a00a7;
+        public static final int tv_current_position=0x7f0a00a1;
+        public static final int tv_duration=0x7f0a0070;
+        public static final int tv_no=0x7f0a0093;
+        public static final int tv_progress_time=0x7f0a006b;
+        public static final int tv_record_setting_show=0x7f0a005f;
+        public static final int tv_record_time=0x7f0a005e;
+        public static final int tv_record_time1=0x7f0a0083;
+        public static final int tv_record_title=0x7f0a005c;
+        public static final int tv_resolution=0x7f0a0087;
+        public static final int tv_right_btn=0x7f0a00a4;
+        public static final int tv_save=0x7f0a009c;
+        public static final int tv_set_location=0x7f0a009a;
+        public static final int tv_time_recorder=0x7f0a0096;
+        public static final int tv_tip=0x7f0a008f;
+        public static final int tv_upload=0x7f0a009e;
+        public static final int tv_yes=0x7f0a0091;
+        public static final int up=0x7f0a0001;
+        public static final int useLogo=0x7f0a0013;
+        public static final int vedio_progress=0x7f0a006f;
+        public static final int view_empty=0x7f0a009b;
+        public static final int vv_vedio_show=0x7f0a006c;
+        public static final int wavesfv=0x7f0a0061;
+        public static final int waveview=0x7f0a0063;
+        public static final int withText=0x7f0a001d;
+        public static final int wrap_content=0x7f0a0009;
+    }
+    public static final class integer {
+        public static final int abc_config_activityDefaultDur=0x7f090001;
+        /**  The duration (in milliseconds) of the activity open/close and fragment open/close animations. 
+         */
+        public static final int abc_config_activityShortDur=0x7f090000;
+        /**  The maximum number of action buttons that should be permitted within
+         an action bar/action mode. This will be used to determine how many
+         showAsAction="ifRoom" items can fit. "always" items can override this. 
+ The maximum number of action buttons that should be permitted within
+     an action bar/action mode. This will be used to determine how many
+     showAsAction="ifRoom" items can fit. "always" items can override this. 
+ The maximum number of action buttons that should be permitted within
+         an action bar/action mode. This will be used to determine how many
+         showAsAction="ifRoom" items can fit. "always" items can override this. 
+ The maximum number of action buttons that should be permitted within
+         an action bar/action mode. This will be used to determine how many
+         showAsAction="ifRoom" items can fit. "always" items can override this. 
+ The maximum number of action buttons that should be permitted within
+         an action bar/action mode. This will be used to determine how many
+         showAsAction="ifRoom" items can fit. "always" items can override this. 
+ The maximum number of action buttons that should be permitted within
+         an action bar/action mode. This will be used to determine how many
+         showAsAction="ifRoom" items can fit. "always" items can override this. 
+ The maximum number of action buttons that should be permitted within
+         an action bar/action mode. This will be used to determine how many
+         showAsAction="ifRoom" items can fit. "always" items can override this. 
+         */
+        public static final int abc_max_action_buttons=0x7f090002;
     }
     public static final class layout {
-        public static final int activity_edit_vedio=0x7f030000;
-        public static final int activity_main=0x7f030001;
-        public static final int activity_video_record=0x7f030002;
-        public static final int bl_pop_layout=0x7f030003;
-        public static final int edit_alert_layout=0x7f030004;
-        public static final int layout_save_video_info=0x7f030005;
+        public static final int abc_action_bar_title_item=0x7f030000;
+        public static final int abc_action_bar_up_container=0x7f030001;
+        public static final int abc_action_bar_view_list_nav_layout=0x7f030002;
+        public static final int abc_action_menu_item_layout=0x7f030003;
+        public static final int abc_action_menu_layout=0x7f030004;
+        public static final int abc_action_mode_bar=0x7f030005;
+        public static final int abc_action_mode_close_item_material=0x7f030006;
+        public static final int abc_activity_chooser_view=0x7f030007;
+        public static final int abc_activity_chooser_view_list_item=0x7f030008;
+        public static final int abc_alert_dialog_material=0x7f030009;
+        public static final int abc_dialog_title_material=0x7f03000a;
+        public static final int abc_expanded_menu_layout=0x7f03000b;
+        public static final int abc_list_menu_item_checkbox=0x7f03000c;
+        public static final int abc_list_menu_item_icon=0x7f03000d;
+        public static final int abc_list_menu_item_layout=0x7f03000e;
+        public static final int abc_list_menu_item_radio=0x7f03000f;
+        public static final int abc_popup_menu_item_layout=0x7f030010;
+        public static final int abc_screen_content_include=0x7f030011;
+        public static final int abc_screen_simple=0x7f030012;
+        public static final int abc_screen_simple_overlay_action_mode=0x7f030013;
+        public static final int abc_screen_toolbar=0x7f030014;
+        public static final int abc_search_dropdown_item_icons_2line=0x7f030015;
+        public static final int abc_search_view=0x7f030016;
+        public static final int abc_select_dialog_material=0x7f030017;
+        public static final int abc_simple_dropdown_hint=0x7f030018;
+        public static final int activity_audio_recorder=0x7f030019;
+        public static final int activity_edit_vedio=0x7f03001a;
+        public static final int activity_main=0x7f03001b;
+        public static final int activity_video_record=0x7f03001c;
+        public static final int bl_pop_layout=0x7f03001d;
+        public static final int edit_alert_layout=0x7f03001e;
+        public static final int item_time_counter=0x7f03001f;
+        public static final int layout_save_video_info=0x7f030020;
+        public static final int pop_info=0x7f030021;
+        public static final int recycler_item=0x7f030022;
+        public static final int select_dialog_item_material=0x7f030023;
+        public static final int select_dialog_multichoice_material=0x7f030024;
+        public static final int select_dialog_singlechoice_material=0x7f030025;
+        public static final int support_simple_spinner_dropdown_item=0x7f030026;
+        public static final int video_grid_layout=0x7f030027;
+        public static final int video_select_item_layout=0x7f030028;
     }
     public static final class menu {
-        public static final int main=0x7f0a0000;
+        public static final int main=0x7f0d0000;
     }
     public static final class raw {
         public static final int ffmpeg=0x7f050000;
@@ -1067,22 +3135,1262 @@ containing a value of this type.
         public static final int pub=0x7f050002;
     }
     public static final class string {
-        public static final int action_settings=0x7f080002;
-        public static final int app_name=0x7f080000;
-        public static final int hello_world=0x7f080001;
+        /**  Content description for the action bar "home" affordance. [CHAR LIMIT=NONE] 
+         */
+        public static final int abc_action_bar_home_description=0x7f0b0001;
+        /**  Formatting string for describing the action bar's title/home/up affordance.
+         This is a single tappable "button" that includes the app icon, the Up indicator
+         (usually a "<" chevron) and the window title text.
+         %1$s is the title. %2$s is the description of what tapping/clicking the whole
+         thing is going to do. 
+         */
+        public static final int abc_action_bar_home_description_format=0x7f0b0005;
+        /**  Just like action_bar_home_description_format, but this one will be used
+         if the window is also providing subtitle text.
+         %1$s is the title. %2$s is the subtitle. %3$s is the description of what
+         tapping/clicking the whole thing is going to do. 
+         */
+        public static final int abc_action_bar_home_subtitle_description_format=0x7f0b0006;
+        /**  Content description for the action bar "up" affordance. [CHAR LIMIT=NONE] 
+         */
+        public static final int abc_action_bar_up_description=0x7f0b0002;
+        /**  Content description for the action menu overflow button. [CHAR LIMIT=NONE] 
+         */
+        public static final int abc_action_menu_overflow_description=0x7f0b0003;
+        /**  Label for the "Done" button on the far left of action mode toolbars. 
+         */
+        public static final int abc_action_mode_done=0x7f0b0000;
+        /**  Title for a button to expand the list of activities in ActivityChooserView [CHAR LIMIT=25] 
+         */
+        public static final int abc_activity_chooser_view_see_all=0x7f0b000e;
+        /**  ActivityChooserView - accessibility support 
+ Description of the shwoing of a popup window with activities to choose from. [CHAR LIMIT=NONE] 
+         */
+        public static final int abc_activitychooserview_choose_application=0x7f0b000d;
+        /**  Default hint text for the system-wide search UI's text field. [CHAR LIMIT=30] 
+         */
+        public static final int abc_search_hint=0x7f0b0008;
+        /**  SearchView accessibility description for clear button [CHAR LIMIT=NONE] 
+         */
+        public static final int abc_searchview_description_clear=0x7f0b000a;
+        /**  SearchView accessibility description for search text field [CHAR LIMIT=NONE] 
+         */
+        public static final int abc_searchview_description_query=0x7f0b0009;
+        /**  SearchView accessibility description for search button [CHAR LIMIT=NONE] 
+         */
+        public static final int abc_searchview_description_search=0x7f0b0007;
+        /**  SearchView accessibility description for submit button [CHAR LIMIT=NONE] 
+         */
+        public static final int abc_searchview_description_submit=0x7f0b000b;
+        /**  SearchView accessibility description for voice button [CHAR LIMIT=NONE] 
+         */
+        public static final int abc_searchview_description_voice=0x7f0b000c;
+        /**  Description of the choose target button in a ShareActionProvider (share UI). [CHAR LIMIT=NONE] 
+         */
+        public static final int abc_shareactionprovider_share_with=0x7f0b0010;
+        /**  Description of a share target (both in the list of such or the default share button) in a ShareActionProvider (share UI). [CHAR LIMIT=NONE] 
+         */
+        public static final int abc_shareactionprovider_share_with_application=0x7f0b000f;
+        /**  Content description for the Toolbar icon used to collapse an expanded action mode. [CHAR LIMIT=NONE] 
+         */
+        public static final int abc_toolbar_collapse_description=0x7f0b0004;
+        public static final int action_settings=0x7f0b0013;
+        public static final int all_images=0x7f0b0014;
+        public static final int app_name=0x7f0b0011;
+        public static final int hello_world=0x7f0b0012;
     }
     public static final class style {
+        public static final int AlertDialog_AppCompat=0x7f0c0040;
+        public static final int AlertDialog_AppCompat_Light=0x7f0c0041;
+        public static final int Animation_AppCompat_Dialog=0x7f0c0046;
+        public static final int Animation_AppCompat_DropDownUp=0x7f0c0047;
+        public static final int Base_AlertDialog_AppCompat=0x7f0c00bd;
+        public static final int Base_AlertDialog_AppCompat_Light=0x7f0c00be;
+        public static final int Base_Animation_AppCompat_Dialog=0x7f0c00b9;
+        public static final int Base_Animation_AppCompat_DropDownUp=0x7f0c00bc;
+        public static final int Base_DialogWindowTitle_AppCompat=0x7f0c00b8;
+        public static final int Base_DialogWindowTitleBackground_AppCompat=0x7f0c00b7;
+        public static final int Base_TextAppearance_AppCompat=0x7f0c00bf;
+        public static final int Base_TextAppearance_AppCompat_Body1=0x7f0c00ca;
+        public static final int Base_TextAppearance_AppCompat_Body2=0x7f0c00c9;
+        public static final int Base_TextAppearance_AppCompat_Button=0x7f0c00cd;
+        public static final int Base_TextAppearance_AppCompat_Caption=0x7f0c00cb;
+        public static final int Base_TextAppearance_AppCompat_Display1=0x7f0c00c3;
+        public static final int Base_TextAppearance_AppCompat_Display2=0x7f0c00c2;
+        public static final int Base_TextAppearance_AppCompat_Display3=0x7f0c00c1;
+        public static final int Base_TextAppearance_AppCompat_Display4=0x7f0c00c0;
+        public static final int Base_TextAppearance_AppCompat_Headline=0x7f0c00c4;
+        /**  Deprecated text styles 
+ Deprecated text styles 
+ Now deprecated styles 
+         */
+        public static final int Base_TextAppearance_AppCompat_Inverse=0x7f0c00ce;
+        public static final int Base_TextAppearance_AppCompat_Large=0x7f0c00cf;
+        public static final int Base_TextAppearance_AppCompat_Large_Inverse=0x7f0c00d0;
+        public static final int Base_TextAppearance_AppCompat_Light_Widget_PopupMenu_Large=0x7f0c009a;
+        public static final int Base_TextAppearance_AppCompat_Light_Widget_PopupMenu_Small=0x7f0c009b;
+        public static final int Base_TextAppearance_AppCompat_Medium=0x7f0c00d1;
+        public static final int Base_TextAppearance_AppCompat_Medium_Inverse=0x7f0c00d2;
+        public static final int Base_TextAppearance_AppCompat_Menu=0x7f0c00cc;
+        public static final int Base_TextAppearance_AppCompat_SearchResult=0x7f0c009c;
+        public static final int Base_TextAppearance_AppCompat_SearchResult_Subtitle=0x7f0c009e;
+        /**  Search View result styles 
+         */
+        public static final int Base_TextAppearance_AppCompat_SearchResult_Title=0x7f0c009d;
+        public static final int Base_TextAppearance_AppCompat_Small=0x7f0c00d3;
+        public static final int Base_TextAppearance_AppCompat_Small_Inverse=0x7f0c00d4;
+        public static final int Base_TextAppearance_AppCompat_Subhead=0x7f0c00c7;
+        public static final int Base_TextAppearance_AppCompat_Subhead_Inverse=0x7f0c00c8;
+        public static final int Base_TextAppearance_AppCompat_Title=0x7f0c00c5;
+        public static final int Base_TextAppearance_AppCompat_Title_Inverse=0x7f0c00c6;
+        public static final int Base_TextAppearance_AppCompat_Widget_ActionBar_Menu=0x7f0c0083;
+        public static final int Base_TextAppearance_AppCompat_Widget_ActionBar_Subtitle=0x7f0c0085;
+        public static final int Base_TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse=0x7f0c0087;
+        public static final int Base_TextAppearance_AppCompat_Widget_ActionBar_Title=0x7f0c0084;
+        public static final int Base_TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse=0x7f0c0086;
+        public static final int Base_TextAppearance_AppCompat_Widget_ActionMode_Subtitle=0x7f0c0082;
+        public static final int Base_TextAppearance_AppCompat_Widget_ActionMode_Title=0x7f0c0081;
+        public static final int Base_TextAppearance_AppCompat_Widget_DropDownItem=0x7f0c0090;
+        public static final int Base_TextAppearance_AppCompat_Widget_PopupMenu_Large=0x7f0c0098;
+        public static final int Base_TextAppearance_AppCompat_Widget_PopupMenu_Small=0x7f0c0099;
+        public static final int Base_TextAppearance_AppCompat_Widget_Switch=0x7f0c00ae;
+        public static final int Base_TextAppearance_AppCompat_Widget_TextView_SpinnerItem=0x7f0c00b6;
+        public static final int Base_TextAppearance_Widget_AppCompat_ExpandedMenu_Item=0x7f0c0091;
+        public static final int Base_TextAppearance_Widget_AppCompat_Toolbar_Subtitle=0x7f0c00a5;
+        public static final int Base_TextAppearance_Widget_AppCompat_Toolbar_Title=0x7f0c00a4;
+        public static final int Base_Theme_AppCompat=0x7f0c00f8;
+        /**  Menu/item attributes 
+         */
+        public static final int Base_Theme_AppCompat_CompactMenu=0x7f0c00fb;
+        public static final int Base_Theme_AppCompat_Dialog=0x7f0c00fe;
+        public static final int Base_Theme_AppCompat_Dialog_Alert=0x7f0c0100;
+        public static final int Base_Theme_AppCompat_Dialog_FixedSize=0x7f0c0104;
+        public static final int Base_Theme_AppCompat_Dialog_MinWidth=0x7f0c0102;
+        /**  We're not large, so redirect to Theme.AppCompat 
+         */
+        public static final int Base_Theme_AppCompat_DialogWhenLarge=0x7f0c0106;
+        public static final int Base_Theme_AppCompat_Light=0x7f0c00f9;
+        public static final int Base_Theme_AppCompat_Light_DarkActionBar=0x7f0c00fa;
+        public static final int Base_Theme_AppCompat_Light_Dialog=0x7f0c00ff;
+        public static final int Base_Theme_AppCompat_Light_Dialog_Alert=0x7f0c0101;
+        public static final int Base_Theme_AppCompat_Light_Dialog_FixedSize=0x7f0c0105;
+        public static final int Base_Theme_AppCompat_Light_Dialog_MinWidth=0x7f0c0103;
+        public static final int Base_Theme_AppCompat_Light_DialogWhenLarge=0x7f0c0107;
+        /**  Overlay themes 
+         */
+        public static final int Base_ThemeOverlay_AppCompat=0x7f0c0108;
+        public static final int Base_ThemeOverlay_AppCompat_ActionBar=0x7f0c010d;
+        public static final int Base_ThemeOverlay_AppCompat_Dark=0x7f0c010c;
+        public static final int Base_ThemeOverlay_AppCompat_Dark_ActionBar=0x7f0c010e;
+        public static final int Base_ThemeOverlay_AppCompat_Light=0x7f0c010b;
+        public static final int Base_V11_Theme_AppCompat_Dialog=0x7f0c0111;
+        public static final int Base_V11_Theme_AppCompat_Light_Dialog=0x7f0c0112;
+        public static final int Base_V21_Theme_AppCompat=0x7f0c0117;
+        public static final int Base_V21_Theme_AppCompat_Dialog=0x7f0c0119;
+        public static final int Base_V21_Theme_AppCompat_Light=0x7f0c0118;
+        public static final int Base_V21_Theme_AppCompat_Light_Dialog=0x7f0c011a;
+        /**  Base platform-dependent theme providing an action bar in a dark-themed activity. 
+         */
+        public static final int Base_V7_Theme_AppCompat=0x7f0c00f6;
+        public static final int Base_V7_Theme_AppCompat_Dialog=0x7f0c00fc;
+        /**  Base platform-dependent theme providing an action bar in a light-themed activity. 
+         */
+        public static final int Base_V7_Theme_AppCompat_Light=0x7f0c00f7;
+        public static final int Base_V7_Theme_AppCompat_Light_Dialog=0x7f0c00fd;
+        public static final int Base_Widget_AppCompat_ActionBar=0x7f0c0072;
+        public static final int Base_Widget_AppCompat_ActionBar_Solid=0x7f0c0074;
+        public static final int Base_Widget_AppCompat_ActionBar_TabBar=0x7f0c0079;
+        public static final int Base_Widget_AppCompat_ActionBar_TabText=0x7f0c007d;
+        public static final int Base_Widget_AppCompat_ActionBar_TabView=0x7f0c007b;
+        /**  Action Button Styles 
+         */
+        public static final int Base_Widget_AppCompat_ActionButton=0x7f0c0076;
+        public static final int Base_Widget_AppCompat_ActionButton_CloseMode=0x7f0c0077;
+        public static final int Base_Widget_AppCompat_ActionButton_Overflow=0x7f0c0078;
+        public static final int Base_Widget_AppCompat_ActionMode=0x7f0c0080;
+        public static final int Base_Widget_AppCompat_ActivityChooserView=0x7f0c00a0;
+        public static final int Base_Widget_AppCompat_AutoCompleteTextView=0x7f0c009f;
+        /**  Bordered ink button 
+         */
+        public static final int Base_Widget_AppCompat_Button=0x7f0c00b0;
+        /**  Borderless ink button 
+         */
+        public static final int Base_Widget_AppCompat_Button_Borderless=0x7f0c00b2;
+        /**  Colored borderless ink button 
+         */
+        public static final int Base_Widget_AppCompat_Button_Borderless_Colored=0x7f0c00b3;
+        public static final int Base_Widget_AppCompat_Button_ButtonBar_AlertDialog=0x7f0c00b4;
+        /**  Small bordered ink button 
+         */
+        public static final int Base_Widget_AppCompat_Button_Small=0x7f0c00b1;
+        public static final int Base_Widget_AppCompat_ButtonBar=0x7f0c00ba;
+        public static final int Base_Widget_AppCompat_ButtonBar_AlertDialog=0x7f0c00bb;
+        public static final int Base_Widget_AppCompat_CompoundButton_CheckBox=0x7f0c00ab;
+        public static final int Base_Widget_AppCompat_CompoundButton_RadioButton=0x7f0c00ac;
+        public static final int Base_Widget_AppCompat_CompoundButton_Switch=0x7f0c00ad;
+        /**  contains values used in all dpis except hdpi and xxhdpi 
+         */
+        public static final int Base_Widget_AppCompat_DrawerArrowToggle=0x7f0c00aa;
+        /**  contains values used in all dpis 
+         */
+        public static final int Base_Widget_AppCompat_DrawerArrowToggle_Common=0x7f0c00a9;
+        public static final int Base_Widget_AppCompat_DropDownItem_Spinner=0x7f0c008d;
+        public static final int Base_Widget_AppCompat_EditText=0x7f0c00a8;
+        public static final int Base_Widget_AppCompat_Light_ActionBar=0x7f0c0073;
+        public static final int Base_Widget_AppCompat_Light_ActionBar_Solid=0x7f0c0075;
+        public static final int Base_Widget_AppCompat_Light_ActionBar_TabBar=0x7f0c007a;
+        public static final int Base_Widget_AppCompat_Light_ActionBar_TabText=0x7f0c007e;
+        public static final int Base_Widget_AppCompat_Light_ActionBar_TabText_Inverse=0x7f0c007f;
+        public static final int Base_Widget_AppCompat_Light_ActionBar_TabView=0x7f0c007c;
+        public static final int Base_Widget_AppCompat_Light_PopupMenu=0x7f0c0097;
+        public static final int Base_Widget_AppCompat_Light_PopupMenu_Overflow=0x7f0c0095;
+        /**  Popup Menu 
+         */
+        public static final int Base_Widget_AppCompat_ListPopupWindow=0x7f0c0093;
+        public static final int Base_Widget_AppCompat_ListView=0x7f0c008e;
+        /**  Spinner Widgets 
+         */
+        public static final int Base_Widget_AppCompat_ListView_DropDown=0x7f0c008f;
+        public static final int Base_Widget_AppCompat_ListView_Menu=0x7f0c0092;
+        public static final int Base_Widget_AppCompat_PopupMenu=0x7f0c0096;
+        public static final int Base_Widget_AppCompat_PopupMenu_Overflow=0x7f0c0094;
+        public static final int Base_Widget_AppCompat_PopupWindow=0x7f0c00a1;
+        public static final int Base_Widget_AppCompat_ProgressBar=0x7f0c0089;
+        /**  Progress Bar 
+ Progress Bar 
+         */
+        public static final int Base_Widget_AppCompat_ProgressBar_Horizontal=0x7f0c0088;
+        public static final int Base_Widget_AppCompat_RatingBar=0x7f0c00af;
+        public static final int Base_Widget_AppCompat_SearchView=0x7f0c00a6;
+        public static final int Base_Widget_AppCompat_SearchView_ActionBar=0x7f0c00a7;
+        /**  Spinner Widgets 
+         */
+        public static final int Base_Widget_AppCompat_Spinner=0x7f0c008a;
+        public static final int Base_Widget_AppCompat_Spinner_DropDown_ActionBar=0x7f0c008c;
+        public static final int Base_Widget_AppCompat_Spinner_Underlined=0x7f0c008b;
+        public static final int Base_Widget_AppCompat_TextView_SpinnerItem=0x7f0c00b5;
+        public static final int Base_Widget_AppCompat_Toolbar=0x7f0c00a2;
+        /** 
+        Widget.AppCompat.Toolbar style is purposely ommitted. This is because the support
+        Toolbar implementation is used on ALL platforms and relies on the unbundled attrs.
+        The supporting Toolbar styles below only use basic attrs so work fine.
+    
+         */
+        public static final int Base_Widget_AppCompat_Toolbar_Button_Navigation=0x7f0c00a3;
+        public static final int Platform_AppCompat=0x7f0c00f4;
+        public static final int Platform_AppCompat_Light=0x7f0c00f5;
+        public static final int Platform_ThemeOverlay_AppCompat_Dark=0x7f0c0109;
+        public static final int Platform_ThemeOverlay_AppCompat_Light=0x7f0c010a;
+        public static final int Platform_V11_AppCompat=0x7f0c010f;
+        public static final int Platform_V11_AppCompat_Light=0x7f0c0110;
+        public static final int Platform_V12_AppCompat=0x7f0c0113;
+        public static final int Platform_V12_AppCompat_Light=0x7f0c0114;
+        public static final int Platform_V14_AppCompat=0x7f0c0115;
+        public static final int Platform_V14_AppCompat_Light=0x7f0c0116;
+        public static final int RtlOverlay_Widget_AppCompat_ActionBar_TitleItem=0x7f0c00db;
+        public static final int RtlOverlay_Widget_AppCompat_ActionButton_Overflow=0x7f0c00dc;
+        public static final int RtlOverlay_Widget_AppCompat_PopupMenuItem=0x7f0c00dd;
+        public static final int RtlOverlay_Widget_AppCompat_PopupMenuItem_InternalGroup=0x7f0c00de;
+        public static final int RtlOverlay_Widget_AppCompat_PopupMenuItem_Text=0x7f0c00df;
+        public static final int RtlOverlay_Widget_AppCompat_Search_DropDown=0x7f0c00d6;
+        public static final int RtlOverlay_Widget_AppCompat_Search_DropDown_Icon1=0x7f0c00d8;
+        public static final int RtlOverlay_Widget_AppCompat_Search_DropDown_Icon2=0x7f0c00d9;
+        public static final int RtlOverlay_Widget_AppCompat_Search_DropDown_Query=0x7f0c00d7;
+        public static final int RtlOverlay_Widget_AppCompat_Search_DropDown_Text=0x7f0c00da;
+        public static final int RtlOverlay_Widget_AppCompat_SearchView_MagIcon=0x7f0c00d5;
+        public static final int RtlOverlay_Widget_AppCompat_Toolbar_Button_Navigation=0x7f0c00e0;
+        public static final int TextAppearance_AppCompat=0x7f0c0048;
+        public static final int TextAppearance_AppCompat_Body1=0x7f0c0053;
+        public static final int TextAppearance_AppCompat_Body2=0x7f0c0052;
+        public static final int TextAppearance_AppCompat_Button=0x7f0c005d;
+        public static final int TextAppearance_AppCompat_Caption=0x7f0c0054;
+        public static final int TextAppearance_AppCompat_Display1=0x7f0c004c;
+        public static final int TextAppearance_AppCompat_Display2=0x7f0c004b;
+        public static final int TextAppearance_AppCompat_Display3=0x7f0c004a;
+        public static final int TextAppearance_AppCompat_Display4=0x7f0c0049;
+        public static final int TextAppearance_AppCompat_Headline=0x7f0c004d;
+        public static final int TextAppearance_AppCompat_Inverse=0x7f0c0056;
+        public static final int TextAppearance_AppCompat_Large=0x7f0c0057;
+        public static final int TextAppearance_AppCompat_Large_Inverse=0x7f0c0058;
+        public static final int TextAppearance_AppCompat_Light_SearchResult_Subtitle=0x7f0c0064;
+        public static final int TextAppearance_AppCompat_Light_SearchResult_Title=0x7f0c0063;
+        public static final int TextAppearance_AppCompat_Light_Widget_PopupMenu_Large=0x7f0c002b;
+        public static final int TextAppearance_AppCompat_Light_Widget_PopupMenu_Small=0x7f0c002c;
+        public static final int TextAppearance_AppCompat_Medium=0x7f0c0059;
+        public static final int TextAppearance_AppCompat_Medium_Inverse=0x7f0c005a;
+        public static final int TextAppearance_AppCompat_Menu=0x7f0c0055;
+        public static final int TextAppearance_AppCompat_SearchResult_Subtitle=0x7f0c002e;
+        public static final int TextAppearance_AppCompat_SearchResult_Title=0x7f0c002d;
+        public static final int TextAppearance_AppCompat_Small=0x7f0c005b;
+        public static final int TextAppearance_AppCompat_Small_Inverse=0x7f0c005c;
+        public static final int TextAppearance_AppCompat_Subhead=0x7f0c0050;
+        public static final int TextAppearance_AppCompat_Subhead_Inverse=0x7f0c0051;
+        public static final int TextAppearance_AppCompat_Title=0x7f0c004e;
+        public static final int TextAppearance_AppCompat_Title_Inverse=0x7f0c004f;
+        public static final int TextAppearance_AppCompat_Widget_ActionBar_Menu=0x7f0c0015;
+        public static final int TextAppearance_AppCompat_Widget_ActionBar_Subtitle=0x7f0c0005;
+        public static final int TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse=0x7f0c0007;
+        public static final int TextAppearance_AppCompat_Widget_ActionBar_Title=0x7f0c0004;
+        public static final int TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse=0x7f0c0006;
+        public static final int TextAppearance_AppCompat_Widget_ActionMode_Subtitle=0x7f0c0018;
+        public static final int TextAppearance_AppCompat_Widget_ActionMode_Subtitle_Inverse=0x7f0c0067;
+        public static final int TextAppearance_AppCompat_Widget_ActionMode_Title=0x7f0c0017;
+        public static final int TextAppearance_AppCompat_Widget_ActionMode_Title_Inverse=0x7f0c0066;
+        public static final int TextAppearance_AppCompat_Widget_DropDownItem=0x7f0c0019;
+        public static final int TextAppearance_AppCompat_Widget_PopupMenu_Large=0x7f0c0029;
+        public static final int TextAppearance_AppCompat_Widget_PopupMenu_Small=0x7f0c002a;
+        public static final int TextAppearance_AppCompat_Widget_Switch=0x7f0c005e;
+        public static final int TextAppearance_AppCompat_Widget_TextView_SpinnerItem=0x7f0c005f;
+        public static final int TextAppearance_Widget_AppCompat_ExpandedMenu_Item=0x7f0c0021;
+        public static final int TextAppearance_Widget_AppCompat_Toolbar_Subtitle=0x7f0c0045;
+        public static final int TextAppearance_Widget_AppCompat_Toolbar_Title=0x7f0c0044;
+        /**  Themes in the "Theme.AppCompat" family will contain an action bar by default.
+         If Holo themes are available on the current platform version they will be used.
+         A limited Holo-styled action bar will be provided on platform versions older
+         than 3.0. (API 11)
+
+         These theme declarations contain any version-independent specification. Items
+         that need to vary based on platform version should be defined in the corresponding
+         "Theme.Base" theme. 
+ Platform-independent theme providing an action bar in a dark-themed activity. 
+         */
+        public static final int Theme_AppCompat=0x7f0c00e1;
+        /**  Menu/item attributes 
+         */
+        public static final int Theme_AppCompat_CompactMenu=0x7f0c00ee;
+        public static final int Theme_AppCompat_Dialog=0x7f0c00e8;
+        /**  Material theme for alert dialog windows, which is used by the AlertDialog class.
+         This is basically a dialog but sets the background to empty so it can do
+         two-tone backgrounds. For applications targeting Honeycomb or newer, this is the default
+         AlertDialog theme. 
+         */
+        public static final int Theme_AppCompat_Dialog_Alert=0x7f0c00ea;
+        /**  Variant of Theme.AppCompat.Dialog that has a nice minimum width for
+         a regular dialog. 
+         */
+        public static final int Theme_AppCompat_Dialog_MinWidth=0x7f0c00ec;
+        public static final int Theme_AppCompat_DialogWhenLarge=0x7f0c00e6;
+        /**  Platform-independent theme providing an action bar in a light-themed activity. 
+         */
+        public static final int Theme_AppCompat_Light=0x7f0c00e2;
+        /**  Platform-independent theme providing an action bar in a dark-themed activity. 
+         */
+        public static final int Theme_AppCompat_Light_DarkActionBar=0x7f0c00e3;
+        public static final int Theme_AppCompat_Light_Dialog=0x7f0c00e9;
+        public static final int Theme_AppCompat_Light_Dialog_Alert=0x7f0c00eb;
+        public static final int Theme_AppCompat_Light_Dialog_MinWidth=0x7f0c00ed;
+        public static final int Theme_AppCompat_Light_DialogWhenLarge=0x7f0c00e7;
+        public static final int Theme_AppCompat_Light_NoActionBar=0x7f0c00e5;
+        public static final int Theme_AppCompat_NoActionBar=0x7f0c00e4;
+        public static final int ThemeOverlay_AppCompat=0x7f0c00ef;
+        /**  Theme overlay that replaces the normal control color, which by default is the same as the
+         secondary text color, with the primary text color. 
+         */
+        public static final int ThemeOverlay_AppCompat_ActionBar=0x7f0c00f2;
+        /**  Theme overlay that replaces colors with their dark versions but preserves
+         the value of colorAccent, colorPrimary and its variants. 
+         */
+        public static final int ThemeOverlay_AppCompat_Dark=0x7f0c00f1;
+        /**  Theme overlay that replaces colors with their dark versions and replaces the normal
+         control color, which by default is the same as the secondary text color, with the primary
+         text color. 
+         */
+        public static final int ThemeOverlay_AppCompat_Dark_ActionBar=0x7f0c00f3;
+        /**  Theme overlay that replaces colors with their light versions but preserves
+         the value of colorAccent, colorPrimary and its variants. 
+         */
+        public static final int ThemeOverlay_AppCompat_Light=0x7f0c00f0;
+        /**  Styles in here can be extended for customisation in your application. Each utilises
+         one of the.styles. If Holo themes are available on the current platform version
+         they will be used instead of the compat styles. 
+         */
+        public static final int Widget_AppCompat_ActionBar=0x7f0c0000;
+        public static final int Widget_AppCompat_ActionBar_Solid=0x7f0c0002;
+        public static final int Widget_AppCompat_ActionBar_TabBar=0x7f0c000d;
+        public static final int Widget_AppCompat_ActionBar_TabText=0x7f0c0011;
+        public static final int Widget_AppCompat_ActionBar_TabView=0x7f0c000f;
+        public static final int Widget_AppCompat_ActionButton=0x7f0c000a;
+        public static final int Widget_AppCompat_ActionButton_CloseMode=0x7f0c000b;
+        public static final int Widget_AppCompat_ActionButton_Overflow=0x7f0c000c;
+        public static final int Widget_AppCompat_ActionMode=0x7f0c0016;
+        public static final int Widget_AppCompat_ActivityChooserView=0x7f0c0030;
+        public static final int Widget_AppCompat_AutoCompleteTextView=0x7f0c002f;
+        public static final int Widget_AppCompat_Button=0x7f0c0038;
+        public static final int Widget_AppCompat_Button_Borderless=0x7f0c003a;
+        public static final int Widget_AppCompat_Button_Borderless_Colored=0x7f0c003b;
+        public static final int Widget_AppCompat_Button_ButtonBar_AlertDialog=0x7f0c003c;
+        public static final int Widget_AppCompat_Button_Small=0x7f0c0039;
+        public static final int Widget_AppCompat_ButtonBar=0x7f0c003d;
+        public static final int Widget_AppCompat_ButtonBar_AlertDialog=0x7f0c003e;
+        public static final int Widget_AppCompat_CompoundButton_CheckBox=0x7f0c0035;
+        public static final int Widget_AppCompat_CompoundButton_RadioButton=0x7f0c0036;
+        public static final int Widget_AppCompat_CompoundButton_Switch=0x7f0c0034;
+        public static final int Widget_AppCompat_DrawerArrowToggle=0x7f0c0012;
+        /**  This style has an extra indirection to properly set RTL attributes. See styles_rtl.xml 
+         */
+        public static final int Widget_AppCompat_DropDownItem_Spinner=0x7f0c001e;
+        public static final int Widget_AppCompat_EditText=0x7f0c0033;
+        public static final int Widget_AppCompat_Light_ActionBar=0x7f0c0001;
+        public static final int Widget_AppCompat_Light_ActionBar_Solid=0x7f0c0003;
+        /** 
+         The following themes are deprecated.
+    
+         */
+        public static final int Widget_AppCompat_Light_ActionBar_Solid_Inverse=0x7f0c0060;
+        public static final int Widget_AppCompat_Light_ActionBar_TabBar=0x7f0c000e;
+        public static final int Widget_AppCompat_Light_ActionBar_TabBar_Inverse=0x7f0c0061;
+        public static final int Widget_AppCompat_Light_ActionBar_TabText=0x7f0c0013;
+        public static final int Widget_AppCompat_Light_ActionBar_TabText_Inverse=0x7f0c0014;
+        public static final int Widget_AppCompat_Light_ActionBar_TabView=0x7f0c0010;
+        public static final int Widget_AppCompat_Light_ActionBar_TabView_Inverse=0x7f0c0062;
+        public static final int Widget_AppCompat_Light_ActionButton=0x7f0c006a;
+        public static final int Widget_AppCompat_Light_ActionButton_CloseMode=0x7f0c006c;
+        public static final int Widget_AppCompat_Light_ActionButton_Overflow=0x7f0c006b;
+        public static final int Widget_AppCompat_Light_ActionMode_Inverse=0x7f0c0065;
+        public static final int Widget_AppCompat_Light_ActivityChooserView=0x7f0c0071;
+        public static final int Widget_AppCompat_Light_AutoCompleteTextView=0x7f0c0070;
+        public static final int Widget_AppCompat_Light_DropDownItem_Spinner=0x7f0c0068;
+        public static final int Widget_AppCompat_Light_ListPopupWindow=0x7f0c006f;
+        public static final int Widget_AppCompat_Light_ListView_DropDown=0x7f0c006e;
+        public static final int Widget_AppCompat_Light_PopupMenu=0x7f0c0026;
+        public static final int Widget_AppCompat_Light_PopupMenu_Overflow=0x7f0c0024;
+        public static final int Widget_AppCompat_Light_SearchView=0x7f0c0069;
+        public static final int Widget_AppCompat_Light_Spinner_DropDown_ActionBar=0x7f0c006d;
+        public static final int Widget_AppCompat_ListPopupWindow=0x7f0c0022;
+        public static final int Widget_AppCompat_ListView=0x7f0c001f;
+        public static final int Widget_AppCompat_ListView_DropDown=0x7f0c0020;
+        public static final int Widget_AppCompat_ListView_Menu=0x7f0c0027;
+        public static final int Widget_AppCompat_PopupMenu=0x7f0c0025;
+        public static final int Widget_AppCompat_PopupMenu_Overflow=0x7f0c0023;
+        public static final int Widget_AppCompat_PopupWindow=0x7f0c0028;
+        public static final int Widget_AppCompat_ProgressBar=0x7f0c0009;
+        public static final int Widget_AppCompat_ProgressBar_Horizontal=0x7f0c0008;
+        public static final int Widget_AppCompat_RatingBar=0x7f0c0037;
+        public static final int Widget_AppCompat_SearchView=0x7f0c0031;
+        public static final int Widget_AppCompat_SearchView_ActionBar=0x7f0c0032;
+        public static final int Widget_AppCompat_Spinner=0x7f0c001a;
+        public static final int Widget_AppCompat_Spinner_DropDown=0x7f0c001c;
+        public static final int Widget_AppCompat_Spinner_DropDown_ActionBar=0x7f0c001d;
+        public static final int Widget_AppCompat_Spinner_Underlined=0x7f0c001b;
+        public static final int Widget_AppCompat_TextView_SpinnerItem=0x7f0c003f;
+        /**  Toolbar 
+         */
+        public static final int Widget_AppCompat_Toolbar=0x7f0c0042;
+        public static final int Widget_AppCompat_Toolbar_Button_Navigation=0x7f0c0043;
         /** 
         Base application theme, dependent on API level. This theme is replaced
         by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
     
          */
-        public static final int dialog_time_animation=0x7f090000;
+        public static final int dialog_time_animation=0x7f0c011b;
         /**  activity变暗 
          */
-        public static final int quicks_option_dialog=0x7f090001;
+        public static final int quicks_option_dialog=0x7f0c011c;
     }
     public static final class styleable {
+        /**  ============================================ 
+ Attributes used to style the Action Bar.
+         These should be set on your theme; the default actionBarStyle will
+         propagate them to the correct elements as needed.
+
+         Please Note: when overriding attributes for an ActionBar style
+         you must specify each attribute twice: once with the "android:"
+         namespace prefix and once without. 
+           <p>Includes the following attributes:</p>
+           <table>
+           <colgroup align="left" />
+           <colgroup align="left" />
+           <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code>{@link #ActionBar_background com.tian.videomergedemo:background}</code></td><td> Specifies a background drawable for the action bar.</td></tr>
+           <tr><td><code>{@link #ActionBar_backgroundSplit com.tian.videomergedemo:backgroundSplit}</code></td><td> Specifies a background drawable for the bottom component of a split action bar.</td></tr>
+           <tr><td><code>{@link #ActionBar_backgroundStacked com.tian.videomergedemo:backgroundStacked}</code></td><td> Specifies a background drawable for a second stacked row of the action bar.</td></tr>
+           <tr><td><code>{@link #ActionBar_contentInsetEnd com.tian.videomergedemo:contentInsetEnd}</code></td><td> Minimum inset for content views within a bar.</td></tr>
+           <tr><td><code>{@link #ActionBar_contentInsetLeft com.tian.videomergedemo:contentInsetLeft}</code></td><td> Minimum inset for content views within a bar.</td></tr>
+           <tr><td><code>{@link #ActionBar_contentInsetRight com.tian.videomergedemo:contentInsetRight}</code></td><td> Minimum inset for content views within a bar.</td></tr>
+           <tr><td><code>{@link #ActionBar_contentInsetStart com.tian.videomergedemo:contentInsetStart}</code></td><td> Minimum inset for content views within a bar.</td></tr>
+           <tr><td><code>{@link #ActionBar_customNavigationLayout com.tian.videomergedemo:customNavigationLayout}</code></td><td> Specifies a layout for custom navigation.</td></tr>
+           <tr><td><code>{@link #ActionBar_displayOptions com.tian.videomergedemo:displayOptions}</code></td><td> Options affecting how the action bar is displayed.</td></tr>
+           <tr><td><code>{@link #ActionBar_divider com.tian.videomergedemo:divider}</code></td><td> Specifies the drawable used for item dividers.</td></tr>
+           <tr><td><code>{@link #ActionBar_elevation com.tian.videomergedemo:elevation}</code></td><td> Elevation for the action bar itself </td></tr>
+           <tr><td><code>{@link #ActionBar_height com.tian.videomergedemo:height}</code></td><td> Specifies a fixed height.</td></tr>
+           <tr><td><code>{@link #ActionBar_hideOnContentScroll com.tian.videomergedemo:hideOnContentScroll}</code></td><td> Set true to hide the action bar on a vertical nested scroll of content.</td></tr>
+           <tr><td><code>{@link #ActionBar_homeAsUpIndicator com.tian.videomergedemo:homeAsUpIndicator}</code></td><td> Up navigation glyph </td></tr>
+           <tr><td><code>{@link #ActionBar_homeLayout com.tian.videomergedemo:homeLayout}</code></td><td> Specifies a layout to use for the "home" section of the action bar.</td></tr>
+           <tr><td><code>{@link #ActionBar_icon com.tian.videomergedemo:icon}</code></td><td> Specifies the drawable used for the application icon.</td></tr>
+           <tr><td><code>{@link #ActionBar_indeterminateProgressStyle com.tian.videomergedemo:indeterminateProgressStyle}</code></td><td> Specifies a style resource to use for an indeterminate progress spinner.</td></tr>
+           <tr><td><code>{@link #ActionBar_itemPadding com.tian.videomergedemo:itemPadding}</code></td><td> Specifies padding that should be applied to the left and right sides of
+             system-provided items in the bar.</td></tr>
+           <tr><td><code>{@link #ActionBar_logo com.tian.videomergedemo:logo}</code></td><td> Specifies the drawable used for the application logo.</td></tr>
+           <tr><td><code>{@link #ActionBar_navigationMode com.tian.videomergedemo:navigationMode}</code></td><td> The type of navigation to use.</td></tr>
+           <tr><td><code>{@link #ActionBar_popupTheme com.tian.videomergedemo:popupTheme}</code></td><td> Reference to a theme that should be used to inflate popups
+             shown by widgets in the action bar.</td></tr>
+           <tr><td><code>{@link #ActionBar_progressBarPadding com.tian.videomergedemo:progressBarPadding}</code></td><td> Specifies the horizontal padding on either end for an embedded progress bar.</td></tr>
+           <tr><td><code>{@link #ActionBar_progressBarStyle com.tian.videomergedemo:progressBarStyle}</code></td><td> Specifies a style resource to use for an embedded progress bar.</td></tr>
+           <tr><td><code>{@link #ActionBar_subtitle com.tian.videomergedemo:subtitle}</code></td><td> Specifies subtitle text used for navigationMode="normal" </td></tr>
+           <tr><td><code>{@link #ActionBar_subtitleTextStyle com.tian.videomergedemo:subtitleTextStyle}</code></td><td> Specifies a style to use for subtitle text.</td></tr>
+           <tr><td><code>{@link #ActionBar_title com.tian.videomergedemo:title}</code></td><td> Specifies title text used for navigationMode="normal" </td></tr>
+           <tr><td><code>{@link #ActionBar_titleTextStyle com.tian.videomergedemo:titleTextStyle}</code></td><td> Specifies a style to use for title text.</td></tr>
+           </table>
+           @see #ActionBar_background
+           @see #ActionBar_backgroundSplit
+           @see #ActionBar_backgroundStacked
+           @see #ActionBar_contentInsetEnd
+           @see #ActionBar_contentInsetLeft
+           @see #ActionBar_contentInsetRight
+           @see #ActionBar_contentInsetStart
+           @see #ActionBar_customNavigationLayout
+           @see #ActionBar_displayOptions
+           @see #ActionBar_divider
+           @see #ActionBar_elevation
+           @see #ActionBar_height
+           @see #ActionBar_hideOnContentScroll
+           @see #ActionBar_homeAsUpIndicator
+           @see #ActionBar_homeLayout
+           @see #ActionBar_icon
+           @see #ActionBar_indeterminateProgressStyle
+           @see #ActionBar_itemPadding
+           @see #ActionBar_logo
+           @see #ActionBar_navigationMode
+           @see #ActionBar_popupTheme
+           @see #ActionBar_progressBarPadding
+           @see #ActionBar_progressBarStyle
+           @see #ActionBar_subtitle
+           @see #ActionBar_subtitleTextStyle
+           @see #ActionBar_title
+           @see #ActionBar_titleTextStyle
+         */
+        public static final int[] ActionBar = {
+            0x7f010000, 0x7f010001, 0x7f010031, 0x7f01006b,
+            0x7f01006c, 0x7f01006d, 0x7f01006e, 0x7f01006f,
+            0x7f010070, 0x7f010071, 0x7f010072, 0x7f010073,
+            0x7f010074, 0x7f010075, 0x7f010076, 0x7f010077,
+            0x7f010078, 0x7f010079, 0x7f01007a, 0x7f01007b,
+            0x7f01007c, 0x7f01007d, 0x7f01007e, 0x7f01007f,
+            0x7f010080, 0x7f010081, 0x7f010082
+        };
+        /**
+          <p>
+          @attr description
+           Specifies a background drawable for the action bar. 
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          <p>This is a private symbol.
+          @attr name com.tian.videomergedemo:background
+        */
+        public static final int ActionBar_background = 11;
+        /**
+          <p>
+          @attr description
+           Specifies a background drawable for the bottom component of a split action bar. 
+
+
+          <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+          <p>This is a private symbol.
+          @attr name com.tian.videomergedemo:backgroundSplit
+        */
+        public static final int ActionBar_backgroundSplit = 13;
+        /**
+          <p>
+          @attr description
+           Specifies a background drawable for a second stacked row of the action bar. 
+
+
+          <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+          <p>This is a private symbol.
+          @attr name com.tian.videomergedemo:backgroundStacked
+        */
+        public static final int ActionBar_backgroundStacked = 12;
+        /**
+          <p>
+          @attr description
+           Minimum inset for content views within a bar. Navigation buttons and
+             menu views are excepted. Only valid for some themes and configurations. 
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          <p>This is a private symbol.
+          @attr name com.tian.videomergedemo:contentInsetEnd
+        */
+        public static final int ActionBar_contentInsetEnd = 22;
+        /**
+          <p>
+          @attr description
+           Minimum inset for content views within a bar. Navigation buttons and
+             menu views are excepted. Only valid for some themes and configurations. 
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          <p>This is a private symbol.
+          @attr name com.tian.videomergedemo:contentInsetLeft
+        */
+        public static final int ActionBar_contentInsetLeft = 23;
+        /**
+          <p>
+          @attr description
+           Minimum inset for content views within a bar. Navigation buttons and
+             menu views are excepted. Only valid for some themes and configurations. 
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          <p>This is a private symbol.
+          @attr name com.tian.videomergedemo:contentInsetRight
+        */
+        public static final int ActionBar_contentInsetRight = 24;
+        /**
+          <p>
+          @attr description
+           Minimum inset for content views within a bar. Navigation buttons and
+             menu views are excepted. Only valid for some themes and configurations. 
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          <p>This is a private symbol.
+          @attr name com.tian.videomergedemo:contentInsetStart
+        */
+        public static final int ActionBar_contentInsetStart = 21;
+        /**
+          <p>
+          @attr description
+           Specifies a layout for custom navigation. Overrides navigationMode. 
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          <p>This is a private symbol.
+          @attr name com.tian.videomergedemo:customNavigationLayout
+        */
+        public static final int ActionBar_customNavigationLayout = 14;
+        /**
+          <p>
+          @attr description
+           Options affecting how the action bar is displayed. 
+
+
+          <p>Must be one or more (separated by '|') of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>none</code></td><td>0</td><td></td></tr>
+<tr><td><code>useLogo</code></td><td>0x1</td><td></td></tr>
+<tr><td><code>showHome</code></td><td>0x2</td><td></td></tr>
+<tr><td><code>homeAsUp</code></td><td>0x4</td><td></td></tr>
+<tr><td><code>showTitle</code></td><td>0x8</td><td></td></tr>
+<tr><td><code>showCustom</code></td><td>0x10</td><td></td></tr>
+<tr><td><code>disableHome</code></td><td>0x20</td><td></td></tr>
+</table>
+          <p>This is a private symbol.
+          @attr name com.tian.videomergedemo:displayOptions
+        */
+        public static final int ActionBar_displayOptions = 4;
+        /**
+          <p>
+          @attr description
+           Specifies the drawable used for item dividers. 
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          <p>This is a private symbol.
+          @attr name com.tian.videomergedemo:divider
+        */
+        public static final int ActionBar_divider = 10;
+        /**
+          <p>
+          @attr description
+           Elevation for the action bar itself 
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          <p>This is a private symbol.
+          @attr name com.tian.videomergedemo:elevation
+        */
+        public static final int ActionBar_elevation = 25;
+        /**
+          <p>
+          @attr description
+           Specifies a fixed height. 
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          <p>This is a private symbol.
+          @attr name com.tian.videomergedemo:height
+        */
+        public static final int ActionBar_height = 1;
+        /**
+          <p>
+          @attr description
+           Set true to hide the action bar on a vertical nested scroll of content. 
+
+
+          <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          <p>This is a private symbol.
+          @attr name com.tian.videomergedemo:hideOnContentScroll
+        */
+        public static final int ActionBar_hideOnContentScroll = 20;
+        /**
+          <p>
+          @attr description
+           Up navigation glyph 
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          <p>This is a private symbol.
+          @attr name com.tian.videomergedemo:homeAsUpIndicator
+        */
+        public static final int ActionBar_homeAsUpIndicator = 2;
+        /**
+          <p>
+          @attr description
+           Specifies a layout to use for the "home" section of the action bar. 
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          <p>This is a private symbol.
+          @attr name com.tian.videomergedemo:homeLayout
+        */
+        public static final int ActionBar_homeLayout = 15;
+        /**
+          <p>
+          @attr description
+           Specifies the drawable used for the application icon. 
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          <p>This is a private symbol.
+          @attr name com.tian.videomergedemo:icon
+        */
+        public static final int ActionBar_icon = 8;
+        /**
+          <p>
+          @attr description
+           Specifies a style resource to use for an indeterminate progress spinner. 
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          <p>This is a private symbol.
+          @attr name com.tian.videomergedemo:indeterminateProgressStyle
+        */
+        public static final int ActionBar_indeterminateProgressStyle = 17;
+        /**
+          <p>
+          @attr description
+           Specifies padding that should be applied to the left and right sides of
+             system-provided items in the bar. 
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          <p>This is a private symbol.
+          @attr name com.tian.videomergedemo:itemPadding
+        */
+        public static final int ActionBar_itemPadding = 19;
+        /**
+          <p>
+          @attr description
+           Specifies the drawable used for the application logo. 
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          <p>This is a private symbol.
+          @attr name com.tian.videomergedemo:logo
+        */
+        public static final int ActionBar_logo = 9;
+        /**
+          <p>
+          @attr description
+           The type of navigation to use. 
+
+
+          <p>Must be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>normal</code></td><td>0</td><td> Normal static title text </td></tr>
+<tr><td><code>listMode</code></td><td>1</td><td> The action bar will use a selection list for navigation. </td></tr>
+<tr><td><code>tabMode</code></td><td>2</td><td> The action bar will use a series of horizontal tabs for navigation. </td></tr>
+</table>
+          <p>This is a private symbol.
+          @attr name com.tian.videomergedemo:navigationMode
+        */
+        public static final int ActionBar_navigationMode = 3;
+        /**
+          <p>
+          @attr description
+           Reference to a theme that should be used to inflate popups
+             shown by widgets in the action bar. 
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          <p>This is a private symbol.
+          @attr name com.tian.videomergedemo:popupTheme
+        */
+        public static final int ActionBar_popupTheme = 26;
+        /**
+          <p>
+          @attr description
+           Specifies the horizontal padding on either end for an embedded progress bar. 
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          <p>This is a private symbol.
+          @attr name com.tian.videomergedemo:progressBarPadding
+        */
+        public static final int ActionBar_progressBarPadding = 18;
+        /**
+          <p>
+          @attr description
+           Specifies a style resource to use for an embedded progress bar. 
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          <p>This is a private symbol.
+          @attr name com.tian.videomergedemo:progressBarStyle
+        */
+        public static final int ActionBar_progressBarStyle = 16;
+        /**
+          <p>
+          @attr description
+           Specifies subtitle text used for navigationMode="normal" 
+
+
+          <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          <p>This is a private symbol.
+          @attr name com.tian.videomergedemo:subtitle
+        */
+        public static final int ActionBar_subtitle = 5;
+        /**
+          <p>
+          @attr description
+           Specifies a style to use for subtitle text. 
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          <p>This is a private symbol.
+          @attr name com.tian.videomergedemo:subtitleTextStyle
+        */
+        public static final int ActionBar_subtitleTextStyle = 7;
+        /**
+          <p>
+          @attr description
+           Specifies title text used for navigationMode="normal" 
+
+
+          <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          <p>This is a private symbol.
+          @attr name com.tian.videomergedemo:title
+        */
+        public static final int ActionBar_title = 0;
+        /**
+          <p>
+          @attr description
+           Specifies a style to use for title text. 
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          <p>This is a private symbol.
+          @attr name com.tian.videomergedemo:titleTextStyle
+        */
+        public static final int ActionBar_titleTextStyle = 6;
+        /**  Valid LayoutParams for views placed in the action bar as custom views. 
+           <p>Includes the following attributes:</p>
+           <table>
+           <colgroup align="left" />
+           <colgroup align="left" />
+           <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code>{@link #ActionBarLayout_android_layout_gravity android:layout_gravity}</code></td><td></td></tr>
+           </table>
+           @see #ActionBarLayout_android_layout_gravity
+         */
+        public static final int[] ActionBarLayout = {
+            0x010100b3
+        };
+        /**
+          <p>This symbol is the offset where the {@link android.R.attr#layout_gravity}
+          attribute's value can be found in the {@link #ActionBarLayout} array.
+          @attr name android:layout_gravity
+        */
+        public static final int ActionBarLayout_android_layout_gravity = 0;
+        /** Attributes that can be used with a ActionMenuItemView.
+           <p>Includes the following attributes:</p>
+           <table>
+           <colgroup align="left" />
+           <colgroup align="left" />
+           <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code>{@link #ActionMenuItemView_android_minWidth android:minWidth}</code></td><td></td></tr>
+           </table>
+           @see #ActionMenuItemView_android_minWidth
+         */
+        public static final int[] ActionMenuItemView = {
+            0x0101013f
+        };
+        /**
+          <p>This symbol is the offset where the {@link android.R.attr#minWidth}
+          attribute's value can be found in the {@link #ActionMenuItemView} array.
+          @attr name android:minWidth
+        */
+        public static final int ActionMenuItemView_android_minWidth = 0;
+        /**  Size of padding on either end of a divider. 
+         */
+        public static final int[] ActionMenuView = {
+            
+        };
+        /** Attributes that can be used with a ActionMode.
+           <p>Includes the following attributes:</p>
+           <table>
+           <colgroup align="left" />
+           <colgroup align="left" />
+           <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code>{@link #ActionMode_background com.tian.videomergedemo:background}</code></td><td> Specifies a background for the action mode bar.</td></tr>
+           <tr><td><code>{@link #ActionMode_backgroundSplit com.tian.videomergedemo:backgroundSplit}</code></td><td> Specifies a background for the split action mode bar.</td></tr>
+           <tr><td><code>{@link #ActionMode_closeItemLayout com.tian.videomergedemo:closeItemLayout}</code></td><td> Specifies a layout to use for the "close" item at the starting edge.</td></tr>
+           <tr><td><code>{@link #ActionMode_height com.tian.videomergedemo:height}</code></td><td> Specifies a fixed height for the action mode bar.</td></tr>
+           <tr><td><code>{@link #ActionMode_subtitleTextStyle com.tian.videomergedemo:subtitleTextStyle}</code></td><td> Specifies a style to use for subtitle text.</td></tr>
+           <tr><td><code>{@link #ActionMode_titleTextStyle com.tian.videomergedemo:titleTextStyle}</code></td><td> Specifies a style to use for title text.</td></tr>
+           </table>
+           @see #ActionMode_background
+           @see #ActionMode_backgroundSplit
+           @see #ActionMode_closeItemLayout
+           @see #ActionMode_height
+           @see #ActionMode_subtitleTextStyle
+           @see #ActionMode_titleTextStyle
+         */
+        public static final int[] ActionMode = {
+            0x7f010001, 0x7f01006e, 0x7f01006f, 0x7f010073,
+            0x7f010075, 0x7f010083
+        };
+        /**
+          <p>
+          @attr description
+           Specifies a background for the action mode bar. 
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          <p>This is a private symbol.
+          @attr name com.tian.videomergedemo:background
+        */
+        public static final int ActionMode_background = 3;
+        /**
+          <p>
+          @attr description
+           Specifies a background for the split action mode bar. 
+
+
+          <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+          <p>This is a private symbol.
+          @attr name com.tian.videomergedemo:backgroundSplit
+        */
+        public static final int ActionMode_backgroundSplit = 4;
+        /**
+          <p>
+          @attr description
+           Specifies a layout to use for the "close" item at the starting edge. 
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          <p>This is a private symbol.
+          @attr name com.tian.videomergedemo:closeItemLayout
+        */
+        public static final int ActionMode_closeItemLayout = 5;
+        /**
+          <p>
+          @attr description
+           Specifies a fixed height for the action mode bar. 
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          <p>This is a private symbol.
+          @attr name com.tian.videomergedemo:height
+        */
+        public static final int ActionMode_height = 0;
+        /**
+          <p>
+          @attr description
+           Specifies a style to use for subtitle text. 
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          <p>This is a private symbol.
+          @attr name com.tian.videomergedemo:subtitleTextStyle
+        */
+        public static final int ActionMode_subtitleTextStyle = 2;
+        /**
+          <p>
+          @attr description
+           Specifies a style to use for title text. 
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          <p>This is a private symbol.
+          @attr name com.tian.videomergedemo:titleTextStyle
+        */
+        public static final int ActionMode_titleTextStyle = 1;
+        /**  Attrbitutes for a ActivityChooserView. 
+           <p>Includes the following attributes:</p>
+           <table>
+           <colgroup align="left" />
+           <colgroup align="left" />
+           <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code>{@link #ActivityChooserView_expandActivityOverflowButtonDrawable com.tian.videomergedemo:expandActivityOverflowButtonDrawable}</code></td><td> The drawable to show in the button for expanding the activities overflow popup.</td></tr>
+           <tr><td><code>{@link #ActivityChooserView_initialActivityCount com.tian.videomergedemo:initialActivityCount}</code></td><td> The maximal number of items initially shown in the activity list.</td></tr>
+           </table>
+           @see #ActivityChooserView_expandActivityOverflowButtonDrawable
+           @see #ActivityChooserView_initialActivityCount
+         */
+        public static final int[] ActivityChooserView = {
+            0x7f01009e, 0x7f01009f
+        };
+        /**
+          <p>
+          @attr description
+           The drawable to show in the button for expanding the activities overflow popup.
+             <strong>Note:</strong> Clients would like to set this drawable
+             as a clue about the action the chosen activity will perform. For
+             example, if share activity is to be chosen the drawable should
+             give a clue that sharing is to be performed.
+         
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          <p>This is a private symbol.
+          @attr name com.tian.videomergedemo:expandActivityOverflowButtonDrawable
+        */
+        public static final int ActivityChooserView_expandActivityOverflowButtonDrawable = 1;
+        /**
+          <p>
+          @attr description
+           The maximal number of items initially shown in the activity list. 
+
+
+          <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          <p>This is a private symbol.
+          @attr name com.tian.videomergedemo:initialActivityCount
+        */
+        public static final int ActivityChooserView_initialActivityCount = 0;
+        /**  The set of attributes that describe a AlertDialog's theme. 
+           <p>Includes the following attributes:</p>
+           <table>
+           <colgroup align="left" />
+           <colgroup align="left" />
+           <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code>{@link #AlertDialog_android_layout android:layout}</code></td><td></td></tr>
+           <tr><td><code>{@link #AlertDialog_buttonPanelSideLayout com.tian.videomergedemo:buttonPanelSideLayout}</code></td><td></td></tr>
+           <tr><td><code>{@link #AlertDialog_listItemLayout com.tian.videomergedemo:listItemLayout}</code></td><td></td></tr>
+           <tr><td><code>{@link #AlertDialog_listLayout com.tian.videomergedemo:listLayout}</code></td><td></td></tr>
+           <tr><td><code>{@link #AlertDialog_multiChoiceItemLayout com.tian.videomergedemo:multiChoiceItemLayout}</code></td><td></td></tr>
+           <tr><td><code>{@link #AlertDialog_singleChoiceItemLayout com.tian.videomergedemo:singleChoiceItemLayout}</code></td><td></td></tr>
+           </table>
+           @see #AlertDialog_android_layout
+           @see #AlertDialog_buttonPanelSideLayout
+           @see #AlertDialog_listItemLayout
+           @see #AlertDialog_listLayout
+           @see #AlertDialog_multiChoiceItemLayout
+           @see #AlertDialog_singleChoiceItemLayout
+         */
+        public static final int[] AlertDialog = {
+            0x010100f2, 0x7f0100c2, 0x7f0100c3, 0x7f0100c4,
+            0x7f0100c5, 0x7f0100c6
+        };
+        /**
+          <p>This symbol is the offset where the {@link android.R.attr#layout}
+          attribute's value can be found in the {@link #AlertDialog} array.
+          @attr name android:layout
+        */
+        public static final int AlertDialog_android_layout = 0;
+        /**
+          <p>This symbol is the offset where the {@link com.tian.videomergedemo.R.attr#buttonPanelSideLayout}
+          attribute's value can be found in the {@link #AlertDialog} array.
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          @attr name com.tian.videomergedemo:buttonPanelSideLayout
+        */
+        public static final int AlertDialog_buttonPanelSideLayout = 1;
+        /**
+          <p>This symbol is the offset where the {@link com.tian.videomergedemo.R.attr#listItemLayout}
+          attribute's value can be found in the {@link #AlertDialog} array.
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          @attr name com.tian.videomergedemo:listItemLayout
+        */
+        public static final int AlertDialog_listItemLayout = 5;
+        /**
+          <p>This symbol is the offset where the {@link com.tian.videomergedemo.R.attr#listLayout}
+          attribute's value can be found in the {@link #AlertDialog} array.
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          @attr name com.tian.videomergedemo:listLayout
+        */
+        public static final int AlertDialog_listLayout = 2;
+        /**
+          <p>This symbol is the offset where the {@link com.tian.videomergedemo.R.attr#multiChoiceItemLayout}
+          attribute's value can be found in the {@link #AlertDialog} array.
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          @attr name com.tian.videomergedemo:multiChoiceItemLayout
+        */
+        public static final int AlertDialog_multiChoiceItemLayout = 3;
+        /**
+          <p>This symbol is the offset where the {@link com.tian.videomergedemo.R.attr#singleChoiceItemLayout}
+          attribute's value can be found in the {@link #AlertDialog} array.
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          @attr name com.tian.videomergedemo:singleChoiceItemLayout
+        */
+        public static final int AlertDialog_singleChoiceItemLayout = 4;
+        /** Attributes that can be used with a AppCompatTextView.
+           <p>Includes the following attributes:</p>
+           <table>
+           <colgroup align="left" />
+           <colgroup align="left" />
+           <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code>{@link #AppCompatTextView_android_textAppearance android:textAppearance}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTextView_textAllCaps com.tian.videomergedemo:textAllCaps}</code></td><td> Present the text in ALL CAPS.</td></tr>
+           </table>
+           @see #AppCompatTextView_android_textAppearance
+           @see #AppCompatTextView_textAllCaps
+         */
+        public static final int[] AppCompatTextView = {
+            0x01010034, 0x7f0100a0
+        };
+        /**
+          <p>This symbol is the offset where the {@link android.R.attr#textAppearance}
+          attribute's value can be found in the {@link #AppCompatTextView} array.
+          @attr name android:textAppearance
+        */
+        public static final int AppCompatTextView_android_textAppearance = 0;
+        /**
+          <p>
+          @attr description
+           Present the text in ALL CAPS. This may use a small-caps form when available. 
+
+
+          <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<p>May be a boolean value, either "<code>true</code>" or "<code>false</code>".
+          <p>This is a private symbol.
+          @attr name com.tian.videomergedemo:textAllCaps
+        */
+        public static final int AppCompatTextView_textAllCaps = 1;
         /** Attributes that can be used with a CircleImageView.
            <p>Includes the following attributes:</p>
            <table>
@@ -1096,7 +4404,7 @@ containing a value of this type.
            @see #CircleImageView_border_width
          */
         public static final int[] CircleImageView = {
-            0x7f010004, 0x7f010005
+            0x7f0100cb, 0x7f0100cc
         };
         /**
           <p>This symbol is the offset where the {@link com.tian.videomergedemo.R.attr#border_color}
@@ -1164,10 +4472,10 @@ containing a value of this type.
            @see #CircleProgress_strokeWidth
          */
         public static final int[] CircleProgress = {
-            0x01010098, 0x7f010000, 0x7f010001, 0x7f010002,
-            0x7f010003, 0x7f010009, 0x7f01000a, 0x7f01000b,
-            0x7f01000c, 0x7f01000d, 0x7f01000e, 0x7f01000f,
-            0x7f010010
+            0x01010098, 0x7f0100c7, 0x7f0100c8, 0x7f0100c9,
+            0x7f0100ca, 0x7f0100d0, 0x7f0100d1, 0x7f0100d2,
+            0x7f0100d3, 0x7f0100d4, 0x7f0100d5, 0x7f0100d6,
+            0x7f0100d7
         };
         /**
           <p>This symbol is the offset where the {@link android.R.attr#textColor}
@@ -1363,7 +4671,7 @@ containing a value of this type.
            @see #CropImageView_showThirds
          */
         public static final int[] CropImageView = {
-            0x7f010029, 0x7f01002a, 0x7f01002b
+            0x7f0100f0, 0x7f0100f1, 0x7f0100f2
         };
         /**
           <p>This symbol is the offset where the {@link com.tian.videomergedemo.R.attr#highlightColor}
@@ -1454,11 +4762,11 @@ containing a value of this type.
            @see #DonutProgress_donut_unfinished_stroke_width
          */
         public static final int[] DonutProgress = {
-            0x7f010011, 0x7f010012, 0x7f010013, 0x7f010014,
-            0x7f010015, 0x7f010016, 0x7f010017, 0x7f010018,
-            0x7f010019, 0x7f01001a, 0x7f01001b, 0x7f01001c,
-            0x7f01001d, 0x7f01001e, 0x7f01001f, 0x7f010020,
-            0x7f010021, 0x7f010022
+            0x7f0100d8, 0x7f0100d9, 0x7f0100da, 0x7f0100db,
+            0x7f0100dc, 0x7f0100dd, 0x7f0100de, 0x7f0100df,
+            0x7f0100e0, 0x7f0100e1, 0x7f0100e2, 0x7f0100e3,
+            0x7f0100e4, 0x7f0100e5, 0x7f0100e6, 0x7f0100e7,
+            0x7f0100e8, 0x7f0100e9
         };
         /**
           <p>This symbol is the offset where the {@link com.tian.videomergedemo.R.attr#donut_background_color}
@@ -1766,11 +5074,11 @@ containing a value of this type.
            @see #DragSortListView_use_default_controller
          */
         public static final int[] DragSortListView = {
-            0x7f010041, 0x7f010042, 0x7f010043, 0x7f010044,
-            0x7f010045, 0x7f010046, 0x7f010047, 0x7f010048,
-            0x7f010049, 0x7f01004a, 0x7f01004b, 0x7f01004c,
-            0x7f01004d, 0x7f01004e, 0x7f01004f, 0x7f010050,
-            0x7f010051, 0x7f010052
+            0x7f010108, 0x7f010109, 0x7f01010a, 0x7f01010b,
+            0x7f01010c, 0x7f01010d, 0x7f01010e, 0x7f01010f,
+            0x7f010110, 0x7f010111, 0x7f010112, 0x7f010113,
+            0x7f010114, 0x7f010115, 0x7f010116, 0x7f010117,
+            0x7f010118, 0x7f010119
         };
         /**
           <p>This symbol is the offset where the {@link com.tian.videomergedemo.R.attr#click_remove_id}
@@ -2034,6 +5342,175 @@ containing a value of this type.
           @attr name com.tian.videomergedemo:use_default_controller
         */
         public static final int DragSortListView_use_default_controller = 17;
+        /** Attributes that can be used with a DrawerArrowToggle.
+           <p>Includes the following attributes:</p>
+           <table>
+           <colgroup align="left" />
+           <colgroup align="left" />
+           <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code>{@link #DrawerArrowToggle_barSize com.tian.videomergedemo:barSize}</code></td><td> The size of the bars when they are parallel to each other </td></tr>
+           <tr><td><code>{@link #DrawerArrowToggle_color com.tian.videomergedemo:color}</code></td><td> The drawing color for the bars </td></tr>
+           <tr><td><code>{@link #DrawerArrowToggle_drawableSize com.tian.videomergedemo:drawableSize}</code></td><td> The total size of the drawable </td></tr>
+           <tr><td><code>{@link #DrawerArrowToggle_gapBetweenBars com.tian.videomergedemo:gapBetweenBars}</code></td><td> The max gap between the bars when they are parallel to each other </td></tr>
+           <tr><td><code>{@link #DrawerArrowToggle_middleBarArrowSize com.tian.videomergedemo:middleBarArrowSize}</code></td><td> The size of the middle bar when top and bottom bars merge into middle bar to form an arrow </td></tr>
+           <tr><td><code>{@link #DrawerArrowToggle_spinBars com.tian.videomergedemo:spinBars}</code></td><td> Whether bars should rotate or not during transition </td></tr>
+           <tr><td><code>{@link #DrawerArrowToggle_thickness com.tian.videomergedemo:thickness}</code></td><td> The thickness (stroke size) for the bar paint </td></tr>
+           <tr><td><code>{@link #DrawerArrowToggle_topBottomBarArrowSize com.tian.videomergedemo:topBottomBarArrowSize}</code></td><td> The size of the top and bottom bars when they merge to the middle bar to form an arrow </td></tr>
+           </table>
+           @see #DrawerArrowToggle_barSize
+           @see #DrawerArrowToggle_color
+           @see #DrawerArrowToggle_drawableSize
+           @see #DrawerArrowToggle_gapBetweenBars
+           @see #DrawerArrowToggle_middleBarArrowSize
+           @see #DrawerArrowToggle_spinBars
+           @see #DrawerArrowToggle_thickness
+           @see #DrawerArrowToggle_topBottomBarArrowSize
+         */
+        public static final int[] DrawerArrowToggle = {
+            0x7f0100b2, 0x7f0100b3, 0x7f0100b4, 0x7f0100b5,
+            0x7f0100b6, 0x7f0100b7, 0x7f0100b8, 0x7f0100b9
+        };
+        /**
+          <p>
+          @attr description
+           The size of the bars when they are parallel to each other 
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          <p>This is a private symbol.
+          @attr name com.tian.videomergedemo:barSize
+        */
+        public static final int DrawerArrowToggle_barSize = 6;
+        /**
+          <p>
+          @attr description
+           The drawing color for the bars 
+
+
+          <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          <p>This is a private symbol.
+          @attr name com.tian.videomergedemo:color
+        */
+        public static final int DrawerArrowToggle_color = 0;
+        /**
+          <p>
+          @attr description
+           The total size of the drawable 
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          <p>This is a private symbol.
+          @attr name com.tian.videomergedemo:drawableSize
+        */
+        public static final int DrawerArrowToggle_drawableSize = 2;
+        /**
+          <p>
+          @attr description
+           The max gap between the bars when they are parallel to each other 
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          <p>This is a private symbol.
+          @attr name com.tian.videomergedemo:gapBetweenBars
+        */
+        public static final int DrawerArrowToggle_gapBetweenBars = 3;
+        /**
+          <p>
+          @attr description
+           The size of the middle bar when top and bottom bars merge into middle bar to form an arrow 
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          <p>This is a private symbol.
+          @attr name com.tian.videomergedemo:middleBarArrowSize
+        */
+        public static final int DrawerArrowToggle_middleBarArrowSize = 5;
+        /**
+          <p>
+          @attr description
+           Whether bars should rotate or not during transition 
+
+
+          <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          <p>This is a private symbol.
+          @attr name com.tian.videomergedemo:spinBars
+        */
+        public static final int DrawerArrowToggle_spinBars = 1;
+        /**
+          <p>
+          @attr description
+           The thickness (stroke size) for the bar paint 
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          <p>This is a private symbol.
+          @attr name com.tian.videomergedemo:thickness
+        */
+        public static final int DrawerArrowToggle_thickness = 7;
+        /**
+          <p>
+          @attr description
+           The size of the top and bottom bars when they merge to the middle bar to form an arrow 
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          <p>This is a private symbol.
+          @attr name com.tian.videomergedemo:topBottomBarArrowSize
+        */
+        public static final int DrawerArrowToggle_topBottomBarArrowSize = 4;
         /** Attributes that can be used with a FlowLayout.
            <p>Includes the following attributes:</p>
            <table>
@@ -2087,7 +5564,7 @@ containing a value of this type.
            @see #FocusImageView_focus_success_id
          */
         public static final int[] FocusImageView = {
-            0x7f01003e, 0x7f01003f, 0x7f010040
+            0x7f010105, 0x7f010106, 0x7f010107
         };
         /**
           <p>This symbol is the offset where the {@link com.tian.videomergedemo.R.attr#focus_fail_id}
@@ -2131,6 +5608,751 @@ containing a value of this type.
           @attr name com.tian.videomergedemo:focus_success_id
         */
         public static final int FocusImageView_focus_success_id = 1;
+        /** Attributes that can be used with a LinearLayoutCompat.
+           <p>Includes the following attributes:</p>
+           <table>
+           <colgroup align="left" />
+           <colgroup align="left" />
+           <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code>{@link #LinearLayoutCompat_android_baselineAligned android:baselineAligned}</code></td><td> When set to false, prevents the layout from aligning its children's
+             baselines.</td></tr>
+           <tr><td><code>{@link #LinearLayoutCompat_android_baselineAlignedChildIndex android:baselineAlignedChildIndex}</code></td><td> When a linear layout is part of another layout that is baseline
+          aligned, it can specify which of its children to baseline align to
+          (that is, which child TextView).</td></tr>
+           <tr><td><code>{@link #LinearLayoutCompat_android_gravity android:gravity}</code></td><td></td></tr>
+           <tr><td><code>{@link #LinearLayoutCompat_android_orientation android:orientation}</code></td><td> Should the layout be a column or a row?  Use "horizontal"
+             for a row, "vertical" for a column.</td></tr>
+           <tr><td><code>{@link #LinearLayoutCompat_android_weightSum android:weightSum}</code></td><td> Defines the maximum weight sum.</td></tr>
+           <tr><td><code>{@link #LinearLayoutCompat_divider com.tian.videomergedemo:divider}</code></td><td> Drawable to use as a vertical divider between buttons.</td></tr>
+           <tr><td><code>{@link #LinearLayoutCompat_dividerPadding com.tian.videomergedemo:dividerPadding}</code></td><td> Size of padding on either end of a divider.</td></tr>
+           <tr><td><code>{@link #LinearLayoutCompat_measureWithLargestChild com.tian.videomergedemo:measureWithLargestChild}</code></td><td> When set to true, all children with a weight will be considered having
+             the minimum size of the largest child.</td></tr>
+           <tr><td><code>{@link #LinearLayoutCompat_showDividers com.tian.videomergedemo:showDividers}</code></td><td> Setting for which dividers to show.</td></tr>
+           </table>
+           @see #LinearLayoutCompat_android_baselineAligned
+           @see #LinearLayoutCompat_android_baselineAlignedChildIndex
+           @see #LinearLayoutCompat_android_gravity
+           @see #LinearLayoutCompat_android_orientation
+           @see #LinearLayoutCompat_android_weightSum
+           @see #LinearLayoutCompat_divider
+           @see #LinearLayoutCompat_dividerPadding
+           @see #LinearLayoutCompat_measureWithLargestChild
+           @see #LinearLayoutCompat_showDividers
+         */
+        public static final int[] LinearLayoutCompat = {
+            0x010100af, 0x010100c4, 0x01010126, 0x01010127,
+            0x01010128, 0x7f010072, 0x7f0100a1, 0x7f0100a2,
+            0x7f0100a3
+        };
+        /**
+          <p>
+          @attr description
+           When set to false, prevents the layout from aligning its children's
+             baselines. This attribute is particularly useful when the children
+             use different values for gravity. The default value is true. 
+          <p>This corresponds to the global attribute
+          resource symbol {@link android.R.attr#baselineAligned}.
+          @attr name android:baselineAligned
+        */
+        public static final int LinearLayoutCompat_android_baselineAligned = 2;
+        /**
+          <p>
+          @attr description
+           When a linear layout is part of another layout that is baseline
+          aligned, it can specify which of its children to baseline align to
+          (that is, which child TextView).
+          <p>This corresponds to the global attribute
+          resource symbol {@link android.R.attr#baselineAlignedChildIndex}.
+          @attr name android:baselineAlignedChildIndex
+        */
+        public static final int LinearLayoutCompat_android_baselineAlignedChildIndex = 3;
+        /**
+          <p>This symbol is the offset where the {@link android.R.attr#gravity}
+          attribute's value can be found in the {@link #LinearLayoutCompat} array.
+          @attr name android:gravity
+        */
+        public static final int LinearLayoutCompat_android_gravity = 0;
+        /**
+          <p>
+          @attr description
+           Should the layout be a column or a row?  Use "horizontal"
+             for a row, "vertical" for a column.  The default is
+             horizontal. 
+          <p>This corresponds to the global attribute
+          resource symbol {@link android.R.attr#orientation}.
+          @attr name android:orientation
+        */
+        public static final int LinearLayoutCompat_android_orientation = 1;
+        /**
+          <p>
+          @attr description
+           Defines the maximum weight sum. If unspecified, the sum is computed
+             by adding the layout_weight of all of the children. This can be
+             used for instance to give a single child 50% of the total available
+             space by giving it a layout_weight of 0.5 and setting the weightSum
+             to 1.0. 
+          <p>This corresponds to the global attribute
+          resource symbol {@link android.R.attr#weightSum}.
+          @attr name android:weightSum
+        */
+        public static final int LinearLayoutCompat_android_weightSum = 4;
+        /**
+          <p>
+          @attr description
+           Drawable to use as a vertical divider between buttons. 
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          <p>This is a private symbol.
+          @attr name com.tian.videomergedemo:divider
+        */
+        public static final int LinearLayoutCompat_divider = 5;
+        /**
+          <p>
+          @attr description
+           Size of padding on either end of a divider. 
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          <p>This is a private symbol.
+          @attr name com.tian.videomergedemo:dividerPadding
+        */
+        public static final int LinearLayoutCompat_dividerPadding = 8;
+        /**
+          <p>
+          @attr description
+           When set to true, all children with a weight will be considered having
+             the minimum size of the largest child. If false, all children are
+             measured normally. 
+
+
+          <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          <p>This is a private symbol.
+          @attr name com.tian.videomergedemo:measureWithLargestChild
+        */
+        public static final int LinearLayoutCompat_measureWithLargestChild = 6;
+        /**
+          <p>
+          @attr description
+           Setting for which dividers to show. 
+
+
+          <p>Must be one or more (separated by '|') of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>none</code></td><td>0</td><td></td></tr>
+<tr><td><code>beginning</code></td><td>1</td><td></td></tr>
+<tr><td><code>middle</code></td><td>2</td><td></td></tr>
+<tr><td><code>end</code></td><td>4</td><td></td></tr>
+</table>
+          <p>This is a private symbol.
+          @attr name com.tian.videomergedemo:showDividers
+        */
+        public static final int LinearLayoutCompat_showDividers = 7;
+        /** Attributes that can be used with a LinearLayoutCompat_Layout.
+           <p>Includes the following attributes:</p>
+           <table>
+           <colgroup align="left" />
+           <colgroup align="left" />
+           <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code>{@link #LinearLayoutCompat_Layout_android_layout_gravity android:layout_gravity}</code></td><td></td></tr>
+           <tr><td><code>{@link #LinearLayoutCompat_Layout_android_layout_height android:layout_height}</code></td><td></td></tr>
+           <tr><td><code>{@link #LinearLayoutCompat_Layout_android_layout_weight android:layout_weight}</code></td><td></td></tr>
+           <tr><td><code>{@link #LinearLayoutCompat_Layout_android_layout_width android:layout_width}</code></td><td></td></tr>
+           </table>
+           @see #LinearLayoutCompat_Layout_android_layout_gravity
+           @see #LinearLayoutCompat_Layout_android_layout_height
+           @see #LinearLayoutCompat_Layout_android_layout_weight
+           @see #LinearLayoutCompat_Layout_android_layout_width
+         */
+        public static final int[] LinearLayoutCompat_Layout = {
+            0x010100b3, 0x010100f4, 0x010100f5, 0x01010181
+        };
+        /**
+          <p>This symbol is the offset where the {@link android.R.attr#layout_gravity}
+          attribute's value can be found in the {@link #LinearLayoutCompat_Layout} array.
+          @attr name android:layout_gravity
+        */
+        public static final int LinearLayoutCompat_Layout_android_layout_gravity = 0;
+        /**
+          <p>This symbol is the offset where the {@link android.R.attr#layout_height}
+          attribute's value can be found in the {@link #LinearLayoutCompat_Layout} array.
+          @attr name android:layout_height
+        */
+        public static final int LinearLayoutCompat_Layout_android_layout_height = 2;
+        /**
+          <p>This symbol is the offset where the {@link android.R.attr#layout_weight}
+          attribute's value can be found in the {@link #LinearLayoutCompat_Layout} array.
+          @attr name android:layout_weight
+        */
+        public static final int LinearLayoutCompat_Layout_android_layout_weight = 3;
+        /**
+          <p>This symbol is the offset where the {@link android.R.attr#layout_width}
+          attribute's value can be found in the {@link #LinearLayoutCompat_Layout} array.
+          @attr name android:layout_width
+        */
+        public static final int LinearLayoutCompat_Layout_android_layout_width = 1;
+        /** Attributes that can be used with a ListPopupWindow.
+           <p>Includes the following attributes:</p>
+           <table>
+           <colgroup align="left" />
+           <colgroup align="left" />
+           <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code>{@link #ListPopupWindow_android_dropDownHorizontalOffset android:dropDownHorizontalOffset}</code></td><td> Amount of pixels by which the drop down should be offset horizontally.</td></tr>
+           <tr><td><code>{@link #ListPopupWindow_android_dropDownVerticalOffset android:dropDownVerticalOffset}</code></td><td> Amount of pixels by which the drop down should be offset vertically.</td></tr>
+           </table>
+           @see #ListPopupWindow_android_dropDownHorizontalOffset
+           @see #ListPopupWindow_android_dropDownVerticalOffset
+         */
+        public static final int[] ListPopupWindow = {
+            0x010102ac, 0x010102ad
+        };
+        /**
+          <p>
+          @attr description
+           Amount of pixels by which the drop down should be offset horizontally. 
+          <p>This corresponds to the global attribute
+          resource symbol {@link android.R.attr#dropDownHorizontalOffset}.
+          @attr name android:dropDownHorizontalOffset
+        */
+        public static final int ListPopupWindow_android_dropDownHorizontalOffset = 0;
+        /**
+          <p>
+          @attr description
+           Amount of pixels by which the drop down should be offset vertically. 
+          <p>This corresponds to the global attribute
+          resource symbol {@link android.R.attr#dropDownVerticalOffset}.
+          @attr name android:dropDownVerticalOffset
+        */
+        public static final int ListPopupWindow_android_dropDownVerticalOffset = 1;
+        /**  Base attributes that are available to all groups. 
+           <p>Includes the following attributes:</p>
+           <table>
+           <colgroup align="left" />
+           <colgroup align="left" />
+           <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code>{@link #MenuGroup_android_checkableBehavior android:checkableBehavior}</code></td><td> Whether the items are capable of displaying a check mark.</td></tr>
+           <tr><td><code>{@link #MenuGroup_android_enabled android:enabled}</code></td><td> Whether the items are enabled.</td></tr>
+           <tr><td><code>{@link #MenuGroup_android_id android:id}</code></td><td> The ID of the group.</td></tr>
+           <tr><td><code>{@link #MenuGroup_android_menuCategory android:menuCategory}</code></td><td> The category applied to all items within this group.</td></tr>
+           <tr><td><code>{@link #MenuGroup_android_orderInCategory android:orderInCategory}</code></td><td> The order within the category applied to all items within this group.</td></tr>
+           <tr><td><code>{@link #MenuGroup_android_visible android:visible}</code></td><td> Whether the items are shown/visible.</td></tr>
+           </table>
+           @see #MenuGroup_android_checkableBehavior
+           @see #MenuGroup_android_enabled
+           @see #MenuGroup_android_id
+           @see #MenuGroup_android_menuCategory
+           @see #MenuGroup_android_orderInCategory
+           @see #MenuGroup_android_visible
+         */
+        public static final int[] MenuGroup = {
+            0x0101000e, 0x010100d0, 0x01010194, 0x010101de,
+            0x010101df, 0x010101e0
+        };
+        /**
+          <p>
+          @attr description
+           Whether the items are capable of displaying a check mark. 
+          <p>This corresponds to the global attribute
+          resource symbol {@link android.R.attr#checkableBehavior}.
+          @attr name android:checkableBehavior
+        */
+        public static final int MenuGroup_android_checkableBehavior = 5;
+        /**
+          <p>
+          @attr description
+           Whether the items are enabled. 
+          <p>This corresponds to the global attribute
+          resource symbol {@link android.R.attr#enabled}.
+          @attr name android:enabled
+        */
+        public static final int MenuGroup_android_enabled = 0;
+        /**
+          <p>
+          @attr description
+           The ID of the group. 
+          <p>This corresponds to the global attribute
+          resource symbol {@link android.R.attr#id}.
+          @attr name android:id
+        */
+        public static final int MenuGroup_android_id = 1;
+        /**
+          <p>
+          @attr description
+           The category applied to all items within this group.
+             (This will be or'ed with the orderInCategory attribute.) 
+          <p>This corresponds to the global attribute
+          resource symbol {@link android.R.attr#menuCategory}.
+          @attr name android:menuCategory
+        */
+        public static final int MenuGroup_android_menuCategory = 3;
+        /**
+          <p>
+          @attr description
+           The order within the category applied to all items within this group.
+             (This will be or'ed with the category attribute.) 
+          <p>This corresponds to the global attribute
+          resource symbol {@link android.R.attr#orderInCategory}.
+          @attr name android:orderInCategory
+        */
+        public static final int MenuGroup_android_orderInCategory = 4;
+        /**
+          <p>
+          @attr description
+           Whether the items are shown/visible. 
+          <p>This corresponds to the global attribute
+          resource symbol {@link android.R.attr#visible}.
+          @attr name android:visible
+        */
+        public static final int MenuGroup_android_visible = 2;
+        /**  Base attributes that are available to all Item objects. 
+           <p>Includes the following attributes:</p>
+           <table>
+           <colgroup align="left" />
+           <colgroup align="left" />
+           <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code>{@link #MenuItem_actionLayout com.tian.videomergedemo:actionLayout}</code></td><td> An optional layout to be used as an action view.</td></tr>
+           <tr><td><code>{@link #MenuItem_actionProviderClass com.tian.videomergedemo:actionProviderClass}</code></td><td> The name of an optional ActionProvider class to instantiate an action view
+             and perform operations such as default action for that menu item.</td></tr>
+           <tr><td><code>{@link #MenuItem_actionViewClass com.tian.videomergedemo:actionViewClass}</code></td><td> The name of an optional View class to instantiate and use as an
+             action view.</td></tr>
+           <tr><td><code>{@link #MenuItem_android_alphabeticShortcut android:alphabeticShortcut}</code></td><td> The alphabetic shortcut key.</td></tr>
+           <tr><td><code>{@link #MenuItem_android_checkable android:checkable}</code></td><td> Whether the item is capable of displaying a check mark.</td></tr>
+           <tr><td><code>{@link #MenuItem_android_checked android:checked}</code></td><td> Whether the item is checked.</td></tr>
+           <tr><td><code>{@link #MenuItem_android_enabled android:enabled}</code></td><td> Whether the item is enabled.</td></tr>
+           <tr><td><code>{@link #MenuItem_android_icon android:icon}</code></td><td> The icon associated with this item.</td></tr>
+           <tr><td><code>{@link #MenuItem_android_id android:id}</code></td><td> The ID of the item.</td></tr>
+           <tr><td><code>{@link #MenuItem_android_menuCategory android:menuCategory}</code></td><td> The category applied to the item.</td></tr>
+           <tr><td><code>{@link #MenuItem_android_numericShortcut android:numericShortcut}</code></td><td> The numeric shortcut key.</td></tr>
+           <tr><td><code>{@link #MenuItem_android_onClick android:onClick}</code></td><td> Name of a method on the Context used to inflate the menu that will be
+             called when the item is clicked.</td></tr>
+           <tr><td><code>{@link #MenuItem_android_orderInCategory android:orderInCategory}</code></td><td> The order within the category applied to the item.</td></tr>
+           <tr><td><code>{@link #MenuItem_android_title android:title}</code></td><td> The title associated with the item.</td></tr>
+           <tr><td><code>{@link #MenuItem_android_titleCondensed android:titleCondensed}</code></td><td> The condensed title associated with the item.</td></tr>
+           <tr><td><code>{@link #MenuItem_android_visible android:visible}</code></td><td> Whether the item is shown/visible.</td></tr>
+           <tr><td><code>{@link #MenuItem_showAsAction com.tian.videomergedemo:showAsAction}</code></td><td> How this item should display in the Action Bar, if present.</td></tr>
+           </table>
+           @see #MenuItem_actionLayout
+           @see #MenuItem_actionProviderClass
+           @see #MenuItem_actionViewClass
+           @see #MenuItem_android_alphabeticShortcut
+           @see #MenuItem_android_checkable
+           @see #MenuItem_android_checked
+           @see #MenuItem_android_enabled
+           @see #MenuItem_android_icon
+           @see #MenuItem_android_id
+           @see #MenuItem_android_menuCategory
+           @see #MenuItem_android_numericShortcut
+           @see #MenuItem_android_onClick
+           @see #MenuItem_android_orderInCategory
+           @see #MenuItem_android_title
+           @see #MenuItem_android_titleCondensed
+           @see #MenuItem_android_visible
+           @see #MenuItem_showAsAction
+         */
+        public static final int[] MenuItem = {
+            0x01010002, 0x0101000e, 0x010100d0, 0x01010106,
+            0x01010194, 0x010101de, 0x010101df, 0x010101e1,
+            0x010101e2, 0x010101e3, 0x010101e4, 0x010101e5,
+            0x0101026f, 0x7f01008a, 0x7f01008b, 0x7f01008c,
+            0x7f01008d
+        };
+        /**
+          <p>
+          @attr description
+           An optional layout to be used as an action view.
+             See {@link android.view.MenuItem#setActionView(android.view.View)}
+             for more info. 
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          <p>This is a private symbol.
+          @attr name com.tian.videomergedemo:actionLayout
+        */
+        public static final int MenuItem_actionLayout = 14;
+        /**
+          <p>
+          @attr description
+           The name of an optional ActionProvider class to instantiate an action view
+             and perform operations such as default action for that menu item.
+             See {@link android.view.MenuItem#setActionProvider(android.view.ActionProvider)}
+             for more info. 
+
+
+          <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          <p>This is a private symbol.
+          @attr name com.tian.videomergedemo:actionProviderClass
+        */
+        public static final int MenuItem_actionProviderClass = 16;
+        /**
+          <p>
+          @attr description
+           The name of an optional View class to instantiate and use as an
+             action view. See {@link android.view.MenuItem#setActionView(android.view.View)}
+             for more info. 
+
+
+          <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          <p>This is a private symbol.
+          @attr name com.tian.videomergedemo:actionViewClass
+        */
+        public static final int MenuItem_actionViewClass = 15;
+        /**
+          <p>
+          @attr description
+           The alphabetic shortcut key.  This is the shortcut when using a keyboard
+             with alphabetic keys. 
+          <p>This corresponds to the global attribute
+          resource symbol {@link android.R.attr#alphabeticShortcut}.
+          @attr name android:alphabeticShortcut
+        */
+        public static final int MenuItem_android_alphabeticShortcut = 9;
+        /**
+          <p>
+          @attr description
+           Whether the item is capable of displaying a check mark. 
+          <p>This corresponds to the global attribute
+          resource symbol {@link android.R.attr#checkable}.
+          @attr name android:checkable
+        */
+        public static final int MenuItem_android_checkable = 11;
+        /**
+          <p>
+          @attr description
+           Whether the item is checked.  Note that you must first have enabled checking with
+             the checkable attribute or else the check mark will not appear. 
+          <p>This corresponds to the global attribute
+          resource symbol {@link android.R.attr#checked}.
+          @attr name android:checked
+        */
+        public static final int MenuItem_android_checked = 3;
+        /**
+          <p>
+          @attr description
+           Whether the item is enabled. 
+          <p>This corresponds to the global attribute
+          resource symbol {@link android.R.attr#enabled}.
+          @attr name android:enabled
+        */
+        public static final int MenuItem_android_enabled = 1;
+        /**
+          <p>
+          @attr description
+           The icon associated with this item.  This icon will not always be shown, so
+             the title should be sufficient in describing this item. 
+          <p>This corresponds to the global attribute
+          resource symbol {@link android.R.attr#icon}.
+          @attr name android:icon
+        */
+        public static final int MenuItem_android_icon = 0;
+        /**
+          <p>
+          @attr description
+           The ID of the item. 
+          <p>This corresponds to the global attribute
+          resource symbol {@link android.R.attr#id}.
+          @attr name android:id
+        */
+        public static final int MenuItem_android_id = 2;
+        /**
+          <p>
+          @attr description
+           The category applied to the item.
+             (This will be or'ed with the orderInCategory attribute.) 
+          <p>This corresponds to the global attribute
+          resource symbol {@link android.R.attr#menuCategory}.
+          @attr name android:menuCategory
+        */
+        public static final int MenuItem_android_menuCategory = 5;
+        /**
+          <p>
+          @attr description
+           The numeric shortcut key.  This is the shortcut when using a numeric (e.g., 12-key)
+             keyboard. 
+          <p>This corresponds to the global attribute
+          resource symbol {@link android.R.attr#numericShortcut}.
+          @attr name android:numericShortcut
+        */
+        public static final int MenuItem_android_numericShortcut = 10;
+        /**
+          <p>
+          @attr description
+           Name of a method on the Context used to inflate the menu that will be
+             called when the item is clicked. 
+          <p>This corresponds to the global attribute
+          resource symbol {@link android.R.attr#onClick}.
+          @attr name android:onClick
+        */
+        public static final int MenuItem_android_onClick = 12;
+        /**
+          <p>
+          @attr description
+           The order within the category applied to the item.
+             (This will be or'ed with the category attribute.) 
+          <p>This corresponds to the global attribute
+          resource symbol {@link android.R.attr#orderInCategory}.
+          @attr name android:orderInCategory
+        */
+        public static final int MenuItem_android_orderInCategory = 6;
+        /**
+          <p>
+          @attr description
+           The title associated with the item. 
+          <p>This corresponds to the global attribute
+          resource symbol {@link android.R.attr#title}.
+          @attr name android:title
+        */
+        public static final int MenuItem_android_title = 7;
+        /**
+          <p>
+          @attr description
+           The condensed title associated with the item.  This is used in situations where the
+             normal title may be too long to be displayed. 
+          <p>This corresponds to the global attribute
+          resource symbol {@link android.R.attr#titleCondensed}.
+          @attr name android:titleCondensed
+        */
+        public static final int MenuItem_android_titleCondensed = 8;
+        /**
+          <p>
+          @attr description
+           Whether the item is shown/visible. 
+          <p>This corresponds to the global attribute
+          resource symbol {@link android.R.attr#visible}.
+          @attr name android:visible
+        */
+        public static final int MenuItem_android_visible = 4;
+        /**
+          <p>
+          @attr description
+           How this item should display in the Action Bar, if present. 
+
+
+          <p>Must be one or more (separated by '|') of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>never</code></td><td>0</td><td> Never show this item in an action bar, show it in the overflow menu instead.
+                 Mutually exclusive with "ifRoom" and "always". </td></tr>
+<tr><td><code>ifRoom</code></td><td>1</td><td> Show this item in an action bar if there is room for it as determined
+                 by the system. Favor this option over "always" where possible.
+                 Mutually exclusive with "never" and "always". </td></tr>
+<tr><td><code>always</code></td><td>2</td><td> Always show this item in an actionbar, even if it would override
+                 the system's limits of how much stuff to put there. This may make
+                 your action bar look bad on some screens. In most cases you should
+                 use "ifRoom" instead. Mutually exclusive with "ifRoom" and "never". </td></tr>
+<tr><td><code>withText</code></td><td>4</td><td> When this item is shown as an action in the action bar, show a text
+                 label with it even if it has an icon representation. </td></tr>
+<tr><td><code>collapseActionView</code></td><td>8</td><td> This item's action view collapses to a normal menu
+                 item. When expanded, the action view takes over a
+                 larger segment of its container. </td></tr>
+</table>
+          <p>This is a private symbol.
+          @attr name com.tian.videomergedemo:showAsAction
+        */
+        public static final int MenuItem_showAsAction = 13;
+        /** Attributes that can be used with a MenuView.
+           <p>Includes the following attributes:</p>
+           <table>
+           <colgroup align="left" />
+           <colgroup align="left" />
+           <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code>{@link #MenuView_android_headerBackground android:headerBackground}</code></td><td> Default background for the menu header.</td></tr>
+           <tr><td><code>{@link #MenuView_android_horizontalDivider android:horizontalDivider}</code></td><td> Default horizontal divider between rows of menu items.</td></tr>
+           <tr><td><code>{@link #MenuView_android_itemBackground android:itemBackground}</code></td><td> Default background for each menu item.</td></tr>
+           <tr><td><code>{@link #MenuView_android_itemIconDisabledAlpha android:itemIconDisabledAlpha}</code></td><td> Default disabled icon alpha for each menu item that shows an icon.</td></tr>
+           <tr><td><code>{@link #MenuView_android_itemTextAppearance android:itemTextAppearance}</code></td><td> Default appearance of menu item text.</td></tr>
+           <tr><td><code>{@link #MenuView_android_verticalDivider android:verticalDivider}</code></td><td> Default vertical divider between menu items.</td></tr>
+           <tr><td><code>{@link #MenuView_android_windowAnimationStyle android:windowAnimationStyle}</code></td><td> Default animations for the menu.</td></tr>
+           <tr><td><code>{@link #MenuView_preserveIconSpacing com.tian.videomergedemo:preserveIconSpacing}</code></td><td> Whether space should be reserved in layout when an icon is missing.</td></tr>
+           </table>
+           @see #MenuView_android_headerBackground
+           @see #MenuView_android_horizontalDivider
+           @see #MenuView_android_itemBackground
+           @see #MenuView_android_itemIconDisabledAlpha
+           @see #MenuView_android_itemTextAppearance
+           @see #MenuView_android_verticalDivider
+           @see #MenuView_android_windowAnimationStyle
+           @see #MenuView_preserveIconSpacing
+         */
+        public static final int[] MenuView = {
+            0x010100ae, 0x0101012c, 0x0101012d, 0x0101012e,
+            0x0101012f, 0x01010130, 0x01010131, 0x7f010089
+        };
+        /**
+          <p>
+          @attr description
+           Default background for the menu header. 
+          <p>This corresponds to the global attribute
+          resource symbol {@link android.R.attr#headerBackground}.
+          @attr name android:headerBackground
+        */
+        public static final int MenuView_android_headerBackground = 4;
+        /**
+          <p>
+          @attr description
+           Default horizontal divider between rows of menu items. 
+          <p>This corresponds to the global attribute
+          resource symbol {@link android.R.attr#horizontalDivider}.
+          @attr name android:horizontalDivider
+        */
+        public static final int MenuView_android_horizontalDivider = 2;
+        /**
+          <p>
+          @attr description
+           Default background for each menu item. 
+          <p>This corresponds to the global attribute
+          resource symbol {@link android.R.attr#itemBackground}.
+          @attr name android:itemBackground
+        */
+        public static final int MenuView_android_itemBackground = 5;
+        /**
+          <p>
+          @attr description
+           Default disabled icon alpha for each menu item that shows an icon. 
+          <p>This corresponds to the global attribute
+          resource symbol {@link android.R.attr#itemIconDisabledAlpha}.
+          @attr name android:itemIconDisabledAlpha
+        */
+        public static final int MenuView_android_itemIconDisabledAlpha = 6;
+        /**
+          <p>
+          @attr description
+           Default appearance of menu item text. 
+          <p>This corresponds to the global attribute
+          resource symbol {@link android.R.attr#itemTextAppearance}.
+          @attr name android:itemTextAppearance
+        */
+        public static final int MenuView_android_itemTextAppearance = 1;
+        /**
+          <p>
+          @attr description
+           Default vertical divider between menu items. 
+          <p>This corresponds to the global attribute
+          resource symbol {@link android.R.attr#verticalDivider}.
+          @attr name android:verticalDivider
+        */
+        public static final int MenuView_android_verticalDivider = 3;
+        /**
+          <p>
+          @attr description
+           Default animations for the menu. 
+          <p>This corresponds to the global attribute
+          resource symbol {@link android.R.attr#windowAnimationStyle}.
+          @attr name android:windowAnimationStyle
+        */
+        public static final int MenuView_android_windowAnimationStyle = 0;
+        /**
+          <p>
+          @attr description
+           Whether space should be reserved in layout when an icon is missing. 
+
+
+          <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          <p>This is a private symbol.
+          @attr name com.tian.videomergedemo:preserveIconSpacing
+        */
+        public static final int MenuView_preserveIconSpacing = 7;
+        /** Attributes that can be used with a PopupWindow.
+           <p>Includes the following attributes:</p>
+           <table>
+           <colgroup align="left" />
+           <colgroup align="left" />
+           <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code>{@link #PopupWindow_android_popupBackground android:popupBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #PopupWindow_overlapAnchor com.tian.videomergedemo:overlapAnchor}</code></td><td> Whether the popup window should overlap its anchor view.</td></tr>
+           </table>
+           @see #PopupWindow_android_popupBackground
+           @see #PopupWindow_overlapAnchor
+         */
+        public static final int[] PopupWindow = {
+            0x01010176, 0x7f0100b1
+        };
+        /**
+          <p>This symbol is the offset where the {@link android.R.attr#popupBackground}
+          attribute's value can be found in the {@link #PopupWindow} array.
+          @attr name android:popupBackground
+        */
+        public static final int PopupWindow_android_popupBackground = 0;
+        /**
+          <p>
+          @attr description
+           Whether the popup window should overlap its anchor view. 
+
+
+          <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          <p>This is a private symbol.
+          @attr name com.tian.videomergedemo:overlapAnchor
+        */
+        public static final int PopupWindow_overlapAnchor = 1;
+        /** Attributes that can be used with a PopupWindowBackgroundState.
+           <p>Includes the following attributes:</p>
+           <table>
+           <colgroup align="left" />
+           <colgroup align="left" />
+           <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code>{@link #PopupWindowBackgroundState_state_above_anchor com.tian.videomergedemo:state_above_anchor}</code></td><td> State identifier indicating the popup will be above the anchor.</td></tr>
+           </table>
+           @see #PopupWindowBackgroundState_state_above_anchor
+         */
+        public static final int[] PopupWindowBackgroundState = {
+            0x7f0100b0
+        };
+        /**
+          <p>
+          @attr description
+           State identifier indicating the popup will be above the anchor. 
+
+
+          <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          <p>This is a private symbol.
+          @attr name com.tian.videomergedemo:state_above_anchor
+        */
+        public static final int PopupWindowBackgroundState_state_above_anchor = 0;
         /** Attributes that can be used with a RoundedImageView.
            <p>Includes the following attributes:</p>
            <table>
@@ -2152,8 +6374,8 @@ containing a value of this type.
            @see #RoundedImageView_oval
          */
         public static final int[] RoundedImageView = {
-            0x0101011d, 0x7f010023, 0x7f010024, 0x7f010025,
-            0x7f010026, 0x7f010027
+            0x0101011d, 0x7f0100ea, 0x7f0100eb, 0x7f0100ec,
+            0x7f0100ed, 0x7f0100ee
         };
         /**
           <p>This symbol is the offset where the {@link android.R.attr#scaleType}
@@ -2236,6 +6458,402 @@ containing a value of this type.
           @attr name com.tian.videomergedemo:oval
         */
         public static final int RoundedImageView_oval = 5;
+        /** Attributes that can be used with a SearchView.
+           <p>Includes the following attributes:</p>
+           <table>
+           <colgroup align="left" />
+           <colgroup align="left" />
+           <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code>{@link #SearchView_android_focusable android:focusable}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_android_imeOptions android:imeOptions}</code></td><td> The IME options to set on the query text field.</td></tr>
+           <tr><td><code>{@link #SearchView_android_inputType android:inputType}</code></td><td> The input type to set on the query text field.</td></tr>
+           <tr><td><code>{@link #SearchView_android_maxWidth android:maxWidth}</code></td><td> An optional maximum width of the SearchView.</td></tr>
+           <tr><td><code>{@link #SearchView_closeIcon com.tian.videomergedemo:closeIcon}</code></td><td> Close button icon </td></tr>
+           <tr><td><code>{@link #SearchView_commitIcon com.tian.videomergedemo:commitIcon}</code></td><td> Commit icon shown in the query suggestion row </td></tr>
+           <tr><td><code>{@link #SearchView_goIcon com.tian.videomergedemo:goIcon}</code></td><td> Go button icon </td></tr>
+           <tr><td><code>{@link #SearchView_iconifiedByDefault com.tian.videomergedemo:iconifiedByDefault}</code></td><td> The default state of the SearchView.</td></tr>
+           <tr><td><code>{@link #SearchView_layout com.tian.videomergedemo:layout}</code></td><td> The layout to use for the search view.</td></tr>
+           <tr><td><code>{@link #SearchView_queryBackground com.tian.videomergedemo:queryBackground}</code></td><td> Background for the section containing the search query </td></tr>
+           <tr><td><code>{@link #SearchView_queryHint com.tian.videomergedemo:queryHint}</code></td><td> An optional query hint string to be displayed in the empty query field.</td></tr>
+           <tr><td><code>{@link #SearchView_searchHintIcon com.tian.videomergedemo:searchHintIcon}</code></td><td> Search icon displayed as a text field hint </td></tr>
+           <tr><td><code>{@link #SearchView_searchIcon com.tian.videomergedemo:searchIcon}</code></td><td> Search icon </td></tr>
+           <tr><td><code>{@link #SearchView_submitBackground com.tian.videomergedemo:submitBackground}</code></td><td> Background for the section containing the action (e.</td></tr>
+           <tr><td><code>{@link #SearchView_suggestionRowLayout com.tian.videomergedemo:suggestionRowLayout}</code></td><td> Layout for query suggestion rows </td></tr>
+           <tr><td><code>{@link #SearchView_voiceIcon com.tian.videomergedemo:voiceIcon}</code></td><td> Voice button icon </td></tr>
+           </table>
+           @see #SearchView_android_focusable
+           @see #SearchView_android_imeOptions
+           @see #SearchView_android_inputType
+           @see #SearchView_android_maxWidth
+           @see #SearchView_closeIcon
+           @see #SearchView_commitIcon
+           @see #SearchView_goIcon
+           @see #SearchView_iconifiedByDefault
+           @see #SearchView_layout
+           @see #SearchView_queryBackground
+           @see #SearchView_queryHint
+           @see #SearchView_searchHintIcon
+           @see #SearchView_searchIcon
+           @see #SearchView_submitBackground
+           @see #SearchView_suggestionRowLayout
+           @see #SearchView_voiceIcon
+         */
+        public static final int[] SearchView = {
+            0x010100da, 0x0101011f, 0x01010220, 0x01010264,
+            0x7f010092, 0x7f010093, 0x7f010094, 0x7f010095,
+            0x7f010096, 0x7f010097, 0x7f010098, 0x7f010099,
+            0x7f01009a, 0x7f01009b, 0x7f01009c, 0x7f01009d
+        };
+        /**
+          <p>This symbol is the offset where the {@link android.R.attr#focusable}
+          attribute's value can be found in the {@link #SearchView} array.
+          @attr name android:focusable
+        */
+        public static final int SearchView_android_focusable = 0;
+        /**
+          <p>
+          @attr description
+           The IME options to set on the query text field. 
+          <p>This corresponds to the global attribute
+          resource symbol {@link android.R.attr#imeOptions}.
+          @attr name android:imeOptions
+        */
+        public static final int SearchView_android_imeOptions = 3;
+        /**
+          <p>
+          @attr description
+           The input type to set on the query text field. 
+          <p>This corresponds to the global attribute
+          resource symbol {@link android.R.attr#inputType}.
+          @attr name android:inputType
+        */
+        public static final int SearchView_android_inputType = 2;
+        /**
+          <p>
+          @attr description
+           An optional maximum width of the SearchView. 
+          <p>This corresponds to the global attribute
+          resource symbol {@link android.R.attr#maxWidth}.
+          @attr name android:maxWidth
+        */
+        public static final int SearchView_android_maxWidth = 1;
+        /**
+          <p>
+          @attr description
+           Close button icon 
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          <p>This is a private symbol.
+          @attr name com.tian.videomergedemo:closeIcon
+        */
+        public static final int SearchView_closeIcon = 7;
+        /**
+          <p>
+          @attr description
+           Commit icon shown in the query suggestion row 
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          <p>This is a private symbol.
+          @attr name com.tian.videomergedemo:commitIcon
+        */
+        public static final int SearchView_commitIcon = 12;
+        /**
+          <p>
+          @attr description
+           Go button icon 
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          <p>This is a private symbol.
+          @attr name com.tian.videomergedemo:goIcon
+        */
+        public static final int SearchView_goIcon = 8;
+        /**
+          <p>
+          @attr description
+           The default state of the SearchView. If true, it will be iconified when not in
+             use and expanded when clicked. 
+
+
+          <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          <p>This is a private symbol.
+          @attr name com.tian.videomergedemo:iconifiedByDefault
+        */
+        public static final int SearchView_iconifiedByDefault = 5;
+        /**
+          <p>
+          @attr description
+           The layout to use for the search view. 
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          <p>This is a private symbol.
+          @attr name com.tian.videomergedemo:layout
+        */
+        public static final int SearchView_layout = 4;
+        /**
+          <p>
+          @attr description
+           Background for the section containing the search query 
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          <p>This is a private symbol.
+          @attr name com.tian.videomergedemo:queryBackground
+        */
+        public static final int SearchView_queryBackground = 14;
+        /**
+          <p>
+          @attr description
+           An optional query hint string to be displayed in the empty query field. 
+
+
+          <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          <p>This is a private symbol.
+          @attr name com.tian.videomergedemo:queryHint
+        */
+        public static final int SearchView_queryHint = 6;
+        /**
+          <p>
+          @attr description
+           Search icon displayed as a text field hint 
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          <p>This is a private symbol.
+          @attr name com.tian.videomergedemo:searchHintIcon
+        */
+        public static final int SearchView_searchHintIcon = 10;
+        /**
+          <p>
+          @attr description
+           Search icon 
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          <p>This is a private symbol.
+          @attr name com.tian.videomergedemo:searchIcon
+        */
+        public static final int SearchView_searchIcon = 9;
+        /**
+          <p>
+          @attr description
+           Background for the section containing the action (e.g. voice search) 
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          <p>This is a private symbol.
+          @attr name com.tian.videomergedemo:submitBackground
+        */
+        public static final int SearchView_submitBackground = 15;
+        /**
+          <p>
+          @attr description
+           Layout for query suggestion rows 
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          <p>This is a private symbol.
+          @attr name com.tian.videomergedemo:suggestionRowLayout
+        */
+        public static final int SearchView_suggestionRowLayout = 13;
+        /**
+          <p>
+          @attr description
+           Voice button icon 
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          <p>This is a private symbol.
+          @attr name com.tian.videomergedemo:voiceIcon
+        */
+        public static final int SearchView_voiceIcon = 11;
+        /** Attributes that can be used with a Spinner.
+           <p>Includes the following attributes:</p>
+           <table>
+           <colgroup align="left" />
+           <colgroup align="left" />
+           <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code>{@link #Spinner_android_background android:background}</code></td><td></td></tr>
+           <tr><td><code>{@link #Spinner_android_dropDownHorizontalOffset android:dropDownHorizontalOffset}</code></td><td> Horizontal offset from the spinner widget for positioning the dropdown
+             in spinnerMode="dropdown".</td></tr>
+           <tr><td><code>{@link #Spinner_android_dropDownSelector android:dropDownSelector}</code></td><td> List selector to use for spinnerMode="dropdown" display.</td></tr>
+           <tr><td><code>{@link #Spinner_android_dropDownVerticalOffset android:dropDownVerticalOffset}</code></td><td> Vertical offset from the spinner widget for positioning the dropdown in
+             spinnerMode="dropdown".</td></tr>
+           <tr><td><code>{@link #Spinner_android_dropDownWidth android:dropDownWidth}</code></td><td> Width of the dropdown in spinnerMode="dropdown".</td></tr>
+           <tr><td><code>{@link #Spinner_android_gravity android:gravity}</code></td><td> Gravity setting for positioning the currently selected item.</td></tr>
+           <tr><td><code>{@link #Spinner_android_popupBackground android:popupBackground}</code></td><td> Background drawable to use for the dropdown in spinnerMode="dropdown".</td></tr>
+           <tr><td><code>{@link #Spinner_disableChildrenWhenDisabled com.tian.videomergedemo:disableChildrenWhenDisabled}</code></td><td> Whether this spinner should mark child views as enabled/disabled when
+             the spinner itself is enabled/disabled.</td></tr>
+           <tr><td><code>{@link #Spinner_popupPromptView com.tian.videomergedemo:popupPromptView}</code></td><td> Reference to a layout to use for displaying a prompt in the dropdown for
+             spinnerMode="dropdown".</td></tr>
+           <tr><td><code>{@link #Spinner_prompt com.tian.videomergedemo:prompt}</code></td><td> The prompt to display when the spinner's dialog is shown.</td></tr>
+           <tr><td><code>{@link #Spinner_spinnerMode com.tian.videomergedemo:spinnerMode}</code></td><td> Display mode for spinner options.</td></tr>
+           </table>
+           @see #Spinner_android_background
+           @see #Spinner_android_dropDownHorizontalOffset
+           @see #Spinner_android_dropDownSelector
+           @see #Spinner_android_dropDownVerticalOffset
+           @see #Spinner_android_dropDownWidth
+           @see #Spinner_android_gravity
+           @see #Spinner_android_popupBackground
+           @see #Spinner_disableChildrenWhenDisabled
+           @see #Spinner_popupPromptView
+           @see #Spinner_prompt
+           @see #Spinner_spinnerMode
+         */
+        public static final int[] Spinner = {
+            0x010100af, 0x010100d4, 0x01010175, 0x01010176,
+            0x01010262, 0x010102ac, 0x010102ad, 0x7f01008e,
+            0x7f01008f, 0x7f010090, 0x7f010091
+        };
+        /**
+          <p>This symbol is the offset where the {@link android.R.attr#background}
+          attribute's value can be found in the {@link #Spinner} array.
+          @attr name android:background
+        */
+        public static final int Spinner_android_background = 1;
+        /**
+          <p>
+          @attr description
+           Horizontal offset from the spinner widget for positioning the dropdown
+             in spinnerMode="dropdown". 
+          <p>This corresponds to the global attribute
+          resource symbol {@link android.R.attr#dropDownHorizontalOffset}.
+          @attr name android:dropDownHorizontalOffset
+        */
+        public static final int Spinner_android_dropDownHorizontalOffset = 5;
+        /**
+          <p>
+          @attr description
+           List selector to use for spinnerMode="dropdown" display. 
+          <p>This corresponds to the global attribute
+          resource symbol {@link android.R.attr#dropDownSelector}.
+          @attr name android:dropDownSelector
+        */
+        public static final int Spinner_android_dropDownSelector = 2;
+        /**
+          <p>
+          @attr description
+           Vertical offset from the spinner widget for positioning the dropdown in
+             spinnerMode="dropdown". 
+          <p>This corresponds to the global attribute
+          resource symbol {@link android.R.attr#dropDownVerticalOffset}.
+          @attr name android:dropDownVerticalOffset
+        */
+        public static final int Spinner_android_dropDownVerticalOffset = 6;
+        /**
+          <p>
+          @attr description
+           Width of the dropdown in spinnerMode="dropdown". 
+          <p>This corresponds to the global attribute
+          resource symbol {@link android.R.attr#dropDownWidth}.
+          @attr name android:dropDownWidth
+        */
+        public static final int Spinner_android_dropDownWidth = 4;
+        /**
+          <p>
+          @attr description
+           Gravity setting for positioning the currently selected item. 
+          <p>This corresponds to the global attribute
+          resource symbol {@link android.R.attr#gravity}.
+          @attr name android:gravity
+        */
+        public static final int Spinner_android_gravity = 0;
+        /**
+          <p>
+          @attr description
+           Background drawable to use for the dropdown in spinnerMode="dropdown". 
+          <p>This corresponds to the global attribute
+          resource symbol {@link android.R.attr#popupBackground}.
+          @attr name android:popupBackground
+        */
+        public static final int Spinner_android_popupBackground = 3;
+        /**
+          <p>
+          @attr description
+           Whether this spinner should mark child views as enabled/disabled when
+             the spinner itself is enabled/disabled. 
+
+
+          <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          <p>This is a private symbol.
+          @attr name com.tian.videomergedemo:disableChildrenWhenDisabled
+        */
+        public static final int Spinner_disableChildrenWhenDisabled = 10;
+        /**
+          <p>
+          @attr description
+           Reference to a layout to use for displaying a prompt in the dropdown for
+             spinnerMode="dropdown". This layout must contain a TextView with the id
+             {@code @android:id/text1} to be populated with the prompt text. 
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          <p>This is a private symbol.
+          @attr name com.tian.videomergedemo:popupPromptView
+        */
+        public static final int Spinner_popupPromptView = 9;
+        /**
+          <p>
+          @attr description
+           The prompt to display when the spinner's dialog is shown. 
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          <p>This is a private symbol.
+          @attr name com.tian.videomergedemo:prompt
+        */
+        public static final int Spinner_prompt = 7;
+        /**
+          <p>
+          @attr description
+           Display mode for spinner options. 
+
+
+          <p>Must be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>dialog</code></td><td>0</td><td> Spinner options will be presented to the user as a dialog window. </td></tr>
+<tr><td><code>dropdown</code></td><td>1</td><td> Spinner options will be presented to the user as an inline dropdown
+                 anchored to the spinner widget itself. </td></tr>
+</table>
+          <p>This is a private symbol.
+          @attr name com.tian.videomergedemo:spinnerMode
+        */
+        public static final int Spinner_spinnerMode = 8;
         /** Attributes that can be used with a SwipeMenuLayout.
            <p>Includes the following attributes:</p>
            <table>
@@ -2251,7 +6869,7 @@ containing a value of this type.
            @see #SwipeMenuLayout_swipeEnable
          */
         public static final int[] SwipeMenuLayout = {
-            0x7f010006, 0x7f010007, 0x7f010008
+            0x7f0100cd, 0x7f0100ce, 0x7f0100cf
         };
         /**
           <p>This symbol is the offset where the {@link com.tian.videomergedemo.R.attr#ios}
@@ -2295,6 +6913,176 @@ containing a value of this type.
           @attr name com.tian.videomergedemo:swipeEnable
         */
         public static final int SwipeMenuLayout_swipeEnable = 0;
+        /** Attributes that can be used with a SwitchCompat.
+           <p>Includes the following attributes:</p>
+           <table>
+           <colgroup align="left" />
+           <colgroup align="left" />
+           <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code>{@link #SwitchCompat_android_textOff android:textOff}</code></td><td> Text to use when the switch is in the unchecked/"off" state.</td></tr>
+           <tr><td><code>{@link #SwitchCompat_android_textOn android:textOn}</code></td><td> Text to use when the switch is in the checked/"on" state.</td></tr>
+           <tr><td><code>{@link #SwitchCompat_android_thumb android:thumb}</code></td><td> Drawable to use as the "thumb" that switches back and forth.</td></tr>
+           <tr><td><code>{@link #SwitchCompat_showText com.tian.videomergedemo:showText}</code></td><td> Whether to draw on/off text.</td></tr>
+           <tr><td><code>{@link #SwitchCompat_splitTrack com.tian.videomergedemo:splitTrack}</code></td><td> Whether to split the track and leave a gap for the thumb drawable.</td></tr>
+           <tr><td><code>{@link #SwitchCompat_switchMinWidth com.tian.videomergedemo:switchMinWidth}</code></td><td> Minimum width for the switch component </td></tr>
+           <tr><td><code>{@link #SwitchCompat_switchPadding com.tian.videomergedemo:switchPadding}</code></td><td> Minimum space between the switch and caption text </td></tr>
+           <tr><td><code>{@link #SwitchCompat_switchTextAppearance com.tian.videomergedemo:switchTextAppearance}</code></td><td> TextAppearance style for text displayed on the switch thumb.</td></tr>
+           <tr><td><code>{@link #SwitchCompat_thumbTextPadding com.tian.videomergedemo:thumbTextPadding}</code></td><td> Amount of padding on either side of text within the switch thumb.</td></tr>
+           <tr><td><code>{@link #SwitchCompat_track com.tian.videomergedemo:track}</code></td><td> Drawable to use as the "track" that the switch thumb slides within.</td></tr>
+           </table>
+           @see #SwitchCompat_android_textOff
+           @see #SwitchCompat_android_textOn
+           @see #SwitchCompat_android_thumb
+           @see #SwitchCompat_showText
+           @see #SwitchCompat_splitTrack
+           @see #SwitchCompat_switchMinWidth
+           @see #SwitchCompat_switchPadding
+           @see #SwitchCompat_switchTextAppearance
+           @see #SwitchCompat_thumbTextPadding
+           @see #SwitchCompat_track
+         */
+        public static final int[] SwitchCompat = {
+            0x01010124, 0x01010125, 0x01010142, 0x7f0100bb,
+            0x7f0100bc, 0x7f0100bd, 0x7f0100be, 0x7f0100bf,
+            0x7f0100c0, 0x7f0100c1
+        };
+        /**
+          <p>
+          @attr description
+           Text to use when the switch is in the unchecked/"off" state. 
+          <p>This corresponds to the global attribute
+          resource symbol {@link android.R.attr#textOff}.
+          @attr name android:textOff
+        */
+        public static final int SwitchCompat_android_textOff = 1;
+        /**
+          <p>
+          @attr description
+           Text to use when the switch is in the checked/"on" state. 
+          <p>This corresponds to the global attribute
+          resource symbol {@link android.R.attr#textOn}.
+          @attr name android:textOn
+        */
+        public static final int SwitchCompat_android_textOn = 0;
+        /**
+          <p>
+          @attr description
+           Drawable to use as the "thumb" that switches back and forth. 
+          <p>This corresponds to the global attribute
+          resource symbol {@link android.R.attr#thumb}.
+          @attr name android:thumb
+        */
+        public static final int SwitchCompat_android_thumb = 2;
+        /**
+          <p>
+          @attr description
+           Whether to draw on/off text. 
+
+
+          <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          <p>This is a private symbol.
+          @attr name com.tian.videomergedemo:showText
+        */
+        public static final int SwitchCompat_showText = 9;
+        /**
+          <p>
+          @attr description
+           Whether to split the track and leave a gap for the thumb drawable. 
+
+
+          <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          <p>This is a private symbol.
+          @attr name com.tian.videomergedemo:splitTrack
+        */
+        public static final int SwitchCompat_splitTrack = 8;
+        /**
+          <p>
+          @attr description
+           Minimum width for the switch component 
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          <p>This is a private symbol.
+          @attr name com.tian.videomergedemo:switchMinWidth
+        */
+        public static final int SwitchCompat_switchMinWidth = 6;
+        /**
+          <p>
+          @attr description
+           Minimum space between the switch and caption text 
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          <p>This is a private symbol.
+          @attr name com.tian.videomergedemo:switchPadding
+        */
+        public static final int SwitchCompat_switchPadding = 7;
+        /**
+          <p>
+          @attr description
+           TextAppearance style for text displayed on the switch thumb. 
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          <p>This is a private symbol.
+          @attr name com.tian.videomergedemo:switchTextAppearance
+        */
+        public static final int SwitchCompat_switchTextAppearance = 5;
+        /**
+          <p>
+          @attr description
+           Amount of padding on either side of text within the switch thumb. 
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          <p>This is a private symbol.
+          @attr name com.tian.videomergedemo:thumbTextPadding
+        */
+        public static final int SwitchCompat_thumbTextPadding = 4;
+        /**
+          <p>
+          @attr description
+           Drawable to use as the "track" that the switch thumb slides within. 
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          <p>This is a private symbol.
+          @attr name com.tian.videomergedemo:track
+        */
+        public static final int SwitchCompat_track = 3;
         /** Attributes that can be used with a TempImageView.
            <p>Includes the following attributes:</p>
            <table>
@@ -2306,7 +7094,7 @@ containing a value of this type.
            @see #TempImageView_animat_id
          */
         public static final int[] TempImageView = {
-            0x7f01003d
+            0x7f010104
         };
         /**
           <p>This symbol is the offset where the {@link com.tian.videomergedemo.R.attr#animat_id}
@@ -2322,6 +7110,2345 @@ containing a value of this type.
           @attr name com.tian.videomergedemo:animat_id
         */
         public static final int TempImageView_animat_id = 0;
+        /** Attributes that can be used with a TextAppearance.
+           <p>Includes the following attributes:</p>
+           <table>
+           <colgroup align="left" />
+           <colgroup align="left" />
+           <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code>{@link #TextAppearance_android_textColor android:textColor}</code></td><td></td></tr>
+           <tr><td><code>{@link #TextAppearance_android_textSize android:textSize}</code></td><td></td></tr>
+           <tr><td><code>{@link #TextAppearance_android_textStyle android:textStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #TextAppearance_android_typeface android:typeface}</code></td><td></td></tr>
+           <tr><td><code>{@link #TextAppearance_textAllCaps com.tian.videomergedemo:textAllCaps}</code></td><td> Present the text in ALL CAPS.</td></tr>
+           </table>
+           @see #TextAppearance_android_textColor
+           @see #TextAppearance_android_textSize
+           @see #TextAppearance_android_textStyle
+           @see #TextAppearance_android_typeface
+           @see #TextAppearance_textAllCaps
+         */
+        public static final int[] TextAppearance = {
+            0x01010095, 0x01010096, 0x01010097, 0x01010098,
+            0x7f0100a0
+        };
+        /**
+          <p>This symbol is the offset where the {@link android.R.attr#textColor}
+          attribute's value can be found in the {@link #TextAppearance} array.
+          @attr name android:textColor
+        */
+        public static final int TextAppearance_android_textColor = 3;
+        /**
+          <p>This symbol is the offset where the {@link android.R.attr#textSize}
+          attribute's value can be found in the {@link #TextAppearance} array.
+          @attr name android:textSize
+        */
+        public static final int TextAppearance_android_textSize = 0;
+        /**
+          <p>This symbol is the offset where the {@link android.R.attr#textStyle}
+          attribute's value can be found in the {@link #TextAppearance} array.
+          @attr name android:textStyle
+        */
+        public static final int TextAppearance_android_textStyle = 2;
+        /**
+          <p>This symbol is the offset where the {@link android.R.attr#typeface}
+          attribute's value can be found in the {@link #TextAppearance} array.
+          @attr name android:typeface
+        */
+        public static final int TextAppearance_android_typeface = 1;
+        /**
+          <p>
+          @attr description
+           Present the text in ALL CAPS. This may use a small-caps form when available. 
+
+
+          <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<p>May be a boolean value, either "<code>true</code>" or "<code>false</code>".
+          <p>This is a private symbol.
+          @attr name com.tian.videomergedemo:textAllCaps
+        */
+        public static final int TextAppearance_textAllCaps = 4;
+        /**  These are the standard attributes that make up a complete theme. 
+           <p>Includes the following attributes:</p>
+           <table>
+           <colgroup align="left" />
+           <colgroup align="left" />
+           <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code>{@link #Theme_actionBarDivider com.tian.videomergedemo:actionBarDivider}</code></td><td> Custom divider drawable to use for elements in the action bar.</td></tr>
+           <tr><td><code>{@link #Theme_actionBarItemBackground com.tian.videomergedemo:actionBarItemBackground}</code></td><td> Custom item state list drawable background for action bar items.</td></tr>
+           <tr><td><code>{@link #Theme_actionBarPopupTheme com.tian.videomergedemo:actionBarPopupTheme}</code></td><td> Reference to a theme that should be used to inflate popups
+             shown by widgets in the action bar.</td></tr>
+           <tr><td><code>{@link #Theme_actionBarSize com.tian.videomergedemo:actionBarSize}</code></td><td> Size of the Action Bar, including the contextual
+             bar used to present Action Modes.</td></tr>
+           <tr><td><code>{@link #Theme_actionBarSplitStyle com.tian.videomergedemo:actionBarSplitStyle}</code></td><td> Reference to a style for the split Action Bar.</td></tr>
+           <tr><td><code>{@link #Theme_actionBarStyle com.tian.videomergedemo:actionBarStyle}</code></td><td> Reference to a style for the Action Bar </td></tr>
+           <tr><td><code>{@link #Theme_actionBarTabBarStyle com.tian.videomergedemo:actionBarTabBarStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionBarTabStyle com.tian.videomergedemo:actionBarTabStyle}</code></td><td> Default style for tabs within an action bar </td></tr>
+           <tr><td><code>{@link #Theme_actionBarTabTextStyle com.tian.videomergedemo:actionBarTabTextStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionBarTheme com.tian.videomergedemo:actionBarTheme}</code></td><td> Reference to a theme that should be used to inflate the
+             action bar.</td></tr>
+           <tr><td><code>{@link #Theme_actionBarWidgetTheme com.tian.videomergedemo:actionBarWidgetTheme}</code></td><td> Reference to a theme that should be used to inflate widgets
+             and layouts destined for the action bar.</td></tr>
+           <tr><td><code>{@link #Theme_actionButtonStyle com.tian.videomergedemo:actionButtonStyle}</code></td><td> Default action button style.</td></tr>
+           <tr><td><code>{@link #Theme_actionDropDownStyle com.tian.videomergedemo:actionDropDownStyle}</code></td><td> Default ActionBar dropdown style.</td></tr>
+           <tr><td><code>{@link #Theme_actionMenuTextAppearance com.tian.videomergedemo:actionMenuTextAppearance}</code></td><td> TextAppearance style that will be applied to text that
+             appears within action menu items.</td></tr>
+           <tr><td><code>{@link #Theme_actionMenuTextColor com.tian.videomergedemo:actionMenuTextColor}</code></td><td> Color for text that appears within action menu items.</td></tr>
+           <tr><td><code>{@link #Theme_actionModeBackground com.tian.videomergedemo:actionModeBackground}</code></td><td> Background drawable to use for action mode UI </td></tr>
+           <tr><td><code>{@link #Theme_actionModeCloseButtonStyle com.tian.videomergedemo:actionModeCloseButtonStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionModeCloseDrawable com.tian.videomergedemo:actionModeCloseDrawable}</code></td><td> Drawable to use for the close action mode button </td></tr>
+           <tr><td><code>{@link #Theme_actionModeCopyDrawable com.tian.videomergedemo:actionModeCopyDrawable}</code></td><td> Drawable to use for the Copy action button in Contextual Action Bar </td></tr>
+           <tr><td><code>{@link #Theme_actionModeCutDrawable com.tian.videomergedemo:actionModeCutDrawable}</code></td><td> Drawable to use for the Cut action button in Contextual Action Bar </td></tr>
+           <tr><td><code>{@link #Theme_actionModeFindDrawable com.tian.videomergedemo:actionModeFindDrawable}</code></td><td> Drawable to use for the Find action button in WebView selection action modes </td></tr>
+           <tr><td><code>{@link #Theme_actionModePasteDrawable com.tian.videomergedemo:actionModePasteDrawable}</code></td><td> Drawable to use for the Paste action button in Contextual Action Bar </td></tr>
+           <tr><td><code>{@link #Theme_actionModePopupWindowStyle com.tian.videomergedemo:actionModePopupWindowStyle}</code></td><td> PopupWindow style to use for action modes when showing as a window overlay.</td></tr>
+           <tr><td><code>{@link #Theme_actionModeSelectAllDrawable com.tian.videomergedemo:actionModeSelectAllDrawable}</code></td><td> Drawable to use for the Select all action button in Contextual Action Bar </td></tr>
+           <tr><td><code>{@link #Theme_actionModeShareDrawable com.tian.videomergedemo:actionModeShareDrawable}</code></td><td> Drawable to use for the Share action button in WebView selection action modes </td></tr>
+           <tr><td><code>{@link #Theme_actionModeSplitBackground com.tian.videomergedemo:actionModeSplitBackground}</code></td><td> Background drawable to use for action mode UI in the lower split bar </td></tr>
+           <tr><td><code>{@link #Theme_actionModeStyle com.tian.videomergedemo:actionModeStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionModeWebSearchDrawable com.tian.videomergedemo:actionModeWebSearchDrawable}</code></td><td> Drawable to use for the Web Search action button in WebView selection action modes </td></tr>
+           <tr><td><code>{@link #Theme_actionOverflowButtonStyle com.tian.videomergedemo:actionOverflowButtonStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionOverflowMenuStyle com.tian.videomergedemo:actionOverflowMenuStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_activityChooserViewStyle com.tian.videomergedemo:activityChooserViewStyle}</code></td><td> Default ActivityChooserView style.</td></tr>
+           <tr><td><code>{@link #Theme_alertDialogButtonGroupStyle com.tian.videomergedemo:alertDialogButtonGroupStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_alertDialogCenterButtons com.tian.videomergedemo:alertDialogCenterButtons}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_alertDialogStyle com.tian.videomergedemo:alertDialogStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_alertDialogTheme com.tian.videomergedemo:alertDialogTheme}</code></td><td> Theme to use for alert dialogs spawned from this theme.</td></tr>
+           <tr><td><code>{@link #Theme_android_windowAnimationStyle android:windowAnimationStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_android_windowIsFloating android:windowIsFloating}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_autoCompleteTextViewStyle com.tian.videomergedemo:autoCompleteTextViewStyle}</code></td><td> Default AutoCompleteTextView style.</td></tr>
+           <tr><td><code>{@link #Theme_buttonBarButtonStyle com.tian.videomergedemo:buttonBarButtonStyle}</code></td><td> Style for buttons within button bars </td></tr>
+           <tr><td><code>{@link #Theme_buttonBarNegativeButtonStyle com.tian.videomergedemo:buttonBarNegativeButtonStyle}</code></td><td> Style for the "negative" buttons within button bars </td></tr>
+           <tr><td><code>{@link #Theme_buttonBarNeutralButtonStyle com.tian.videomergedemo:buttonBarNeutralButtonStyle}</code></td><td> Style for the "neutral" buttons within button bars </td></tr>
+           <tr><td><code>{@link #Theme_buttonBarPositiveButtonStyle com.tian.videomergedemo:buttonBarPositiveButtonStyle}</code></td><td> Style for the "positive" buttons within button bars </td></tr>
+           <tr><td><code>{@link #Theme_buttonBarStyle com.tian.videomergedemo:buttonBarStyle}</code></td><td> Style for button bars </td></tr>
+           <tr><td><code>{@link #Theme_buttonStyle com.tian.videomergedemo:buttonStyle}</code></td><td> Normal Button style.</td></tr>
+           <tr><td><code>{@link #Theme_buttonStyleSmall com.tian.videomergedemo:buttonStyleSmall}</code></td><td> Small Button style.</td></tr>
+           <tr><td><code>{@link #Theme_checkboxStyle com.tian.videomergedemo:checkboxStyle}</code></td><td> Default Checkbox style.</td></tr>
+           <tr><td><code>{@link #Theme_checkedTextViewStyle com.tian.videomergedemo:checkedTextViewStyle}</code></td><td> Default CheckedTextView style.</td></tr>
+           <tr><td><code>{@link #Theme_colorAccent com.tian.videomergedemo:colorAccent}</code></td><td> Bright complement to the primary branding color.</td></tr>
+           <tr><td><code>{@link #Theme_colorButtonNormal com.tian.videomergedemo:colorButtonNormal}</code></td><td> The color applied to framework buttons in their normal state.</td></tr>
+           <tr><td><code>{@link #Theme_colorControlActivated com.tian.videomergedemo:colorControlActivated}</code></td><td> The color applied to framework controls in their activated (ex.</td></tr>
+           <tr><td><code>{@link #Theme_colorControlHighlight com.tian.videomergedemo:colorControlHighlight}</code></td><td> The color applied to framework control highlights (ex.</td></tr>
+           <tr><td><code>{@link #Theme_colorControlNormal com.tian.videomergedemo:colorControlNormal}</code></td><td> The color applied to framework controls in their normal state.</td></tr>
+           <tr><td><code>{@link #Theme_colorPrimary com.tian.videomergedemo:colorPrimary}</code></td><td> The primary branding color for the app.</td></tr>
+           <tr><td><code>{@link #Theme_colorPrimaryDark com.tian.videomergedemo:colorPrimaryDark}</code></td><td> Dark variant of the primary branding color.</td></tr>
+           <tr><td><code>{@link #Theme_colorSwitchThumbNormal com.tian.videomergedemo:colorSwitchThumbNormal}</code></td><td> The color applied to framework switch thumbs in their normal state.</td></tr>
+           <tr><td><code>{@link #Theme_dialogPreferredPadding com.tian.videomergedemo:dialogPreferredPadding}</code></td><td> Preferred padding for dialog content.</td></tr>
+           <tr><td><code>{@link #Theme_dialogTheme com.tian.videomergedemo:dialogTheme}</code></td><td> Theme to use for dialogs spawned from this theme.</td></tr>
+           <tr><td><code>{@link #Theme_dividerHorizontal com.tian.videomergedemo:dividerHorizontal}</code></td><td> A drawable that may be used as a horizontal divider between visual elements.</td></tr>
+           <tr><td><code>{@link #Theme_dividerVertical com.tian.videomergedemo:dividerVertical}</code></td><td> A drawable that may be used as a vertical divider between visual elements.</td></tr>
+           <tr><td><code>{@link #Theme_dropDownListViewStyle com.tian.videomergedemo:dropDownListViewStyle}</code></td><td> ListPopupWindow compatibility </td></tr>
+           <tr><td><code>{@link #Theme_dropdownListPreferredItemHeight com.tian.videomergedemo:dropdownListPreferredItemHeight}</code></td><td> The preferred item height for dropdown lists.</td></tr>
+           <tr><td><code>{@link #Theme_editTextBackground com.tian.videomergedemo:editTextBackground}</code></td><td> EditText background drawable.</td></tr>
+           <tr><td><code>{@link #Theme_editTextColor com.tian.videomergedemo:editTextColor}</code></td><td> EditText text foreground color.</td></tr>
+           <tr><td><code>{@link #Theme_editTextStyle com.tian.videomergedemo:editTextStyle}</code></td><td> Default EditText style.</td></tr>
+           <tr><td><code>{@link #Theme_homeAsUpIndicator com.tian.videomergedemo:homeAsUpIndicator}</code></td><td> Specifies a drawable to use for the 'home as up' indicator.</td></tr>
+           <tr><td><code>{@link #Theme_listChoiceBackgroundIndicator com.tian.videomergedemo:listChoiceBackgroundIndicator}</code></td><td> Drawable used as a background for selected list items.</td></tr>
+           <tr><td><code>{@link #Theme_listDividerAlertDialog com.tian.videomergedemo:listDividerAlertDialog}</code></td><td> The list divider used in alert dialogs.</td></tr>
+           <tr><td><code>{@link #Theme_listPopupWindowStyle com.tian.videomergedemo:listPopupWindowStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_listPreferredItemHeight com.tian.videomergedemo:listPreferredItemHeight}</code></td><td> The preferred list item height.</td></tr>
+           <tr><td><code>{@link #Theme_listPreferredItemHeightLarge com.tian.videomergedemo:listPreferredItemHeightLarge}</code></td><td> A larger, more robust list item height.</td></tr>
+           <tr><td><code>{@link #Theme_listPreferredItemHeightSmall com.tian.videomergedemo:listPreferredItemHeightSmall}</code></td><td> A smaller, sleeker list item height.</td></tr>
+           <tr><td><code>{@link #Theme_listPreferredItemPaddingLeft com.tian.videomergedemo:listPreferredItemPaddingLeft}</code></td><td> The preferred padding along the left edge of list items.</td></tr>
+           <tr><td><code>{@link #Theme_listPreferredItemPaddingRight com.tian.videomergedemo:listPreferredItemPaddingRight}</code></td><td> The preferred padding along the right edge of list items.</td></tr>
+           <tr><td><code>{@link #Theme_panelBackground com.tian.videomergedemo:panelBackground}</code></td><td> The background of a panel when it is inset from the left and right edges of the screen.</td></tr>
+           <tr><td><code>{@link #Theme_panelMenuListTheme com.tian.videomergedemo:panelMenuListTheme}</code></td><td> Default Panel Menu style.</td></tr>
+           <tr><td><code>{@link #Theme_panelMenuListWidth com.tian.videomergedemo:panelMenuListWidth}</code></td><td> Default Panel Menu width.</td></tr>
+           <tr><td><code>{@link #Theme_popupMenuStyle com.tian.videomergedemo:popupMenuStyle}</code></td><td> Default PopupMenu style.</td></tr>
+           <tr><td><code>{@link #Theme_popupWindowStyle com.tian.videomergedemo:popupWindowStyle}</code></td><td> Default PopupWindow style.</td></tr>
+           <tr><td><code>{@link #Theme_radioButtonStyle com.tian.videomergedemo:radioButtonStyle}</code></td><td> Default RadioButton style.</td></tr>
+           <tr><td><code>{@link #Theme_ratingBarStyle com.tian.videomergedemo:ratingBarStyle}</code></td><td> Default RatingBar style.</td></tr>
+           <tr><td><code>{@link #Theme_searchViewStyle com.tian.videomergedemo:searchViewStyle}</code></td><td> Style for the search query widget.</td></tr>
+           <tr><td><code>{@link #Theme_selectableItemBackground com.tian.videomergedemo:selectableItemBackground}</code></td><td> A style that may be applied to buttons or other selectable items
+             that should react to pressed and focus states, but that do not
+             have a clear visual border along the edges.</td></tr>
+           <tr><td><code>{@link #Theme_selectableItemBackgroundBorderless com.tian.videomergedemo:selectableItemBackgroundBorderless}</code></td><td> Background drawable for borderless standalone items that need focus/pressed states.</td></tr>
+           <tr><td><code>{@link #Theme_spinnerDropDownItemStyle com.tian.videomergedemo:spinnerDropDownItemStyle}</code></td><td> Default Spinner style.</td></tr>
+           <tr><td><code>{@link #Theme_spinnerStyle com.tian.videomergedemo:spinnerStyle}</code></td><td> Default Spinner style.</td></tr>
+           <tr><td><code>{@link #Theme_switchStyle com.tian.videomergedemo:switchStyle}</code></td><td> Default style for the Switch widget.</td></tr>
+           <tr><td><code>{@link #Theme_textAppearanceLargePopupMenu com.tian.videomergedemo:textAppearanceLargePopupMenu}</code></td><td> Text color, typeface, size, and style for the text inside of a popup menu.</td></tr>
+           <tr><td><code>{@link #Theme_textAppearanceListItem com.tian.videomergedemo:textAppearanceListItem}</code></td><td> The preferred TextAppearance for the primary text of list items.</td></tr>
+           <tr><td><code>{@link #Theme_textAppearanceListItemSmall com.tian.videomergedemo:textAppearanceListItemSmall}</code></td><td> The preferred TextAppearance for the primary text of small list items.</td></tr>
+           <tr><td><code>{@link #Theme_textAppearanceSearchResultSubtitle com.tian.videomergedemo:textAppearanceSearchResultSubtitle}</code></td><td> Text color, typeface, size, and style for system search result subtitle.</td></tr>
+           <tr><td><code>{@link #Theme_textAppearanceSearchResultTitle com.tian.videomergedemo:textAppearanceSearchResultTitle}</code></td><td> Text color, typeface, size, and style for system search result title.</td></tr>
+           <tr><td><code>{@link #Theme_textAppearanceSmallPopupMenu com.tian.videomergedemo:textAppearanceSmallPopupMenu}</code></td><td> Text color, typeface, size, and style for small text inside of a popup menu.</td></tr>
+           <tr><td><code>{@link #Theme_textColorAlertDialogListItem com.tian.videomergedemo:textColorAlertDialogListItem}</code></td><td> Color of list item text in alert dialogs.</td></tr>
+           <tr><td><code>{@link #Theme_textColorSearchUrl com.tian.videomergedemo:textColorSearchUrl}</code></td><td> Text color for urls in search suggestions, used by things like global search </td></tr>
+           <tr><td><code>{@link #Theme_toolbarNavigationButtonStyle com.tian.videomergedemo:toolbarNavigationButtonStyle}</code></td><td> Default Toolar NavigationButtonStyle </td></tr>
+           <tr><td><code>{@link #Theme_toolbarStyle com.tian.videomergedemo:toolbarStyle}</code></td><td> Default Toolbar style.</td></tr>
+           <tr><td><code>{@link #Theme_windowActionBar com.tian.videomergedemo:windowActionBar}</code></td><td> Flag indicating whether this window should have an Action Bar
+             in place of the usual title bar.</td></tr>
+           <tr><td><code>{@link #Theme_windowActionBarOverlay com.tian.videomergedemo:windowActionBarOverlay}</code></td><td> Flag indicating whether this window's Action Bar should overlay
+             application content.</td></tr>
+           <tr><td><code>{@link #Theme_windowActionModeOverlay com.tian.videomergedemo:windowActionModeOverlay}</code></td><td> Flag indicating whether action modes should overlay window content
+             when there is not reserved space for their UI (such as an Action Bar).</td></tr>
+           <tr><td><code>{@link #Theme_windowFixedHeightMajor com.tian.videomergedemo:windowFixedHeightMajor}</code></td><td> A fixed height for the window along the major axis of the screen,
+             that is, when in portrait.</td></tr>
+           <tr><td><code>{@link #Theme_windowFixedHeightMinor com.tian.videomergedemo:windowFixedHeightMinor}</code></td><td> A fixed height for the window along the minor axis of the screen,
+             that is, when in landscape.</td></tr>
+           <tr><td><code>{@link #Theme_windowFixedWidthMajor com.tian.videomergedemo:windowFixedWidthMajor}</code></td><td> A fixed width for the window along the major axis of the screen,
+             that is, when in landscape.</td></tr>
+           <tr><td><code>{@link #Theme_windowFixedWidthMinor com.tian.videomergedemo:windowFixedWidthMinor}</code></td><td> A fixed width for the window along the minor axis of the screen,
+             that is, when in portrait.</td></tr>
+           <tr><td><code>{@link #Theme_windowMinWidthMajor com.tian.videomergedemo:windowMinWidthMajor}</code></td><td> The minimum width the window is allowed to be, along the major
+             axis of the screen.</td></tr>
+           <tr><td><code>{@link #Theme_windowMinWidthMinor com.tian.videomergedemo:windowMinWidthMinor}</code></td><td> The minimum width the window is allowed to be, along the minor
+             axis of the screen.</td></tr>
+           <tr><td><code>{@link #Theme_windowNoTitle com.tian.videomergedemo:windowNoTitle}</code></td><td> Flag indicating whether there should be no title on this window.</td></tr>
+           </table>
+           @see #Theme_actionBarDivider
+           @see #Theme_actionBarItemBackground
+           @see #Theme_actionBarPopupTheme
+           @see #Theme_actionBarSize
+           @see #Theme_actionBarSplitStyle
+           @see #Theme_actionBarStyle
+           @see #Theme_actionBarTabBarStyle
+           @see #Theme_actionBarTabStyle
+           @see #Theme_actionBarTabTextStyle
+           @see #Theme_actionBarTheme
+           @see #Theme_actionBarWidgetTheme
+           @see #Theme_actionButtonStyle
+           @see #Theme_actionDropDownStyle
+           @see #Theme_actionMenuTextAppearance
+           @see #Theme_actionMenuTextColor
+           @see #Theme_actionModeBackground
+           @see #Theme_actionModeCloseButtonStyle
+           @see #Theme_actionModeCloseDrawable
+           @see #Theme_actionModeCopyDrawable
+           @see #Theme_actionModeCutDrawable
+           @see #Theme_actionModeFindDrawable
+           @see #Theme_actionModePasteDrawable
+           @see #Theme_actionModePopupWindowStyle
+           @see #Theme_actionModeSelectAllDrawable
+           @see #Theme_actionModeShareDrawable
+           @see #Theme_actionModeSplitBackground
+           @see #Theme_actionModeStyle
+           @see #Theme_actionModeWebSearchDrawable
+           @see #Theme_actionOverflowButtonStyle
+           @see #Theme_actionOverflowMenuStyle
+           @see #Theme_activityChooserViewStyle
+           @see #Theme_alertDialogButtonGroupStyle
+           @see #Theme_alertDialogCenterButtons
+           @see #Theme_alertDialogStyle
+           @see #Theme_alertDialogTheme
+           @see #Theme_android_windowAnimationStyle
+           @see #Theme_android_windowIsFloating
+           @see #Theme_autoCompleteTextViewStyle
+           @see #Theme_buttonBarButtonStyle
+           @see #Theme_buttonBarNegativeButtonStyle
+           @see #Theme_buttonBarNeutralButtonStyle
+           @see #Theme_buttonBarPositiveButtonStyle
+           @see #Theme_buttonBarStyle
+           @see #Theme_buttonStyle
+           @see #Theme_buttonStyleSmall
+           @see #Theme_checkboxStyle
+           @see #Theme_checkedTextViewStyle
+           @see #Theme_colorAccent
+           @see #Theme_colorButtonNormal
+           @see #Theme_colorControlActivated
+           @see #Theme_colorControlHighlight
+           @see #Theme_colorControlNormal
+           @see #Theme_colorPrimary
+           @see #Theme_colorPrimaryDark
+           @see #Theme_colorSwitchThumbNormal
+           @see #Theme_dialogPreferredPadding
+           @see #Theme_dialogTheme
+           @see #Theme_dividerHorizontal
+           @see #Theme_dividerVertical
+           @see #Theme_dropDownListViewStyle
+           @see #Theme_dropdownListPreferredItemHeight
+           @see #Theme_editTextBackground
+           @see #Theme_editTextColor
+           @see #Theme_editTextStyle
+           @see #Theme_homeAsUpIndicator
+           @see #Theme_listChoiceBackgroundIndicator
+           @see #Theme_listDividerAlertDialog
+           @see #Theme_listPopupWindowStyle
+           @see #Theme_listPreferredItemHeight
+           @see #Theme_listPreferredItemHeightLarge
+           @see #Theme_listPreferredItemHeightSmall
+           @see #Theme_listPreferredItemPaddingLeft
+           @see #Theme_listPreferredItemPaddingRight
+           @see #Theme_panelBackground
+           @see #Theme_panelMenuListTheme
+           @see #Theme_panelMenuListWidth
+           @see #Theme_popupMenuStyle
+           @see #Theme_popupWindowStyle
+           @see #Theme_radioButtonStyle
+           @see #Theme_ratingBarStyle
+           @see #Theme_searchViewStyle
+           @see #Theme_selectableItemBackground
+           @see #Theme_selectableItemBackgroundBorderless
+           @see #Theme_spinnerDropDownItemStyle
+           @see #Theme_spinnerStyle
+           @see #Theme_switchStyle
+           @see #Theme_textAppearanceLargePopupMenu
+           @see #Theme_textAppearanceListItem
+           @see #Theme_textAppearanceListItemSmall
+           @see #Theme_textAppearanceSearchResultSubtitle
+           @see #Theme_textAppearanceSearchResultTitle
+           @see #Theme_textAppearanceSmallPopupMenu
+           @see #Theme_textColorAlertDialogListItem
+           @see #Theme_textColorSearchUrl
+           @see #Theme_toolbarNavigationButtonStyle
+           @see #Theme_toolbarStyle
+           @see #Theme_windowActionBar
+           @see #Theme_windowActionBarOverlay
+           @see #Theme_windowActionModeOverlay
+           @see #Theme_windowFixedHeightMajor
+           @see #Theme_windowFixedHeightMinor
+           @see #Theme_windowFixedWidthMajor
+           @see #Theme_windowFixedWidthMinor
+           @see #Theme_windowMinWidthMajor
+           @see #Theme_windowMinWidthMinor
+           @see #Theme_windowNoTitle
+         */
+        public static final int[] Theme = {
+            0x01010057, 0x010100ae, 0x7f010003, 0x7f010004,
+            0x7f010005, 0x7f010006, 0x7f010007, 0x7f010008,
+            0x7f010009, 0x7f01000a, 0x7f01000b, 0x7f01000c,
+            0x7f01000d, 0x7f01000e, 0x7f01000f, 0x7f010010,
+            0x7f010011, 0x7f010012, 0x7f010013, 0x7f010014,
+            0x7f010015, 0x7f010016, 0x7f010017, 0x7f010018,
+            0x7f010019, 0x7f01001a, 0x7f01001b, 0x7f01001c,
+            0x7f01001d, 0x7f01001e, 0x7f01001f, 0x7f010020,
+            0x7f010021, 0x7f010022, 0x7f010023, 0x7f010024,
+            0x7f010025, 0x7f010026, 0x7f010027, 0x7f010028,
+            0x7f010029, 0x7f01002a, 0x7f01002b, 0x7f01002c,
+            0x7f01002d, 0x7f01002e, 0x7f01002f, 0x7f010030,
+            0x7f010031, 0x7f010032, 0x7f010033, 0x7f010034,
+            0x7f010035, 0x7f010036, 0x7f010037, 0x7f010038,
+            0x7f010039, 0x7f01003a, 0x7f01003b, 0x7f01003c,
+            0x7f01003d, 0x7f01003e, 0x7f01003f, 0x7f010040,
+            0x7f010041, 0x7f010042, 0x7f010043, 0x7f010044,
+            0x7f010045, 0x7f010046, 0x7f010047, 0x7f010048,
+            0x7f010049, 0x7f01004a, 0x7f01004b, 0x7f01004c,
+            0x7f01004d, 0x7f01004e, 0x7f01004f, 0x7f010050,
+            0x7f010051, 0x7f010052, 0x7f010053, 0x7f010054,
+            0x7f010055, 0x7f010056, 0x7f010057, 0x7f010058,
+            0x7f010059, 0x7f01005a, 0x7f01005b, 0x7f01005c,
+            0x7f01005d, 0x7f01005e, 0x7f01005f, 0x7f010060,
+            0x7f010061, 0x7f010062, 0x7f010063, 0x7f010064,
+            0x7f010065, 0x7f010066, 0x7f010067, 0x7f010068,
+            0x7f010069, 0x7f01006a
+        };
+        /**
+          <p>
+          @attr description
+           Custom divider drawable to use for elements in the action bar. 
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          <p>This is a private symbol.
+          @attr name com.tian.videomergedemo:actionBarDivider
+        */
+        public static final int Theme_actionBarDivider = 23;
+        /**
+          <p>
+          @attr description
+           Custom item state list drawable background for action bar items. 
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          <p>This is a private symbol.
+          @attr name com.tian.videomergedemo:actionBarItemBackground
+        */
+        public static final int Theme_actionBarItemBackground = 24;
+        /**
+          <p>
+          @attr description
+           Reference to a theme that should be used to inflate popups
+             shown by widgets in the action bar. 
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          <p>This is a private symbol.
+          @attr name com.tian.videomergedemo:actionBarPopupTheme
+        */
+        public static final int Theme_actionBarPopupTheme = 17;
+        /**
+          <p>
+          @attr description
+           Size of the Action Bar, including the contextual
+             bar used to present Action Modes. 
+
+
+          <p>May be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+<p>May be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>wrap_content</code></td><td>0</td><td></td></tr>
+</table>
+          <p>This is a private symbol.
+          @attr name com.tian.videomergedemo:actionBarSize
+        */
+        public static final int Theme_actionBarSize = 22;
+        /**
+          <p>
+          @attr description
+           Reference to a style for the split Action Bar. This style
+             controls the split component that holds the menu/action
+             buttons. actionBarStyle is still used for the primary
+             bar. 
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          <p>This is a private symbol.
+          @attr name com.tian.videomergedemo:actionBarSplitStyle
+        */
+        public static final int Theme_actionBarSplitStyle = 19;
+        /**
+          <p>
+          @attr description
+           Reference to a style for the Action Bar 
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          <p>This is a private symbol.
+          @attr name com.tian.videomergedemo:actionBarStyle
+        */
+        public static final int Theme_actionBarStyle = 18;
+        /**
+          <p>This symbol is the offset where the {@link com.tian.videomergedemo.R.attr#actionBarTabBarStyle}
+          attribute's value can be found in the {@link #Theme} array.
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          @attr name com.tian.videomergedemo:actionBarTabBarStyle
+        */
+        public static final int Theme_actionBarTabBarStyle = 13;
+        /**
+          <p>
+          @attr description
+           Default style for tabs within an action bar 
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          <p>This is a private symbol.
+          @attr name com.tian.videomergedemo:actionBarTabStyle
+        */
+        public static final int Theme_actionBarTabStyle = 12;
+        /**
+          <p>This symbol is the offset where the {@link com.tian.videomergedemo.R.attr#actionBarTabTextStyle}
+          attribute's value can be found in the {@link #Theme} array.
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          @attr name com.tian.videomergedemo:actionBarTabTextStyle
+        */
+        public static final int Theme_actionBarTabTextStyle = 14;
+        /**
+          <p>
+          @attr description
+           Reference to a theme that should be used to inflate the
+             action bar. This will be inherited by any widget inflated
+             into the action bar. 
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          <p>This is a private symbol.
+          @attr name com.tian.videomergedemo:actionBarTheme
+        */
+        public static final int Theme_actionBarTheme = 20;
+        /**
+          <p>
+          @attr description
+           Reference to a theme that should be used to inflate widgets
+             and layouts destined for the action bar. Most of the time
+             this will be a reference to the current theme, but when
+             the action bar has a significantly different contrast
+             profile than the rest of the activity the difference
+             can become important. If this is set to @null the current
+             theme will be used.
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          <p>This is a private symbol.
+          @attr name com.tian.videomergedemo:actionBarWidgetTheme
+        */
+        public static final int Theme_actionBarWidgetTheme = 21;
+        /**
+          <p>
+          @attr description
+           Default action button style. 
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          <p>This is a private symbol.
+          @attr name com.tian.videomergedemo:actionButtonStyle
+        */
+        public static final int Theme_actionButtonStyle = 49;
+        /**
+          <p>
+          @attr description
+           Default ActionBar dropdown style. 
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          <p>This is a private symbol.
+          @attr name com.tian.videomergedemo:actionDropDownStyle
+        */
+        public static final int Theme_actionDropDownStyle = 45;
+        /**
+          <p>
+          @attr description
+           TextAppearance style that will be applied to text that
+             appears within action menu items. 
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          <p>This is a private symbol.
+          @attr name com.tian.videomergedemo:actionMenuTextAppearance
+        */
+        public static final int Theme_actionMenuTextAppearance = 25;
+        /**
+          <p>
+          @attr description
+           Color for text that appears within action menu items. 
+ Color for text that appears within action menu items. 
+
+
+          <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+          <p>This is a private symbol.
+          @attr name com.tian.videomergedemo:actionMenuTextColor
+        */
+        public static final int Theme_actionMenuTextColor = 26;
+        /**
+          <p>
+          @attr description
+           Background drawable to use for action mode UI 
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          <p>This is a private symbol.
+          @attr name com.tian.videomergedemo:actionModeBackground
+        */
+        public static final int Theme_actionModeBackground = 29;
+        /**
+          <p>This symbol is the offset where the {@link com.tian.videomergedemo.R.attr#actionModeCloseButtonStyle}
+          attribute's value can be found in the {@link #Theme} array.
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          @attr name com.tian.videomergedemo:actionModeCloseButtonStyle
+        */
+        public static final int Theme_actionModeCloseButtonStyle = 28;
+        /**
+          <p>
+          @attr description
+           Drawable to use for the close action mode button 
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          <p>This is a private symbol.
+          @attr name com.tian.videomergedemo:actionModeCloseDrawable
+        */
+        public static final int Theme_actionModeCloseDrawable = 31;
+        /**
+          <p>
+          @attr description
+           Drawable to use for the Copy action button in Contextual Action Bar 
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          <p>This is a private symbol.
+          @attr name com.tian.videomergedemo:actionModeCopyDrawable
+        */
+        public static final int Theme_actionModeCopyDrawable = 33;
+        /**
+          <p>
+          @attr description
+           Drawable to use for the Cut action button in Contextual Action Bar 
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          <p>This is a private symbol.
+          @attr name com.tian.videomergedemo:actionModeCutDrawable
+        */
+        public static final int Theme_actionModeCutDrawable = 32;
+        /**
+          <p>
+          @attr description
+           Drawable to use for the Find action button in WebView selection action modes 
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          <p>This is a private symbol.
+          @attr name com.tian.videomergedemo:actionModeFindDrawable
+        */
+        public static final int Theme_actionModeFindDrawable = 37;
+        /**
+          <p>
+          @attr description
+           Drawable to use for the Paste action button in Contextual Action Bar 
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          <p>This is a private symbol.
+          @attr name com.tian.videomergedemo:actionModePasteDrawable
+        */
+        public static final int Theme_actionModePasteDrawable = 34;
+        /**
+          <p>
+          @attr description
+           PopupWindow style to use for action modes when showing as a window overlay. 
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          <p>This is a private symbol.
+          @attr name com.tian.videomergedemo:actionModePopupWindowStyle
+        */
+        public static final int Theme_actionModePopupWindowStyle = 39;
+        /**
+          <p>
+          @attr description
+           Drawable to use for the Select all action button in Contextual Action Bar 
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          <p>This is a private symbol.
+          @attr name com.tian.videomergedemo:actionModeSelectAllDrawable
+        */
+        public static final int Theme_actionModeSelectAllDrawable = 35;
+        /**
+          <p>
+          @attr description
+           Drawable to use for the Share action button in WebView selection action modes 
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          <p>This is a private symbol.
+          @attr name com.tian.videomergedemo:actionModeShareDrawable
+        */
+        public static final int Theme_actionModeShareDrawable = 36;
+        /**
+          <p>
+          @attr description
+           Background drawable to use for action mode UI in the lower split bar 
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          <p>This is a private symbol.
+          @attr name com.tian.videomergedemo:actionModeSplitBackground
+        */
+        public static final int Theme_actionModeSplitBackground = 30;
+        /**
+          <p>This symbol is the offset where the {@link com.tian.videomergedemo.R.attr#actionModeStyle}
+          attribute's value can be found in the {@link #Theme} array.
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          @attr name com.tian.videomergedemo:actionModeStyle
+        */
+        public static final int Theme_actionModeStyle = 27;
+        /**
+          <p>
+          @attr description
+           Drawable to use for the Web Search action button in WebView selection action modes 
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          <p>This is a private symbol.
+          @attr name com.tian.videomergedemo:actionModeWebSearchDrawable
+        */
+        public static final int Theme_actionModeWebSearchDrawable = 38;
+        /**
+          <p>This symbol is the offset where the {@link com.tian.videomergedemo.R.attr#actionOverflowButtonStyle}
+          attribute's value can be found in the {@link #Theme} array.
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          @attr name com.tian.videomergedemo:actionOverflowButtonStyle
+        */
+        public static final int Theme_actionOverflowButtonStyle = 15;
+        /**
+          <p>This symbol is the offset where the {@link com.tian.videomergedemo.R.attr#actionOverflowMenuStyle}
+          attribute's value can be found in the {@link #Theme} array.
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          @attr name com.tian.videomergedemo:actionOverflowMenuStyle
+        */
+        public static final int Theme_actionOverflowMenuStyle = 16;
+        /**
+          <p>
+          @attr description
+           Default ActivityChooserView style. 
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          <p>This is a private symbol.
+          @attr name com.tian.videomergedemo:activityChooserViewStyle
+        */
+        public static final int Theme_activityChooserViewStyle = 56;
+        /**
+          <p>This symbol is the offset where the {@link com.tian.videomergedemo.R.attr#alertDialogButtonGroupStyle}
+          attribute's value can be found in the {@link #Theme} array.
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          @attr name com.tian.videomergedemo:alertDialogButtonGroupStyle
+        */
+        public static final int Theme_alertDialogButtonGroupStyle = 89;
+        /**
+          <p>This symbol is the offset where the {@link com.tian.videomergedemo.R.attr#alertDialogCenterButtons}
+          attribute's value can be found in the {@link #Theme} array.
+
+
+          <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.tian.videomergedemo:alertDialogCenterButtons
+        */
+        public static final int Theme_alertDialogCenterButtons = 90;
+        /**
+          <p>This symbol is the offset where the {@link com.tian.videomergedemo.R.attr#alertDialogStyle}
+          attribute's value can be found in the {@link #Theme} array.
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          @attr name com.tian.videomergedemo:alertDialogStyle
+        */
+        public static final int Theme_alertDialogStyle = 88;
+        /**
+          <p>
+          @attr description
+           Theme to use for alert dialogs spawned from this theme. 
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          <p>This is a private symbol.
+          @attr name com.tian.videomergedemo:alertDialogTheme
+        */
+        public static final int Theme_alertDialogTheme = 91;
+        /**
+          <p>This symbol is the offset where the {@link android.R.attr#windowAnimationStyle}
+          attribute's value can be found in the {@link #Theme} array.
+          @attr name android:windowAnimationStyle
+        */
+        public static final int Theme_android_windowAnimationStyle = 1;
+        /**
+          <p>This symbol is the offset where the {@link android.R.attr#windowIsFloating}
+          attribute's value can be found in the {@link #Theme} array.
+          @attr name android:windowIsFloating
+        */
+        public static final int Theme_android_windowIsFloating = 0;
+        /**
+          <p>
+          @attr description
+           Default AutoCompleteTextView style. 
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          <p>This is a private symbol.
+          @attr name com.tian.videomergedemo:autoCompleteTextViewStyle
+        */
+        public static final int Theme_autoCompleteTextViewStyle = 96;
+        /**
+          <p>
+          @attr description
+           Style for buttons within button bars 
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          <p>This is a private symbol.
+          @attr name com.tian.videomergedemo:buttonBarButtonStyle
+        */
+        public static final int Theme_buttonBarButtonStyle = 51;
+        /**
+          <p>
+          @attr description
+           Style for the "negative" buttons within button bars 
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          <p>This is a private symbol.
+          @attr name com.tian.videomergedemo:buttonBarNegativeButtonStyle
+        */
+        public static final int Theme_buttonBarNegativeButtonStyle = 94;
+        /**
+          <p>
+          @attr description
+           Style for the "neutral" buttons within button bars 
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          <p>This is a private symbol.
+          @attr name com.tian.videomergedemo:buttonBarNeutralButtonStyle
+        */
+        public static final int Theme_buttonBarNeutralButtonStyle = 95;
+        /**
+          <p>
+          @attr description
+           Style for the "positive" buttons within button bars 
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          <p>This is a private symbol.
+          @attr name com.tian.videomergedemo:buttonBarPositiveButtonStyle
+        */
+        public static final int Theme_buttonBarPositiveButtonStyle = 93;
+        /**
+          <p>
+          @attr description
+           Style for button bars 
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          <p>This is a private symbol.
+          @attr name com.tian.videomergedemo:buttonBarStyle
+        */
+        public static final int Theme_buttonBarStyle = 50;
+        /**
+          <p>
+          @attr description
+           Normal Button style. 
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          <p>This is a private symbol.
+          @attr name com.tian.videomergedemo:buttonStyle
+        */
+        public static final int Theme_buttonStyle = 97;
+        /**
+          <p>
+          @attr description
+           Small Button style. 
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          <p>This is a private symbol.
+          @attr name com.tian.videomergedemo:buttonStyleSmall
+        */
+        public static final int Theme_buttonStyleSmall = 98;
+        /**
+          <p>
+          @attr description
+           Default Checkbox style. 
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          <p>This is a private symbol.
+          @attr name com.tian.videomergedemo:checkboxStyle
+        */
+        public static final int Theme_checkboxStyle = 99;
+        /**
+          <p>
+          @attr description
+           Default CheckedTextView style. 
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          <p>This is a private symbol.
+          @attr name com.tian.videomergedemo:checkedTextViewStyle
+        */
+        public static final int Theme_checkedTextViewStyle = 100;
+        /**
+          <p>
+          @attr description
+           Bright complement to the primary branding color. By default, this is the color applied
+             to framework controls (via colorControlActivated). 
+
+
+          <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          <p>This is a private symbol.
+          @attr name com.tian.videomergedemo:colorAccent
+        */
+        public static final int Theme_colorAccent = 82;
+        /**
+          <p>
+          @attr description
+           The color applied to framework buttons in their normal state. 
+
+
+          <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          <p>This is a private symbol.
+          @attr name com.tian.videomergedemo:colorButtonNormal
+        */
+        public static final int Theme_colorButtonNormal = 86;
+        /**
+          <p>
+          @attr description
+           The color applied to framework controls in their activated (ex. checked) state. 
+
+
+          <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          <p>This is a private symbol.
+          @attr name com.tian.videomergedemo:colorControlActivated
+        */
+        public static final int Theme_colorControlActivated = 84;
+        /**
+          <p>
+          @attr description
+           The color applied to framework control highlights (ex. ripples, list selectors). 
+
+
+          <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          <p>This is a private symbol.
+          @attr name com.tian.videomergedemo:colorControlHighlight
+        */
+        public static final int Theme_colorControlHighlight = 85;
+        /**
+          <p>
+          @attr description
+           The color applied to framework controls in their normal state. 
+
+
+          <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          <p>This is a private symbol.
+          @attr name com.tian.videomergedemo:colorControlNormal
+        */
+        public static final int Theme_colorControlNormal = 83;
+        /**
+          <p>
+          @attr description
+           The primary branding color for the app. By default, this is the color applied to the
+             action bar background. 
+
+
+          <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          <p>This is a private symbol.
+          @attr name com.tian.videomergedemo:colorPrimary
+        */
+        public static final int Theme_colorPrimary = 80;
+        /**
+          <p>
+          @attr description
+           Dark variant of the primary branding color. By default, this is the color applied to
+             the status bar (via statusBarColor) and navigation bar (via navigationBarColor). 
+
+
+          <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          <p>This is a private symbol.
+          @attr name com.tian.videomergedemo:colorPrimaryDark
+        */
+        public static final int Theme_colorPrimaryDark = 81;
+        /**
+          <p>
+          @attr description
+           The color applied to framework switch thumbs in their normal state. 
+
+
+          <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          <p>This is a private symbol.
+          @attr name com.tian.videomergedemo:colorSwitchThumbNormal
+        */
+        public static final int Theme_colorSwitchThumbNormal = 87;
+        /**
+          <p>
+          @attr description
+           Preferred padding for dialog content. 
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          <p>This is a private symbol.
+          @attr name com.tian.videomergedemo:dialogPreferredPadding
+        */
+        public static final int Theme_dialogPreferredPadding = 43;
+        /**
+          <p>
+          @attr description
+           Theme to use for dialogs spawned from this theme. 
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          <p>This is a private symbol.
+          @attr name com.tian.videomergedemo:dialogTheme
+        */
+        public static final int Theme_dialogTheme = 42;
+        /**
+          <p>
+          @attr description
+           A drawable that may be used as a horizontal divider between visual elements. 
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          <p>This is a private symbol.
+          @attr name com.tian.videomergedemo:dividerHorizontal
+        */
+        public static final int Theme_dividerHorizontal = 55;
+        /**
+          <p>
+          @attr description
+           A drawable that may be used as a vertical divider between visual elements. 
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          <p>This is a private symbol.
+          @attr name com.tian.videomergedemo:dividerVertical
+        */
+        public static final int Theme_dividerVertical = 54;
+        /**
+          <p>
+          @attr description
+           ListPopupWindow compatibility 
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          <p>This is a private symbol.
+          @attr name com.tian.videomergedemo:dropDownListViewStyle
+        */
+        public static final int Theme_dropDownListViewStyle = 72;
+        /**
+          <p>
+          @attr description
+           The preferred item height for dropdown lists. 
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          <p>This is a private symbol.
+          @attr name com.tian.videomergedemo:dropdownListPreferredItemHeight
+        */
+        public static final int Theme_dropdownListPreferredItemHeight = 46;
+        /**
+          <p>
+          @attr description
+           EditText background drawable. 
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          <p>This is a private symbol.
+          @attr name com.tian.videomergedemo:editTextBackground
+        */
+        public static final int Theme_editTextBackground = 62;
+        /**
+          <p>
+          @attr description
+           EditText text foreground color. 
+
+
+          <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+          <p>This is a private symbol.
+          @attr name com.tian.videomergedemo:editTextColor
+        */
+        public static final int Theme_editTextColor = 61;
+        /**
+          <p>
+          @attr description
+           Default EditText style. 
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          <p>This is a private symbol.
+          @attr name com.tian.videomergedemo:editTextStyle
+        */
+        public static final int Theme_editTextStyle = 101;
+        /**
+          <p>
+          @attr description
+           Specifies a drawable to use for the 'home as up' indicator. 
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          <p>This is a private symbol.
+          @attr name com.tian.videomergedemo:homeAsUpIndicator
+        */
+        public static final int Theme_homeAsUpIndicator = 48;
+        /**
+          <p>
+          @attr description
+           Drawable used as a background for selected list items. 
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          <p>This is a private symbol.
+          @attr name com.tian.videomergedemo:listChoiceBackgroundIndicator
+        */
+        public static final int Theme_listChoiceBackgroundIndicator = 79;
+        /**
+          <p>
+          @attr description
+           The list divider used in alert dialogs. 
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          <p>This is a private symbol.
+          @attr name com.tian.videomergedemo:listDividerAlertDialog
+        */
+        public static final int Theme_listDividerAlertDialog = 44;
+        /**
+          <p>This symbol is the offset where the {@link com.tian.videomergedemo.R.attr#listPopupWindowStyle}
+          attribute's value can be found in the {@link #Theme} array.
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          @attr name com.tian.videomergedemo:listPopupWindowStyle
+        */
+        public static final int Theme_listPopupWindowStyle = 73;
+        /**
+          <p>
+          @attr description
+           The preferred list item height. 
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          <p>This is a private symbol.
+          @attr name com.tian.videomergedemo:listPreferredItemHeight
+        */
+        public static final int Theme_listPreferredItemHeight = 67;
+        /**
+          <p>
+          @attr description
+           A larger, more robust list item height. 
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          <p>This is a private symbol.
+          @attr name com.tian.videomergedemo:listPreferredItemHeightLarge
+        */
+        public static final int Theme_listPreferredItemHeightLarge = 69;
+        /**
+          <p>
+          @attr description
+           A smaller, sleeker list item height. 
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          <p>This is a private symbol.
+          @attr name com.tian.videomergedemo:listPreferredItemHeightSmall
+        */
+        public static final int Theme_listPreferredItemHeightSmall = 68;
+        /**
+          <p>
+          @attr description
+           The preferred padding along the left edge of list items. 
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          <p>This is a private symbol.
+          @attr name com.tian.videomergedemo:listPreferredItemPaddingLeft
+        */
+        public static final int Theme_listPreferredItemPaddingLeft = 70;
+        /**
+          <p>
+          @attr description
+           The preferred padding along the right edge of list items. 
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          <p>This is a private symbol.
+          @attr name com.tian.videomergedemo:listPreferredItemPaddingRight
+        */
+        public static final int Theme_listPreferredItemPaddingRight = 71;
+        /**
+          <p>
+          @attr description
+           The background of a panel when it is inset from the left and right edges of the screen. 
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          <p>This is a private symbol.
+          @attr name com.tian.videomergedemo:panelBackground
+        */
+        public static final int Theme_panelBackground = 76;
+        /**
+          <p>
+          @attr description
+           Default Panel Menu style. 
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          <p>This is a private symbol.
+          @attr name com.tian.videomergedemo:panelMenuListTheme
+        */
+        public static final int Theme_panelMenuListTheme = 78;
+        /**
+          <p>
+          @attr description
+           Default Panel Menu width. 
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          <p>This is a private symbol.
+          @attr name com.tian.videomergedemo:panelMenuListWidth
+        */
+        public static final int Theme_panelMenuListWidth = 77;
+        /**
+          <p>
+          @attr description
+           Default PopupMenu style. 
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          <p>This is a private symbol.
+          @attr name com.tian.videomergedemo:popupMenuStyle
+        */
+        public static final int Theme_popupMenuStyle = 59;
+        /**
+          <p>
+          @attr description
+           Default PopupWindow style. 
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          <p>This is a private symbol.
+          @attr name com.tian.videomergedemo:popupWindowStyle
+        */
+        public static final int Theme_popupWindowStyle = 60;
+        /**
+          <p>
+          @attr description
+           Default RadioButton style. 
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          <p>This is a private symbol.
+          @attr name com.tian.videomergedemo:radioButtonStyle
+        */
+        public static final int Theme_radioButtonStyle = 102;
+        /**
+          <p>
+          @attr description
+           Default RatingBar style. 
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          <p>This is a private symbol.
+          @attr name com.tian.videomergedemo:ratingBarStyle
+        */
+        public static final int Theme_ratingBarStyle = 103;
+        /**
+          <p>
+          @attr description
+           Style for the search query widget. 
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          <p>This is a private symbol.
+          @attr name com.tian.videomergedemo:searchViewStyle
+        */
+        public static final int Theme_searchViewStyle = 66;
+        /**
+          <p>
+          @attr description
+           A style that may be applied to buttons or other selectable items
+             that should react to pressed and focus states, but that do not
+             have a clear visual border along the edges. 
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          <p>This is a private symbol.
+          @attr name com.tian.videomergedemo:selectableItemBackground
+        */
+        public static final int Theme_selectableItemBackground = 52;
+        /**
+          <p>
+          @attr description
+           Background drawable for borderless standalone items that need focus/pressed states. 
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          <p>This is a private symbol.
+          @attr name com.tian.videomergedemo:selectableItemBackgroundBorderless
+        */
+        public static final int Theme_selectableItemBackgroundBorderless = 53;
+        /**
+          <p>
+          @attr description
+           Default Spinner style. 
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          <p>This is a private symbol.
+          @attr name com.tian.videomergedemo:spinnerDropDownItemStyle
+        */
+        public static final int Theme_spinnerDropDownItemStyle = 47;
+        /**
+          <p>
+          @attr description
+           Default Spinner style. 
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          <p>This is a private symbol.
+          @attr name com.tian.videomergedemo:spinnerStyle
+        */
+        public static final int Theme_spinnerStyle = 104;
+        /**
+          <p>
+          @attr description
+           Default style for the Switch widget. 
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          <p>This is a private symbol.
+          @attr name com.tian.videomergedemo:switchStyle
+        */
+        public static final int Theme_switchStyle = 105;
+        /**
+          <p>
+          @attr description
+           Text color, typeface, size, and style for the text inside of a popup menu. 
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          <p>This is a private symbol.
+          @attr name com.tian.videomergedemo:textAppearanceLargePopupMenu
+        */
+        public static final int Theme_textAppearanceLargePopupMenu = 40;
+        /**
+          <p>
+          @attr description
+           The preferred TextAppearance for the primary text of list items. 
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          <p>This is a private symbol.
+          @attr name com.tian.videomergedemo:textAppearanceListItem
+        */
+        public static final int Theme_textAppearanceListItem = 74;
+        /**
+          <p>
+          @attr description
+           The preferred TextAppearance for the primary text of small list items. 
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          <p>This is a private symbol.
+          @attr name com.tian.videomergedemo:textAppearanceListItemSmall
+        */
+        public static final int Theme_textAppearanceListItemSmall = 75;
+        /**
+          <p>
+          @attr description
+           Text color, typeface, size, and style for system search result subtitle. Defaults to primary inverse text color. 
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          <p>This is a private symbol.
+          @attr name com.tian.videomergedemo:textAppearanceSearchResultSubtitle
+        */
+        public static final int Theme_textAppearanceSearchResultSubtitle = 64;
+        /**
+          <p>
+          @attr description
+           Text color, typeface, size, and style for system search result title. Defaults to primary inverse text color. 
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          <p>This is a private symbol.
+          @attr name com.tian.videomergedemo:textAppearanceSearchResultTitle
+        */
+        public static final int Theme_textAppearanceSearchResultTitle = 63;
+        /**
+          <p>
+          @attr description
+           Text color, typeface, size, and style for small text inside of a popup menu. 
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          <p>This is a private symbol.
+          @attr name com.tian.videomergedemo:textAppearanceSmallPopupMenu
+        */
+        public static final int Theme_textAppearanceSmallPopupMenu = 41;
+        /**
+          <p>
+          @attr description
+           Color of list item text in alert dialogs. 
+
+
+          <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+          <p>This is a private symbol.
+          @attr name com.tian.videomergedemo:textColorAlertDialogListItem
+        */
+        public static final int Theme_textColorAlertDialogListItem = 92;
+        /**
+          <p>
+          @attr description
+           Text color for urls in search suggestions, used by things like global search 
+
+
+          <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+          <p>This is a private symbol.
+          @attr name com.tian.videomergedemo:textColorSearchUrl
+        */
+        public static final int Theme_textColorSearchUrl = 65;
+        /**
+          <p>
+          @attr description
+           Default Toolar NavigationButtonStyle 
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          <p>This is a private symbol.
+          @attr name com.tian.videomergedemo:toolbarNavigationButtonStyle
+        */
+        public static final int Theme_toolbarNavigationButtonStyle = 58;
+        /**
+          <p>
+          @attr description
+           Default Toolbar style. 
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          <p>This is a private symbol.
+          @attr name com.tian.videomergedemo:toolbarStyle
+        */
+        public static final int Theme_toolbarStyle = 57;
+        /**
+          <p>
+          @attr description
+           Flag indicating whether this window should have an Action Bar
+             in place of the usual title bar. 
+
+
+          <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          <p>This is a private symbol.
+          @attr name com.tian.videomergedemo:windowActionBar
+        */
+        public static final int Theme_windowActionBar = 2;
+        /**
+          <p>
+          @attr description
+           Flag indicating whether this window's Action Bar should overlay
+             application content. Does nothing if the window would not
+             have an Action Bar. 
+
+
+          <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          <p>This is a private symbol.
+          @attr name com.tian.videomergedemo:windowActionBarOverlay
+        */
+        public static final int Theme_windowActionBarOverlay = 4;
+        /**
+          <p>
+          @attr description
+           Flag indicating whether action modes should overlay window content
+             when there is not reserved space for their UI (such as an Action Bar). 
+
+
+          <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          <p>This is a private symbol.
+          @attr name com.tian.videomergedemo:windowActionModeOverlay
+        */
+        public static final int Theme_windowActionModeOverlay = 5;
+        /**
+          <p>
+          @attr description
+           A fixed height for the window along the major axis of the screen,
+             that is, when in portrait. Can be either an absolute dimension
+             or a fraction of the screen size in that dimension. 
+
+
+          <p>May be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>May be a fractional value, which is a floating point number appended with either % or %p, such as "<code>14.5%</code>".
+The % suffix always means a percentage of the base size; the optional %p suffix provides a size relative to
+some parent container.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          <p>This is a private symbol.
+          @attr name com.tian.videomergedemo:windowFixedHeightMajor
+        */
+        public static final int Theme_windowFixedHeightMajor = 9;
+        /**
+          <p>
+          @attr description
+           A fixed height for the window along the minor axis of the screen,
+             that is, when in landscape. Can be either an absolute dimension
+             or a fraction of the screen size in that dimension. 
+
+
+          <p>May be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>May be a fractional value, which is a floating point number appended with either % or %p, such as "<code>14.5%</code>".
+The % suffix always means a percentage of the base size; the optional %p suffix provides a size relative to
+some parent container.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          <p>This is a private symbol.
+          @attr name com.tian.videomergedemo:windowFixedHeightMinor
+        */
+        public static final int Theme_windowFixedHeightMinor = 7;
+        /**
+          <p>
+          @attr description
+           A fixed width for the window along the major axis of the screen,
+             that is, when in landscape. Can be either an absolute dimension
+             or a fraction of the screen size in that dimension. 
+
+
+          <p>May be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>May be a fractional value, which is a floating point number appended with either % or %p, such as "<code>14.5%</code>".
+The % suffix always means a percentage of the base size; the optional %p suffix provides a size relative to
+some parent container.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          <p>This is a private symbol.
+          @attr name com.tian.videomergedemo:windowFixedWidthMajor
+        */
+        public static final int Theme_windowFixedWidthMajor = 6;
+        /**
+          <p>
+          @attr description
+           A fixed width for the window along the minor axis of the screen,
+             that is, when in portrait. Can be either an absolute dimension
+             or a fraction of the screen size in that dimension. 
+
+
+          <p>May be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>May be a fractional value, which is a floating point number appended with either % or %p, such as "<code>14.5%</code>".
+The % suffix always means a percentage of the base size; the optional %p suffix provides a size relative to
+some parent container.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          <p>This is a private symbol.
+          @attr name com.tian.videomergedemo:windowFixedWidthMinor
+        */
+        public static final int Theme_windowFixedWidthMinor = 8;
+        /**
+          <p>
+          @attr description
+           The minimum width the window is allowed to be, along the major
+             axis of the screen.  That is, when in landscape.  Can be either
+             an absolute dimension or a fraction of the screen size in that
+             dimension. 
+
+
+          <p>May be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>May be a fractional value, which is a floating point number appended with either % or %p, such as "<code>14.5%</code>".
+The % suffix always means a percentage of the base size; the optional %p suffix provides a size relative to
+some parent container.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          <p>This is a private symbol.
+          @attr name com.tian.videomergedemo:windowMinWidthMajor
+        */
+        public static final int Theme_windowMinWidthMajor = 10;
+        /**
+          <p>
+          @attr description
+           The minimum width the window is allowed to be, along the minor
+             axis of the screen.  That is, when in portrait.  Can be either
+             an absolute dimension or a fraction of the screen size in that
+             dimension. 
+
+
+          <p>May be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>May be a fractional value, which is a floating point number appended with either % or %p, such as "<code>14.5%</code>".
+The % suffix always means a percentage of the base size; the optional %p suffix provides a size relative to
+some parent container.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          <p>This is a private symbol.
+          @attr name com.tian.videomergedemo:windowMinWidthMinor
+        */
+        public static final int Theme_windowMinWidthMinor = 11;
+        /**
+          <p>
+          @attr description
+           Flag indicating whether there should be no title on this window. 
+
+
+          <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          <p>This is a private symbol.
+          @attr name com.tian.videomergedemo:windowNoTitle
+        */
+        public static final int Theme_windowNoTitle = 3;
+        /** Attributes that can be used with a Toolbar.
+           <p>Includes the following attributes:</p>
+           <table>
+           <colgroup align="left" />
+           <colgroup align="left" />
+           <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code>{@link #Toolbar_android_gravity android:gravity}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_android_minHeight android:minHeight}</code></td><td> Allows us to read in the minHeight attr pre-v16 </td></tr>
+           <tr><td><code>{@link #Toolbar_collapseContentDescription com.tian.videomergedemo:collapseContentDescription}</code></td><td> Text to set as the content description for the collapse button.</td></tr>
+           <tr><td><code>{@link #Toolbar_collapseIcon com.tian.videomergedemo:collapseIcon}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_contentInsetEnd com.tian.videomergedemo:contentInsetEnd}</code></td><td> Minimum inset for content views within a bar.</td></tr>
+           <tr><td><code>{@link #Toolbar_contentInsetLeft com.tian.videomergedemo:contentInsetLeft}</code></td><td> Minimum inset for content views within a bar.</td></tr>
+           <tr><td><code>{@link #Toolbar_contentInsetRight com.tian.videomergedemo:contentInsetRight}</code></td><td> Minimum inset for content views within a bar.</td></tr>
+           <tr><td><code>{@link #Toolbar_contentInsetStart com.tian.videomergedemo:contentInsetStart}</code></td><td> Minimum inset for content views within a bar.</td></tr>
+           <tr><td><code>{@link #Toolbar_maxButtonHeight com.tian.videomergedemo:maxButtonHeight}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_navigationContentDescription com.tian.videomergedemo:navigationContentDescription}</code></td><td> Text to set as the content description for the navigation button
+             located at the start of the toolbar.</td></tr>
+           <tr><td><code>{@link #Toolbar_navigationIcon com.tian.videomergedemo:navigationIcon}</code></td><td> Icon drawable to use for the navigation button located at
+             the start of the toolbar.</td></tr>
+           <tr><td><code>{@link #Toolbar_popupTheme com.tian.videomergedemo:popupTheme}</code></td><td> Reference to a theme that should be used to inflate popups
+             shown by widgets in the toolbar.</td></tr>
+           <tr><td><code>{@link #Toolbar_subtitle com.tian.videomergedemo:subtitle}</code></td><td> Specifies subtitle text used for navigationMode="normal" </td></tr>
+           <tr><td><code>{@link #Toolbar_subtitleTextAppearance com.tian.videomergedemo:subtitleTextAppearance}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_title com.tian.videomergedemo:title}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_titleMarginBottom com.tian.videomergedemo:titleMarginBottom}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_titleMarginEnd com.tian.videomergedemo:titleMarginEnd}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_titleMarginStart com.tian.videomergedemo:titleMarginStart}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_titleMarginTop com.tian.videomergedemo:titleMarginTop}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_titleMargins com.tian.videomergedemo:titleMargins}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_titleTextAppearance com.tian.videomergedemo:titleTextAppearance}</code></td><td></td></tr>
+           </table>
+           @see #Toolbar_android_gravity
+           @see #Toolbar_android_minHeight
+           @see #Toolbar_collapseContentDescription
+           @see #Toolbar_collapseIcon
+           @see #Toolbar_contentInsetEnd
+           @see #Toolbar_contentInsetLeft
+           @see #Toolbar_contentInsetRight
+           @see #Toolbar_contentInsetStart
+           @see #Toolbar_maxButtonHeight
+           @see #Toolbar_navigationContentDescription
+           @see #Toolbar_navigationIcon
+           @see #Toolbar_popupTheme
+           @see #Toolbar_subtitle
+           @see #Toolbar_subtitleTextAppearance
+           @see #Toolbar_title
+           @see #Toolbar_titleMarginBottom
+           @see #Toolbar_titleMarginEnd
+           @see #Toolbar_titleMarginStart
+           @see #Toolbar_titleMarginTop
+           @see #Toolbar_titleMargins
+           @see #Toolbar_titleTextAppearance
+         */
+        public static final int[] Toolbar = {
+            0x010100af, 0x01010140, 0x7f010000, 0x7f01006d,
+            0x7f01007d, 0x7f01007e, 0x7f01007f, 0x7f010080,
+            0x7f010082, 0x7f0100a4, 0x7f0100a5, 0x7f0100a6,
+            0x7f0100a7, 0x7f0100a8, 0x7f0100a9, 0x7f0100aa,
+            0x7f0100ab, 0x7f0100ac, 0x7f0100ad, 0x7f0100ae,
+            0x7f0100af
+        };
+        /**
+          <p>This symbol is the offset where the {@link android.R.attr#gravity}
+          attribute's value can be found in the {@link #Toolbar} array.
+          @attr name android:gravity
+        */
+        public static final int Toolbar_android_gravity = 0;
+        /**
+          <p>
+          @attr description
+           Allows us to read in the minHeight attr pre-v16 
+          <p>This corresponds to the global attribute
+          resource symbol {@link android.R.attr#minHeight}.
+          @attr name android:minHeight
+        */
+        public static final int Toolbar_android_minHeight = 1;
+        /**
+          <p>
+          @attr description
+           Text to set as the content description for the collapse button. 
+
+
+          <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          <p>This is a private symbol.
+          @attr name com.tian.videomergedemo:collapseContentDescription
+        */
+        public static final int Toolbar_collapseContentDescription = 18;
+        /**
+          <p>This symbol is the offset where the {@link com.tian.videomergedemo.R.attr#collapseIcon}
+          attribute's value can be found in the {@link #Toolbar} array.
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          @attr name com.tian.videomergedemo:collapseIcon
+        */
+        public static final int Toolbar_collapseIcon = 17;
+        /**
+          <p>
+          @attr description
+           Minimum inset for content views within a bar. Navigation buttons and
+             menu views are excepted. Only valid for some themes and configurations. 
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          <p>This is a private symbol.
+          @attr name com.tian.videomergedemo:contentInsetEnd
+        */
+        public static final int Toolbar_contentInsetEnd = 5;
+        /**
+          <p>
+          @attr description
+           Minimum inset for content views within a bar. Navigation buttons and
+             menu views are excepted. Only valid for some themes and configurations. 
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          <p>This is a private symbol.
+          @attr name com.tian.videomergedemo:contentInsetLeft
+        */
+        public static final int Toolbar_contentInsetLeft = 6;
+        /**
+          <p>
+          @attr description
+           Minimum inset for content views within a bar. Navigation buttons and
+             menu views are excepted. Only valid for some themes and configurations. 
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          <p>This is a private symbol.
+          @attr name com.tian.videomergedemo:contentInsetRight
+        */
+        public static final int Toolbar_contentInsetRight = 7;
+        /**
+          <p>
+          @attr description
+           Minimum inset for content views within a bar. Navigation buttons and
+             menu views are excepted. Only valid for some themes and configurations. 
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          <p>This is a private symbol.
+          @attr name com.tian.videomergedemo:contentInsetStart
+        */
+        public static final int Toolbar_contentInsetStart = 4;
+        /**
+          <p>This symbol is the offset where the {@link com.tian.videomergedemo.R.attr#maxButtonHeight}
+          attribute's value can be found in the {@link #Toolbar} array.
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.tian.videomergedemo:maxButtonHeight
+        */
+        public static final int Toolbar_maxButtonHeight = 16;
+        /**
+          <p>
+          @attr description
+           Text to set as the content description for the navigation button
+             located at the start of the toolbar. 
+
+
+          <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          <p>This is a private symbol.
+          @attr name com.tian.videomergedemo:navigationContentDescription
+        */
+        public static final int Toolbar_navigationContentDescription = 20;
+        /**
+          <p>
+          @attr description
+           Icon drawable to use for the navigation button located at
+             the start of the toolbar. 
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          <p>This is a private symbol.
+          @attr name com.tian.videomergedemo:navigationIcon
+        */
+        public static final int Toolbar_navigationIcon = 19;
+        /**
+          <p>
+          @attr description
+           Reference to a theme that should be used to inflate popups
+             shown by widgets in the toolbar. 
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          <p>This is a private symbol.
+          @attr name com.tian.videomergedemo:popupTheme
+        */
+        public static final int Toolbar_popupTheme = 8;
+        /**
+          <p>
+          @attr description
+           Specifies subtitle text used for navigationMode="normal" 
+
+
+          <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          <p>This is a private symbol.
+          @attr name com.tian.videomergedemo:subtitle
+        */
+        public static final int Toolbar_subtitle = 3;
+        /**
+          <p>This symbol is the offset where the {@link com.tian.videomergedemo.R.attr#subtitleTextAppearance}
+          attribute's value can be found in the {@link #Toolbar} array.
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          @attr name com.tian.videomergedemo:subtitleTextAppearance
+        */
+        public static final int Toolbar_subtitleTextAppearance = 10;
+        /**
+          <p>This symbol is the offset where the {@link com.tian.videomergedemo.R.attr#title}
+          attribute's value can be found in the {@link #Toolbar} array.
+
+
+          <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.tian.videomergedemo:title
+        */
+        public static final int Toolbar_title = 2;
+        /**
+          <p>This symbol is the offset where the {@link com.tian.videomergedemo.R.attr#titleMarginBottom}
+          attribute's value can be found in the {@link #Toolbar} array.
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.tian.videomergedemo:titleMarginBottom
+        */
+        public static final int Toolbar_titleMarginBottom = 15;
+        /**
+          <p>This symbol is the offset where the {@link com.tian.videomergedemo.R.attr#titleMarginEnd}
+          attribute's value can be found in the {@link #Toolbar} array.
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.tian.videomergedemo:titleMarginEnd
+        */
+        public static final int Toolbar_titleMarginEnd = 13;
+        /**
+          <p>This symbol is the offset where the {@link com.tian.videomergedemo.R.attr#titleMarginStart}
+          attribute's value can be found in the {@link #Toolbar} array.
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.tian.videomergedemo:titleMarginStart
+        */
+        public static final int Toolbar_titleMarginStart = 12;
+        /**
+          <p>This symbol is the offset where the {@link com.tian.videomergedemo.R.attr#titleMarginTop}
+          attribute's value can be found in the {@link #Toolbar} array.
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.tian.videomergedemo:titleMarginTop
+        */
+        public static final int Toolbar_titleMarginTop = 14;
+        /**
+          <p>This symbol is the offset where the {@link com.tian.videomergedemo.R.attr#titleMargins}
+          attribute's value can be found in the {@link #Toolbar} array.
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.tian.videomergedemo:titleMargins
+        */
+        public static final int Toolbar_titleMargins = 11;
+        /**
+          <p>This symbol is the offset where the {@link com.tian.videomergedemo.R.attr#titleTextAppearance}
+          attribute's value can be found in the {@link #Toolbar} array.
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          @attr name com.tian.videomergedemo:titleTextAppearance
+        */
+        public static final int Toolbar_titleTextAppearance = 9;
+        /** Attributes that can be used with a View.
+           <p>Includes the following attributes:</p>
+           <table>
+           <colgroup align="left" />
+           <colgroup align="left" />
+           <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code>{@link #View_android_focusable android:focusable}</code></td><td> Boolean that controls whether a view can take focus.</td></tr>
+           <tr><td><code>{@link #View_android_theme android:theme}</code></td><td> Specifies a theme override for a view.</td></tr>
+           <tr><td><code>{@link #View_backgroundTint com.tian.videomergedemo:backgroundTint}</code></td><td> Tint to apply to the background.</td></tr>
+           <tr><td><code>{@link #View_backgroundTintMode com.tian.videomergedemo:backgroundTintMode}</code></td><td> Blending mode used to apply the background tint.</td></tr>
+           <tr><td><code>{@link #View_paddingEnd com.tian.videomergedemo:paddingEnd}</code></td><td> Sets the padding, in pixels, of the end edge; see {@link android.R.attr#padding}.</td></tr>
+           <tr><td><code>{@link #View_paddingStart com.tian.videomergedemo:paddingStart}</code></td><td> Sets the padding, in pixels, of the start edge; see {@link android.R.attr#padding}.</td></tr>
+           <tr><td><code>{@link #View_theme com.tian.videomergedemo:theme}</code></td><td> Deprecated.</td></tr>
+           </table>
+           @see #View_android_focusable
+           @see #View_android_theme
+           @see #View_backgroundTint
+           @see #View_backgroundTintMode
+           @see #View_paddingEnd
+           @see #View_paddingStart
+           @see #View_theme
+         */
+        public static final int[] View = {
+            0x01010000, 0x010100da, 0x7f010084, 0x7f010085,
+            0x7f010086, 0x7f010087, 0x7f010088
+        };
+        /**
+          <p>
+          @attr description
+           Boolean that controls whether a view can take focus.  By default the user can not
+             move focus to a view; by setting this attribute to true the view is
+             allowed to take focus.  This value does not impact the behavior of
+             directly calling {@link android.view.View#requestFocus}, which will
+             always request focus regardless of this view.  It only impacts where
+             focus navigation will try to move focus. 
+          <p>This corresponds to the global attribute
+          resource symbol {@link android.R.attr#focusable}.
+          @attr name android:focusable
+        */
+        public static final int View_android_focusable = 1;
+        /**
+          <p>
+          @attr description
+           Specifies a theme override for a view. When a theme override is set, the
+             view will be inflated using a {@link android.content.Context} themed with
+             the specified resource. 
+          <p>This corresponds to the global attribute
+          resource symbol {@link android.R.attr#theme}.
+          @attr name android:theme
+        */
+        public static final int View_android_theme = 0;
+        /**
+          <p>
+          @attr description
+           Tint to apply to the background. 
+
+
+          <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          <p>This is a private symbol.
+          @attr name com.tian.videomergedemo:backgroundTint
+        */
+        public static final int View_backgroundTint = 5;
+        /**
+          <p>
+          @attr description
+           Blending mode used to apply the background tint. 
+
+
+          <p>Must be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>src_over</code></td><td>3</td><td> The tint is drawn on top of the drawable.
+                 [Sa + (1 - Sa)*Da, Rc = Sc + (1 - Sa)*Dc] </td></tr>
+<tr><td><code>src_in</code></td><td>5</td><td> The tint is masked by the alpha channel of the drawable. The drawable’s
+                 color channels are thrown out. [Sa * Da, Sc * Da] </td></tr>
+<tr><td><code>src_atop</code></td><td>9</td><td> The tint is drawn above the drawable, but with the drawable’s alpha
+                 channel masking the result. [Da, Sc * Da + (1 - Sa) * Dc] </td></tr>
+<tr><td><code>multiply</code></td><td>14</td><td> Multiplies the color and alpha channels of the drawable with those of
+                 the tint. [Sa * Da, Sc * Dc] </td></tr>
+<tr><td><code>screen</code></td><td>15</td><td> [Sa + Da - Sa * Da, Sc + Dc - Sc * Dc] </td></tr>
+</table>
+          <p>This is a private symbol.
+          @attr name com.tian.videomergedemo:backgroundTintMode
+        */
+        public static final int View_backgroundTintMode = 6;
+        /**
+          <p>
+          @attr description
+           Sets the padding, in pixels, of the end edge; see {@link android.R.attr#padding}. 
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          <p>This is a private symbol.
+          @attr name com.tian.videomergedemo:paddingEnd
+        */
+        public static final int View_paddingEnd = 3;
+        /**
+          <p>
+          @attr description
+           Sets the padding, in pixels, of the start edge; see {@link android.R.attr#padding}. 
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          <p>This is a private symbol.
+          @attr name com.tian.videomergedemo:paddingStart
+        */
+        public static final int View_paddingStart = 2;
+        /**
+          <p>
+          @attr description
+           Deprecated. 
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          <p>This is a private symbol.
+          @attr name com.tian.videomergedemo:theme
+        */
+        public static final int View_theme = 4;
+        /** Attributes that can be used with a ViewStubCompat.
+           <p>Includes the following attributes:</p>
+           <table>
+           <colgroup align="left" />
+           <colgroup align="left" />
+           <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code>{@link #ViewStubCompat_android_id android:id}</code></td><td></td></tr>
+           <tr><td><code>{@link #ViewStubCompat_android_inflatedId android:inflatedId}</code></td><td> Overrides the id of the inflated View with this value.</td></tr>
+           <tr><td><code>{@link #ViewStubCompat_android_layout android:layout}</code></td><td> Supply an identifier for the layout resource to inflate when the ViewStub
+             becomes visible or when forced to do so.</td></tr>
+           </table>
+           @see #ViewStubCompat_android_id
+           @see #ViewStubCompat_android_inflatedId
+           @see #ViewStubCompat_android_layout
+         */
+        public static final int[] ViewStubCompat = {
+            0x010100d0, 0x010100f2, 0x010100f3
+        };
+        /**
+          <p>This symbol is the offset where the {@link android.R.attr#id}
+          attribute's value can be found in the {@link #ViewStubCompat} array.
+          @attr name android:id
+        */
+        public static final int ViewStubCompat_android_id = 0;
+        /**
+          <p>
+          @attr description
+           Overrides the id of the inflated View with this value. 
+          <p>This corresponds to the global attribute
+          resource symbol {@link android.R.attr#inflatedId}.
+          @attr name android:inflatedId
+        */
+        public static final int ViewStubCompat_android_inflatedId = 2;
+        /**
+          <p>
+          @attr description
+           Supply an identifier for the layout resource to inflate when the ViewStub
+             becomes visible or when forced to do so. The layout resource must be a
+             valid reference to a layout. 
+          <p>This corresponds to the global attribute
+          resource symbol {@link android.R.attr#layout}.
+          @attr name android:layout
+        */
+        public static final int ViewStubCompat_android_layout = 1;
         /** Attributes that can be used with a WheelView.
            <p>Includes the following attributes:</p>
            <table>
@@ -2357,10 +9484,10 @@ containing a value of this type.
            @see #WheelView_unitHight
          */
         public static final int[] WheelView = {
-            0x7f01002c, 0x7f01002d, 0x7f01002e, 0x7f01002f,
-            0x7f010030, 0x7f010031, 0x7f010032, 0x7f010033,
-            0x7f010034, 0x7f010035, 0x7f010036, 0x7f010037,
-            0x7f010038
+            0x7f0100f3, 0x7f0100f4, 0x7f0100f5, 0x7f0100f6,
+            0x7f0100f7, 0x7f0100f8, 0x7f0100f9, 0x7f0100fa,
+            0x7f0100fb, 0x7f0100fc, 0x7f0100fd, 0x7f0100fe,
+            0x7f0100ff
         };
         /**
           <p>This symbol is the offset where the {@link com.tian.videomergedemo.R.attr#bottomLineColor}
@@ -2577,7 +9704,7 @@ containing a value of this type.
            @see #wheelview_textColorOut
          */
         public static final int[] wheelview = {
-            0x7f010039, 0x7f01003a, 0x7f01003b, 0x7f01003c
+            0x7f010100, 0x7f010101, 0x7f010102, 0x7f010103
         };
         /**
           <p>This symbol is the offset where the {@link com.tian.videomergedemo.R.attr#dividerColor}

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.tian.videomergedemo.view.SquareLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+     <ImageView
+        android:id="@+id/iv_thumb"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+       />
+     <ImageView 
+         android:id="@+id/iv_select"
+          android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:src="@drawable/blue_dot_empty"
+        android:layout_marginRight="8dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="8dp"
+         />
+
+</com.tian.videomergedemo.view.SquareLayout>

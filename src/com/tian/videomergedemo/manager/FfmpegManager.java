@@ -40,8 +40,8 @@ public class FfmpegManager {
 
     // 线程池管理
     ThreadPoolExecutor mDecodeThreadPool = new ThreadPoolExecutor(
-            NUMBER_OF_CORES,       // Initial pool size
-            NUMBER_OF_CORES,       // Max pool size
+            NUMBER_OF_CORES,       // 初始化线程
+            NUMBER_OF_CORES,       // 最大线程数
             KEEP_ALIVE_TIME,
             KEEP_ALIVE_TIME_UNIT,
             mDecodeWorkQueue);

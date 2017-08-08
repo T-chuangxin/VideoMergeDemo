@@ -13,7 +13,7 @@ import com.tian.videomergedemo.inter.CompletionListener;
 import com.tian.videomergedemo.utils.TimeFormatUtils;
 
 /**
- * 
+ * @author TCX
  */
 public class TrimTask implements Runnable {
 

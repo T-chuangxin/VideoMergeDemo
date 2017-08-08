@@ -15,6 +15,24 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
-        android:text="开始拍摄" />
+        android:text=" 开始拍摄   " />
+    
+    
+    <Button
+        android:id="@+id/btn_click_selcet_loaction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/btn_click"
+        android:text="本地选取视频" />
+    
+    
+     <Button
+        android:id="@+id/btn_record_audio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/btn_click_selcet_loaction"
+        android:text="开始录音"/>
 
 </RelativeLayout>

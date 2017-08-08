@@ -69,6 +69,15 @@
             android:screenOrientation="portrait"
             ></activity>
         
+        <activity android:name="com.tian.videomergedemo.VideoGridActivity"
+            android:screenOrientation="portrait"
+            ></activity>
+        
+        <activity android:name="com.tian.videomergedemo.AudioActivity"
+            android:screenOrientation="portrait"
+            ></activity>
+        
+        
     </application>
 
 </manifest>

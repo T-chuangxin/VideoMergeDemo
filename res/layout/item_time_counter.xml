@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="#00000000"
+    android:gravity="center"
+    >
+    
+    
+    <RelativeLayout 
+        android:layout_width="60dp"
+        android:layout_height="20dp"
+        >
+        <View 
+            android:id="@+id/line_left"
+            android:layout_width="0.5px"
+            android:layout_height="20dp"
+            android:background="#eeeeee"
+            
+            />
+         <View 
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="0.5px"
+            android:background="#eeeeee"
+            android:visibility="gone"
+            />
+         <View 
+            android:id="@+id/line_right"
+            android:layout_width="0.5px"
+            android:layout_height="15dp"
+            android:background="#eeeeee"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:visibility="gone"
+            />
+         
+         
+         <TextView 
+             android:id="@+id/tv_time_recorder"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:textColor="#eeeeee"
+             android:text="00:00"
+             android:textSize="10sp"
+             android:textStyle="bold"
+             android:gravity="center"
+             
+             />
+         
+        
+    </RelativeLayout>
+    
+    
+    
+    
+
+</LinearLayout>

@@ -11,5 +11,6 @@
 	<classpathentry exported="true" kind="lib" path="libs/libksysv.jar"/>
 	<classpathentry exported="true" kind="lib" path="libs/ksylive.jar"/>
 	<classpathentry exported="true" kind="lib" path="libs/gson-2.3.jar"/>
+	<classpathentry exported="true" kind="lib" path="libs/android-support-v7-recyclerview (2).jar"/>
 	<classpathentry kind="output" path="bin/classes"/>
 </classpath>

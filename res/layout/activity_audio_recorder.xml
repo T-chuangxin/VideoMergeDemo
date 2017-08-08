@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EEEEEE"
+    android:id="@+id/rl_all"
+    android:orientation="vertical" >
+     <RelativeLayout
+        android:id="@+id/rl_top"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#2B3552" >
+
+        <ImageView
+            android:id="@+id/iv_clock"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:src="@drawable/ic_audio_record_setting" 
+            />
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:src="@drawable/ic_audio_record_back" 
+            />
+
+        <!--  -->
+         <TextView
+            android:id="@+id/tv_record_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="音频录制"
+            android:textColor="@color/white"
+            android:textSize="20sp" /> 
+    </RelativeLayout>
+    
+     
+     
+     <LinearLayout 
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:layout_above="@+id/rl_bottom"
+        android:layout_below="@+id/rl_top"
+        android:orientation="vertical"
+         >
+         
+         
+         <RelativeLayout 
+             android:layout_width="match_parent"
+             android:layout_height="80dp"
+             android:padding="10dp"
+             >
+             
+             <TextView
+	            android:id="@+id/tv_record_time"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_alignParentLeft="true"
+	            android:layout_centerVertical="true"
+	            android:text="00:00:00"
+	            android:textColor="#2A3552"
+	            android:textStyle="bold"
+	            android:textSize="28sp" />
+             
+             
+             <TextView
+	            android:id="@+id/tv_record_setting_show"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_alignParentRight="true"
+	            android:layout_centerVertical="true"
+	            android:text="WAV  16Khz"
+	            android:textStyle="bold"
+	            android:textColor="#2A3552"
+	            android:textSize="18sp" />
+         </RelativeLayout>
+         
+         
+         
+         <RelativeLayout 
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:background="@drawable/shape_rect_blue"
+             android:layout_marginLeft="5dp"
+             android:layout_marginRight="5dp"
+             android:paddingTop="10dp"
+             android:gravity="center_vertical"
+             >
+             <android.support.v7.widget.RecyclerView
+                 android:id="@+id/time_coder"
+                 android:layout_width="match_parent"
+                 android:layout_height="20dp"
+                 /> 
+             
+          <com.tian.videomergedemo.view.WaveSurfaceView
+	        android:id="@+id/wavesfv"
+	        android:layout_width="fill_parent"
+	        android:background="#2A3552"
+	        android:layout_below="@+id/time_coder"
+	        android:layout_above="@+id/hlv_scroll"
+	        android:layout_height="240dp"/>
+
+          
+		   <com.tian.videomergedemo.view.WaveformView
+		     android:id="@+id/waveview"
+		     android:visibility="invisible"
+		     android:layout_width="fill_parent"
+		     android:background="#2A3552"
+		     android:layout_below="@+id/time_coder"
+		     android:layout_above="@+id/hlv_scroll"
+		     android:layout_height="240dp" />
+             
+		  <com.tian.videomergedemo.view.ObservableScrollView 
+               android:id="@+id/hlv_scroll"
+               android:layout_width="match_parent"
+               android:layout_height="10dp"
+			   android:layout_marginTop="20dp"
+			   android:layout_alignParentBottom="true"
+               android:scrollbars="none"> 
+               
+			<LinearLayout 
+			    android:id="@+id/ll_content"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content">
+				
+		       <com.tian.videomergedemo.view.ProgressView_audio 
+			       android:id="@+id/audio_progress"
+			       android:layout_width="360000dp"
+			       android:layout_height="10dp"
+		       />
+		       </LinearLayout>
+		   
+		     </com.tian.videomergedemo.view.ObservableScrollView>
+		   
+		   
+         </RelativeLayout>
+         
+     </LinearLayout>
+     
+     
+    
+    
+    <RelativeLayout 
+        android:id="@+id/rl_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        >
+        
+        
+         <ImageView
+            android:id="@+id/iv_record_mark"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="30dp"
+            android:layout_toLeftOf="@+id/iv_record"
+            android:layout_marginRight="20dp"
+            android:layout_centerVertical="true"
+             />
+        
+        
+         <RelativeLayout 
+             android:id="@+id/iv_record"
+             android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+             >
+        <ImageView
+            android:id="@+id/iv_record_off"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/record_circle" />
+         <ImageView
+            android:id="@+id/iv_record_on"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:visibility="gone"
+            android:src="@drawable/ic_record_audioing" />
+        </RelativeLayout>
+        
+         <ImageView
+            android:id="@+id/iv_record_control"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="30dp"
+            android:layout_toRightOf="@+id/iv_record"
+            android:layout_marginLeft="20dp"
+            android:layout_centerVertical="true"
+             />
+    </RelativeLayout>
+    
+</RelativeLayout>

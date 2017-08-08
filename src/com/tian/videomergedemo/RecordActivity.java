@@ -188,8 +188,6 @@ public class RecordActivity extends Activity implements OnClickListener {
 		rl_root = (RelativeLayout)this.findViewById(R.id.rl_root);
 		
 		
-		
-		
 		mRecordProgressCtl = new RecordProgressController(mBarBottomLayout);
 		//每次进入取上次的设置的时间总长
 		mRecordProgressCtl.setMaxDuration(getSharedPreferences(SPConstant.RECORD_MAXTIME_NAME, MODE_PRIVATE).getInt(SPConstant.RECORD_MAXTIME_DURATION, MAX_DURATION));

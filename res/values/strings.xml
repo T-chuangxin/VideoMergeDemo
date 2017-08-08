@@ -4,5 +4,9 @@
     <string name="app_name">VideoMergeDemo</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
+    
+    
+    <string name="all_images">全部图片</string>
+    
 
 </resources>
