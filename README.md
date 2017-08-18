@@ -9,17 +9,17 @@
 
 **视频采集和编辑截图：**
 
-![](https://github.com/T-chuangxin/VideoMergeDemo/raw/assets/555.jpg)  
+![](https://github.com/T-chuangxin/VideoMergeDemo/blob/master/assets/555.jpg)  
 
-![](https://github.com/T-chuangxin/VideoMergeDemo/raw/assets/666.jpg)  
+![](https://github.com/T-chuangxin/VideoMergeDemo/blob/master/assets/666.jpg)  
 
 
 
 **音频采集和编辑截图：**
 
-![](https://github.com/T-chuangxin/VideoMergeDemo/raw/assets/333.jpg)  
+![](https://github.com/T-chuangxin/VideoMergeDemo/blob/master/assets/333.jpg)  
 
-![](https://github.com/T-chuangxin/VideoMergeDemo/raw/assets/444.jpg)  
+![](https://github.com/T-chuangxin/VideoMergeDemo/blob/master/assets/444.jpg)  
 
 
 
