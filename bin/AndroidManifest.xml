@@ -76,6 +76,9 @@
         <activity android:name="com.tian.videomergedemo.AudioActivity"
             android:screenOrientation="portrait"
             ></activity>
+        <activity android:name="com.tian.videomergedemo.AudioEditActivity"
+            android:screenOrientation="portrait"
+            ></activity>
         
         
     </application>

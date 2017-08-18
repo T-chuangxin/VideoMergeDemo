@@ -130,12 +130,12 @@ public class AudioActivity extends Activity implements OnClickListener{
 ////					setResult(2, intent);//2任意
 ////					AudioActivity.this.finish();
 //				}else{
-					//跳转到编辑界面
-//					Intent intent = new Intent(AudioActivity.this,AudioEditActivity.class);
-//					intent.setData(Uri.parse(outFile.getAbsolutePath()));
-//					intent.putExtra("time", totalTime/1000);
-//					startActivity(intent);
-//					finish();
+//					跳转到编辑界面
+					Intent intent = new Intent(AudioActivity.this,AudioEditActivity.class);
+					intent.setData(Uri.parse(outFile.getAbsolutePath()));
+					intent.putExtra("time", totalTime/1000);
+					startActivity(intent);
+					finish();
 //				}
 				break;
 			default:
